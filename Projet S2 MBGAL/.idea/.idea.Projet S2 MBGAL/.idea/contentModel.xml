@@ -8,6 +8,9 @@
       <e p="Assets" t="Include">
         <e p="MainMenu.cs" t="Include" />
         <e p="Scenes" t="Include">
+          <e p="scene" t="Include">
+            <e p="InputManager.cs" t="Include" />
+          </e>
           <e p="script" t="Include">
             <e p="map" t="Include">
               <e p="caserne.cs" t="Include" />
