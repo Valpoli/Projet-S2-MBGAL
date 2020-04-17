@@ -1,34 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class champ : MonoBehaviour
+public class Champ : Batiment
 {
-    public class Champ : TypeBatiment.Batiment
+    private int vie = 10;
+    private long tpsPousse = 20;
+    public const long prodNourriture = 5;
+    public const long prix = 10;
+    
+    public int Vie
     {
-        private int vie;
-        public long prodNourriture;
-        public const long prix = 100;
-        
-        public int Vie
-        {
-            get => vie;
-            set => vie = value;
-        }
-        
-        public Champ()
-        {
-            type = BatimentType.CHAMP;
-        }
-        
-        public Champ(Champ champ)
-        {
-            type = champ.type;
-        }
+        get => vie;
+        set => vie = value;
+    }
+    
+    public long TpsPousse
+    {
+        get => tpsPousse;
+        set => tpsPousse = value;
+    }
+    
+    public Champ()
+    {
+        type = BatimentType.CHAMP;
+    }
+    
+    public Champ(Champ champ)
+    {
+        type = champ.type;
+    }
 
-        public long recolte()
+    public long recolte()
+    {
+        
+        if (tpsPousse <= 0) 
         {
             return prodNourriture;
         }
+        else
+        {
+            return 0;
+        }
     }
+    
 }
 

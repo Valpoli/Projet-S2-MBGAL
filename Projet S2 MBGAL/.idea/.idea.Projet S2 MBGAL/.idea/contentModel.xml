@@ -13,10 +13,13 @@
           </e>
           <e p="script" t="Include">
             <e p="map" t="Include">
+              <e p="carte.cs" t="Include" />
               <e p="caserne.cs" t="Include" />
               <e p="champ.cs" t="Include" />
               <e p="chateau.cs" t="Include" />
+              <e p="jeu.cs" t="Include" />
               <e p="maison.cs" t="Include" />
+              <e p="outils.cs" t="Include" />
               <e p="tour.cs" t="Include" />
               <e p="tuile.cs" t="Include" />
               <e p="TypeBatiment.cs" t="Include" />

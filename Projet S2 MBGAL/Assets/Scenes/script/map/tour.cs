@@ -1,33 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class tour : MonoBehaviour
+public class Tour : Batiment
 {
-    public class Tour : TypeBatiment.Batiment
+    private int vie = 30;
+    private int tpsRecharge = 3;
+    public const int degatTour = 30;
+    public const long prix = 100;
+
+    public int Vie
     {
-        private int vie;
-        public int degatTour;
-        public const long prix = 100;
+        get => vie;
+        set => vie = value;
+    }
+    
+    public int TpsRecharge
+    {
+        get => tpsRecharge;
+        set => tpsRecharge = value;
+    }
 
-        public int Vie
-        {
-            get => vie;
-            set => vie = value;
-        }
+    public Tour()
+    {
+        type = BatimentType.TOUR;
+    }
+    
+    public Tour(Tour tour)
+    {
+        type = tour.type;
+    }
 
-        public Tour()
-        {
-            type = BatimentType.TOUR;
-        }
-        
-        public Tour(Tour tour)
-        {
-            type = tour.type;
-        }
-
-        public long degatInflige()
+    public long degatInflige()
+    {
+        if (tpsRecharge <= 0)
         {
             return degatTour;
+        }
+        else
+        {
+            return 0;
         }
     }
 }
