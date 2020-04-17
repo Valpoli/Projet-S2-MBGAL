@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    public Transform prefab;
+    public Camera cam;
+    public bool check = true;
 
     public float PlateauSpeed;
 
@@ -20,7 +23,16 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveCamera();
+        if (Input.GetMouseButtonDown(0) && check)
+        { 
+            print(cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10f)));
+            ///outils.instancier(Input.mousePosition,prefab);
+            check = false;
+        }
+        if (Input.GetMouseButtonDown(1))
+        { 
+            check = true;
+        }
     }
     void MoveCamera()
     {
