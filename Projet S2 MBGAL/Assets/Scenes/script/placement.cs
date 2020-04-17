@@ -21,6 +21,6 @@ public class placement : MonoBehaviour
             money -= 100;
             check = false;
         }
-        print(money);
+        
     }
 }
