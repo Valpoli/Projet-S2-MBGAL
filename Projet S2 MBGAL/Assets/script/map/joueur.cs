@@ -10,8 +10,9 @@ public class joueur : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        long test = aya.Nourriture + 50;
-        print(aya.Nourriture);
+        long a = aya.Nourriture;
+        a +=  50;
+        print(a);
     }
 
     // Update is called once per frame
