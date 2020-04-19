@@ -23,16 +23,7 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && check)
-        { 
-            print(cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10f)));
-            ///outils.instancier(Input.mousePosition,prefab);
-            check = false;
-        }
-        if (Input.GetMouseButtonDown(1))
-        { 
-            check = true;
-        }
+        MoveCamera();
     }
     void MoveCamera()
     {
