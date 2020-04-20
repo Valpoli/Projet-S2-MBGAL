@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Map 
+public class Map
 {
     public Case[,] matrix;
 
