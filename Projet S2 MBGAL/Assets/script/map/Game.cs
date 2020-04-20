@@ -3,56 +3,66 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game
+public class Game : MonoBehaviour
 {
-    private long score;
-    private long logementTot;
-    private long argent;
-    private long nourriture;
-    private Map map ;
-
-    public Game(long initialMoney, long initialnourriture)
-    {
-        score = 0;
-        logementTot = Chateau.logement;
-        argent = initialMoney;
-        nourriture = initialnourriture;
-        map = new Map();
-    }
+    public long score;
+    public long logementTot;
+    public long argent;
+    public long nourriture;
+    public Map map = new Map();
+    public bool needAnInput = false;
     
-    public long LogementTot()
+    void Start()
     {
-        return logementTot;
+        Camera cam = Camera.main;
+        if (needAnInput && Input.GetMouseButtonDown(0))
+        {
+            Vector3 clic = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.x,10f));
+            calcCentre(clic);
+        }
     }
 
-    public long ArgentTot()
+    // Update is called once per frame
+    void Update()
     {
-        return argent;
+        print(nourriture);
     }
 
-    public long NourritureTot()
+    public void InputSomething()
     {
-        return nourriture;
+        needAnInput = true;
     }
-
-    public long Argent
+    public int[] calcCentre(Vector3 clic)
     {
-        get { return argent; }
-    }
-
-    public long Score
-    {
-        get { return score; }
-    }
-
-    public long Nourriture
-    {
-        get { return nourriture; }
-    }
-
-    public Map Map
-    {
-        get { return map; }
+        float x = clic.x;
+        float z = clic.z;
+        int posx = Convert.ToInt16(x);
+        int posz = Convert.ToInt16(z);
+        int[] res = {-1,-1};
+        if (posx >= 0 || posx <= 100 || posz >= 0 || posz <= 100)
+        {
+            if (x - posx != 0)
+            {
+                posx = +1;
+            }
+            if (z - posz != 0)
+            {
+                posz = +1;
+            }
+            while (posx % 4 == 0)
+            {
+                posx += 1;
+            }
+            while (posz % 4 == 0)
+            {
+                posz += 1;
+            }
+            posx -= 2;
+            posz -= 2;
+            res[0] = posx;
+            res[1] = posz;
+        }
+        return res;
     }
 }
 

@@ -9,10 +9,10 @@
         <e p="MainMenu.cs" t="Include" />
         <e p="prefabs" t="Include">
           <e p="HUD" t="Include">
-            <e p="Bonjour.cs" t="Include" />
             <e p="Food.cs" t="Include" />
             <e p="Gold.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
+            <e p="MontreNourri.cs" t="Include" />
             <e p="Population.cs" t="Include" />
           </e>
         </e>
@@ -23,15 +23,12 @@
             <e p="champ.cs" t="Include" />
             <e p="chateau.cs" t="Include" />
             <e p="Game.cs" t="Include" />
-            <e p="joueur.cs" t="Include" />
             <e p="maison.cs" t="Include" />
             <e p="Map.cs" t="Include" />
             <e p="tour.cs" t="Include" />
             <e p="TypeBatiment.cs" t="Include" />
           </e>
         </e>
-        <e p="script.cs" t="Include" />
-        <e p="selection.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
