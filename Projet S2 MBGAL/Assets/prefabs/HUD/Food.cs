@@ -13,7 +13,5 @@ public class Food : MonoBehaviour
 
     void Update()
     {
-        Game Food1 = test1.GetComponent<Game>();
-        nbFood.text = ": " + Convert.ToString(Food1.nourriture);
     }
 }

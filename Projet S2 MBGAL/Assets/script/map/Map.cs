@@ -2,7 +2,7 @@
 
 public class Map
 {
-    public Case[,] matrix;
+    public Case[,] matrix = new Case[25,25];
 
     public Map()
     {
@@ -11,8 +11,19 @@ public class Map
 
     public Case[,] Generate()
     {
-        Case[,] res = { { new Case(Case.Biome.PLAINE), new Case(Case.Biome.PLAINE) }, { new Case(Case.Biome.PLAINE), new Case(Case.Biome.PLAINE) }};
-        return res;
+        int i = 0;
+        while (i < 25)
+        {
+            int j = 0;
+            while (j < 25)
+            {
+                matrix[i, j] = new Case(Case.Biome.PLAINE);
+                j += 1;
+            }
+
+            i += 1;
+        }
+        return matrix;
     }
 
 

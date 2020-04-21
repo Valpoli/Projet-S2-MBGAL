@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 8b7d9b6b6e136354b9692c2b8c4c9b67
+guid: 58cad47f0750de849b743a67bced31e4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - nbGold: {instanceID: 0}
-  - Or: {fileID: 8296130211182977093, guid: 3641281e655197e46ac1b35798a8c3bf, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

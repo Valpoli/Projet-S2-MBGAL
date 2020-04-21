@@ -11,67 +11,74 @@ public class Game : MonoBehaviour
     public long argent;
     public long nourriture;
     public Map map = new Map();
-    public bool needAnInput;
     private Camera cam;
-    private int cameraCurrentZoom = 8;
+    private int cameraCurrentZoom = 15;
+    
+    /// prefabs nécessaires
     public GameObject Maison;
+    public GameObject Caserne;
+    public GameObject Tour;
+    public GameObject Champ;
+    
+    
+    /// si il faut un construire
+    public bool needMaison;
+    public bool needCaserne;
+    public bool needTour;
+    public bool needChamp;
+
+    public Game()
+    {
+        needMaison = false;
+        needCaserne = false;
+        needTour = false;
+        needChamp = false;
+    }
     void Start()
     {
         cam = Camera.main;
         Camera.main.orthographicSize = cameraCurrentZoom;
-        needAnInput = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (needAnInput && Input.GetMouseButtonDown(0))
+        BeginConstruction();
+    }
+
+    
+    #region Construction 
+    public void BeginConstruction()
+    {
+        if (needMaison && Input.GetMouseButtonDown(0))
         {
             Vector3 clic = cam.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(clic); 
-            calcCentre(clic);
-            construireMaison(calcCentre(clic));
-            needAnInput = false;
+            ConstruireMaison(clic);
         }
-        
+    }
+    #region Maison
+    public void ConstruireMaison(Vector3 clic)
+    {
+        if (Construction.DanslaCarte(clic))
+        {
+            InstantiateMaison(Construction.calcCentre(clic));
+        }
+        else
+        {
+            Debug.Log("Pas dans la carte");
+        }
+        needMaison = false;
+        (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
+        Debug.Log(map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.MAISON));
     }
     
-    public Vector3 calcCentre(Vector3 clic)
-    {
-        bool check = false;
-        string test = "PAS DANS LA MAP";
-        if (clic.x >= 0 && clic.x <= 100 && clic.z >= 0 && clic.z <= 100)
-        {
-            double x = Math.Round(clic.x);
-            double z = Math.Round(clic.z);
-            while (x % 4 != 0 || x == 0)
-            {
-                x += 1;
-            }
-            while (z % 4 != 0 || z == 0)
-            {
-                z += 1;
-            }
-            x -= 2;
-            z -= 2;
-            test = Convert.ToString(x) + " , " +  Convert.ToString(z);
-            check = true;
-            clic.x = (float)x;
-            clic.z = (float)z;
-
-        }
-        Debug.Log(test);
-        Debug.Log(check);
-        return clic;
-    }
-
-    public void construireMaison(Vector3 clic)
+    public void InstantiateMaison(Vector3 clic)
     {
         clic.y = (float)0.5;
         Instantiate(Maison, clic, Quaternion.identity);
     }
-
-
+    #endregion
+    #endregion
 }
 
 

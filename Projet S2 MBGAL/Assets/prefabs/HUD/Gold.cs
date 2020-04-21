@@ -6,16 +6,13 @@ using UnityEngine;
 
 public class Gold : MonoBehaviour
 {
-    public Text nbGold;
-
-    public GameObject Or;
+    public Text coucou;
     // Start is called before the first frame update
 
 
     private void Update()
     {
-        Game or = Or.GetComponent<Game>();
-        nbGold.text = ": " + Convert.ToString(or.argent);
+
 
     }
 }
