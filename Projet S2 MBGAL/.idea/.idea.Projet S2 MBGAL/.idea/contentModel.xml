@@ -9,6 +9,7 @@
         <e p="MainMenu.cs" t="Include" />
         <e p="prefabs" t="Include">
           <e p="HUD" t="Include">
+            <e p="Add_food.cs" t="Include" />
             <e p="Food.cs" t="Include" />
             <e p="Gold.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />

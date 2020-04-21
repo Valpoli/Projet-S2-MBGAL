@@ -422,9 +422,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 130
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -448,7 +448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 50, y: 20, z: 50}
+  m_LocalPosition: {x: 50, y: 50, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -502,6 +502,7 @@ MonoBehaviour:
   argent: 500
   nourriture: 1000
   needAnInput: 1
+  Maison: {fileID: 2006794183080203121, guid: 1dfa03a3e07c35f419ffcdf8183c3308, type: 3}
 --- !u!1001 &1106214368
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -28,15 +28,15 @@
             if (tuile.batiment == null)
                 batiment = null;
             else if (tuile.batiment.Type == TypeBatiment.BatimentType.TOUR)
-                batiment = new Tour();
+                batiment = new Tour.tour();
             else if (tuile.batiment.Type == TypeBatiment.BatimentType.CHAMP)
-                batiment = new Champ();
+                batiment = new Champ.champ();
             else if (tuile.batiment.Type == TypeBatiment.BatimentType.MAISON)
-                batiment = new Maison();
+                batiment = new Maison.maison();
             else if (tuile.batiment.Type == TypeBatiment.BatimentType.CASERNE)
-                batiment = new Caserne();
+                batiment = new Caserne.caserne();
             else if (tuile.batiment.Type == TypeBatiment.BatimentType.CHATEAU)
-                batiment = new Chateau();
+                batiment = new Chateau.chateau();
         }
 
         public bool constructible()
@@ -52,29 +52,29 @@
             }
             else
             {
-                if (type == TypeBatiment.BatimentType.TOUR && bois >= Tour.prix)
+                if (type == TypeBatiment.BatimentType.TOUR && bois >= Tour.tour.prix)
                 {
-                    batiment = new Tour();
-                    bois -= Tour.prix;
+                    batiment = new Tour.tour();
+                    bois -= Tour.tour.prix;
                 }
 
-                if (type == TypeBatiment.BatimentType.CHAMP && bois >= Champ.prix)
+                if (type == TypeBatiment.BatimentType.CHAMP && bois >= Champ.champ.prix)
                 {
-                    batiment = new Champ();
-                    bois -= Champ.prix;
+                    batiment = new Champ.champ();
+                    bois -= Champ.champ.prix;
                 }
 
-                if (type == TypeBatiment.BatimentType.MAISON && bois >= Maison.prix)
+                if (type == TypeBatiment.BatimentType.MAISON && bois >= Maison.maison.prix)
                 {
-                    batiment = new Maison();
-                    bois -= Maison.prix;
-                    logementTot += Maison.logement;
+                    batiment = new Maison.maison();
+                    bois -= Maison.maison.prix;
+                    logementTot += Maison.maison.logement;
                 }
 
-                if (type == TypeBatiment.BatimentType.CASERNE && bois >= Caserne.prix)
+                if (type == TypeBatiment.BatimentType.CASERNE && bois >= Caserne.caserne.prix)
                 {
-                    batiment = new Caserne();
-                    bois -= Caserne.prix;
+                    batiment = new Caserne.caserne();
+                    bois -= Caserne.caserne.prix;
                 }
 
                 return true;
@@ -98,7 +98,7 @@
         {
             if (batiment != null && batiment.Type == TypeBatiment.BatimentType.CHAMP)
             {
-                Champ c = new Champ();
+                Champ.champ c = new Champ.champ();
                 return c.recolte();
             }
             else

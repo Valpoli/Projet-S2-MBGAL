@@ -1,38 +1,44 @@
 ﻿using System;
-public class Caserne : TypeBatiment
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class Caserne : MonoBehaviour
 {
-    private int vie = 20;
-    public const int prixSoldat = 30;
-    public const long prix = 300;
-
-    public int Vie
+    public class caserne : TypeBatiment
     {
-        get => vie;
-        set => vie = value;
-    }
+        private int vie = 20;
+        public const int prixSoldat = 30;
+        public const long prix = 300;
 
-    public Caserne()
-    {
-        type = BatimentType.CASERNE;
-    }
-
-    public Caserne(Caserne caserne)
-    {
-        type = caserne.type;
-    }
-
-    public static bool CreeSoldat(ref long nourriture)
-    {
-        bool res = true;
-        if (nourriture >= prixSoldat)
+        public int Vie
         {
-            nourriture -= prixSoldat;
-        }
-        else
-        {
-            res = false;
+            get => vie;
+            set => vie = value;
         }
 
-        return res;
+        public caserne()
+        {
+            type = BatimentType.CASERNE;
+        }
+
+        public caserne(caserne caserne)
+        {
+            type = caserne.type;
+        }
+
+        public static bool CreeSoldat(ref long nourriture)
+        {
+            bool res = true;
+            if (nourriture >= prixSoldat)
+            {
+                nourriture -= prixSoldat;
+            }
+            else
+            {
+                res = false;
+            }
+
+            return res;
+        }
     }
 }

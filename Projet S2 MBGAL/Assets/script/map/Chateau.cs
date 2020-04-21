@@ -1,45 +1,50 @@
 ﻿using System;
-
-public class Chateau : TypeBatiment
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+public class Chateau : MonoBehaviour
 {
-    private int vie = 300;
-    public const int logement = 50;
-    public const int prixVillageois = 10;
-
-    public int Vie
+    public class chateau : TypeBatiment
     {
-        get => vie;
-        set => vie = value;
-    }
+        private int vie = 300;
+        public const int logement = 50;
+        public const int prixVillageois = 10;
 
-    public Chateau()
-    {
-        type = BatimentType.CHATEAU;
-    }
-
-    public Chateau(Chateau chateau)
-    {
-        type = chateau.type;
-    }
-
-    public bool CreeVillageois(ref long nourriture)
-    {
-        bool res = true;
-        if (nourriture >= prixVillageois)
+        public int Vie
         {
-            nourriture -= prixVillageois;
-        }
-        else
-        {
-            res = false;
+            get => vie;
+            set => vie = value;
         }
 
-        return res;
-    }
+        public chateau()
+        {
+            type = BatimentType.CHATEAU;
+        }
 
-    public long Logement()
-    {
-        return logement;
+        public chateau(chateau chateau)
+        {
+            type = chateau.type;
+        }
+
+        public bool CreeVillageois(ref long nourriture)
+        {
+            bool res = true;
+            if (nourriture >= prixVillageois)
+            {
+                nourriture -= prixVillageois;
+            }
+            else
+            {
+                res = false;
+            }
+
+            return res;
+        }
+
+        public long Logement()
+        {
+            return logement;
+        }
     }
 }
 

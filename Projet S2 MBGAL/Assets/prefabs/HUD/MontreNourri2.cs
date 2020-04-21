@@ -9,7 +9,7 @@ public class MontreNourri : MonoBehaviour
     {
         Camera cam = Camera.main;
         Game tests = test.GetComponent<Game>();
-        tests.nourriture = 99999999;
+        tests.needAnInput = true;
     }
   
 }
