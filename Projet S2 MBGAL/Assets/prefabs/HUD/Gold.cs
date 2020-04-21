@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -6,14 +7,15 @@ using UnityEngine;
 public class Gold : MonoBehaviour
 {
     public Text nbGold;
-    // Start is called before the first frame update
-    void Start()
-    {
-        nbGold.text = ": 1000";
-    }
 
-    public void actualnbGold(int Gold)
+    public GameObject Or;
+    // Start is called before the first frame update
+
+
+    private void Update()
     {
-        nbGold.text = ": " + Gold.ToString();
+        Game or = Or.GetComponent<Game>();
+        nbGold.text = ": " + Convert.ToString(or.argent);
+
     }
 }
