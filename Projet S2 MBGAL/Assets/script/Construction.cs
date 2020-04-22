@@ -13,6 +13,15 @@ public class Construction : MonoBehaviour
         bool res = clic.x >= 0 && clic.x <= 100 && clic.z >= 0 && clic.z <= 100;
         return res;
     }
+    public static bool DansleChateau(Vector3 clic)
+    {
+        bool res = !(clic.x <= 24 && clic.x >= 20 && clic.z<= 16 && clic.z >= 12);
+        if (clic.x <= 64 && clic.x >= 56 && clic.z<= 64 && clic.z >= 56)
+        {
+            res = false;
+        }
+        return res;
+    }
     
     public static Vector3 calcCentre(Vector3 clic)
     {
