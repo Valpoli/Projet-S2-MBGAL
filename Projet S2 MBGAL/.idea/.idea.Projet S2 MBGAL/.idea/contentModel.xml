@@ -11,10 +11,7 @@
           <e p="HUD" t="Include">
             <e p="Add_food.cs" t="Include" />
             <e p="bouton" t="Include">
-              <e p="BoutonCaserne.cs" t="Include" />
-              <e p="BoutonChamp.cs" t="Include" />
-              <e p="BoutonMaison.cs" t="Include" />
-              <e p="BoutonTour.cs" t="Include" />
+              <e p="Boutons.cs" t="Include" />
             </e>
             <e p="Food.cs" t="Include" />
             <e p="Gold.cs" t="Include" />
@@ -36,6 +33,7 @@
             <e p="Case.cs" t="Include" />
             <e p="Game.cs" t="Include" />
             <e p="GestionSoldat.cs" t="Include" />
+            <e p="Guerrier.cs" t="Include" />
             <e p="Map.cs" t="Include" />
             <e p="TypeUnité.cs" t="Include" />
           </e>

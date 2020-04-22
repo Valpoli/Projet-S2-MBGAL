@@ -403,8 +403,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Bonjours
+      - m_Target: {fileID: 1172798187}
+        m_MethodName: ConstrChamp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -602,7 +602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 50, y: 20, z: 50}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -789,8 +789,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Bonjours
+      - m_Target: {fileID: 1172798187}
+        m_MethodName: ConstrCaserne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1045,8 +1045,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Bonjours
+      - m_Target: {fileID: 1172798187}
+        m_MethodName: ConstrTour
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1762,7 +1762,7 @@ PrefabInstance:
     - target: {fileID: 8296130211182977091, guid: 3641281e655197e46ac1b35798a8c3bf,
         type: 3}
       propertyPath: argent
-      value: 150
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 8296130211182977091, guid: 3641281e655197e46ac1b35798a8c3bf,
         type: 3}
@@ -1792,6 +1792,30 @@ PrefabInstance:
       propertyPath: Champ
       value: 
       objectReference: {fileID: 8362137339574040905, guid: 638855cbc27ac064ab81893971743838,
+        type: 3}
+    - target: {fileID: 8296130211182977091, guid: 3641281e655197e46ac1b35798a8c3bf,
+        type: 3}
+      propertyPath: ObjMaison
+      value: 
+      objectReference: {fileID: 2006794183080203121, guid: 1dfa03a3e07c35f419ffcdf8183c3308,
+        type: 3}
+    - target: {fileID: 8296130211182977091, guid: 3641281e655197e46ac1b35798a8c3bf,
+        type: 3}
+      propertyPath: ObjTour
+      value: 
+      objectReference: {fileID: 4367988159879116272, guid: ab277757539f2e743a3b5091366ae4dd,
+        type: 3}
+    - target: {fileID: 8296130211182977091, guid: 3641281e655197e46ac1b35798a8c3bf,
+        type: 3}
+      propertyPath: ObjChamp
+      value: 
+      objectReference: {fileID: 8362137339574040905, guid: 638855cbc27ac064ab81893971743838,
+        type: 3}
+    - target: {fileID: 8296130211182977091, guid: 3641281e655197e46ac1b35798a8c3bf,
+        type: 3}
+      propertyPath: ObjCaserne
+      value: 
+      objectReference: {fileID: 2944616600871505959, guid: d08ceaac1ac8e004982594c330609198,
         type: 3}
     - target: {fileID: 8296130211182977092, guid: 3641281e655197e46ac1b35798a8c3bf,
         type: 3}
