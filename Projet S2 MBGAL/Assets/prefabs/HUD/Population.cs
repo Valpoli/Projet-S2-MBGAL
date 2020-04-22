@@ -10,7 +10,11 @@ public class Population : MonoBehaviour
 
     public GameObject pop;
     // Start is called before the first frame update
-
+    void Update()
+    {
+        Game Pop = pop.GetComponent<Game>();
+        nbPop.text = ": " + Convert.ToString(Pop.popAct) + "/" + Convert.ToString(Pop.logementTot);
+    }
 
     
 }

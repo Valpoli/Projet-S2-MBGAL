@@ -75,28 +75,35 @@ public class Game : MonoBehaviour
     #region Maison
     public void ConstruireMaison(Vector3 clic)
     {
-        if (Construction.DanslaCarte(clic))
+        if (Construction.DansleChateau(clic))
         {
-            (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
-            if (Maison.maison.prix <= argent)
+            if (Construction.DanslaCarte(clic))
             {
-                if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.MAISON))
+                (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
+                if (Maison.maison.prix <= argent)
                 {
-                    InstantiateMaison(Construction.calcCentre(clic));
+                    if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.MAISON))
+                    {
+                        InstantiateMaison(Construction.calcCentre(clic));
+                    }
+                    else
+                    {
+                        Debug.Log("Il y a déjà un batiment à cet endroit");
+                    }
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    Debug.Log("Il manque de l'argent");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                Debug.Log("Pas dans la carte");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            Debug.Log("Il ne faut pas construire dans le chateau");
         }
         needMaison = false;
 
@@ -111,29 +118,37 @@ public class Game : MonoBehaviour
     #region Caserne
     public void ConstruireCaserne(Vector3 clic)
     {
-        if (Construction.DanslaCarte(clic))
+        if (Construction.DansleChateau(clic))
         {
-            (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
-            if (Caserne.caserne.prix <= argent)
+            if (Construction.DanslaCarte(clic))
             {
-                if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.CASERNE))
+                (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
+                if (Caserne.caserne.prix <= argent)
                 {
-                    InstantiateCaserne(Construction.calcCentre(clic));
+                    if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.CASERNE))
+                    {
+                        InstantiateCaserne(Construction.calcCentre(clic));
+                    }
+                    else
+                    {
+                        Debug.Log("Il y a déjà un batiment à cet endroit");
+                    }
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    Debug.Log("Il manque de l'argent");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                Debug.Log("Pas dans la carte");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            Debug.Log("Il ne faut pas construire dans le chateau");
         }
+
         needCaserne = false;
 
     }
@@ -147,28 +162,35 @@ public class Game : MonoBehaviour
     #region Tour
     public void ConstruireTour(Vector3 clic)
     {
-        if (Construction.DanslaCarte(clic))
+        if (Construction.DansleChateau(clic))
         {
-            (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
-            if (Tour.tour.prix <= argent)
+            if (Construction.DanslaCarte(clic))
             {
-                if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.TOUR))
+                (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
+                if (Tour.tour.prix <= argent)
                 {
-                    InstantiateTour(Construction.calcCentre(clic));
+                    if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.TOUR))
+                    {
+                        InstantiateTour(Construction.calcCentre(clic));
+                    }
+                    else
+                    {
+                        Debug.Log("Il y a déjà un batiment à cet endroit");
+                    }
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    Debug.Log("Il manque de l'argent");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                Debug.Log("Pas dans la carte");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            Debug.Log("Il ne faut pas construire dans le chateau");
         }
         needTour = false;
 
@@ -183,29 +205,37 @@ public class Game : MonoBehaviour
     #region Champ
     public void ConstruireChamp(Vector3 clic)
     {
-        if (Construction.DanslaCarte(clic))
+        if (Construction.DansleChateau(clic))
         {
-            (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
-            if (Champ.champ.prix <= argent)
+            if (Construction.DanslaCarte(clic))
             {
-                if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.CHAMP))
+                (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
+                if (Champ.champ.prix <= argent)
                 {
-                    InstantiateChamp(Construction.calcCentre(clic));
+                    if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.CHAMP))
+                    {
+                        InstantiateChamp(Construction.calcCentre(clic));
+                    }
+                    else
+                    {
+                        Debug.Log("Il y a déjà un batiment à cet endroit");
+                    }
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    Debug.Log("Il manque de l'argent");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                Debug.Log("Pas dans la carte");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            Debug.Log("Il ne faut pas construire dans le chateau");
         }
+
         needChamp = false;
 
     }

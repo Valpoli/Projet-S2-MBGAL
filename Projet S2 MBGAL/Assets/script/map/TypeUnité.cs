@@ -7,6 +7,7 @@ public class TypeUnité : MonoBehaviour
     public enum UnitéType
     {
         NONE,
+        VILLAGEOIS,
         GUERRIER,
         ARCHER
     }
