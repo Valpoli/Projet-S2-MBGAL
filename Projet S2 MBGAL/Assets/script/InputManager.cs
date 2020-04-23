@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    public Transform prefab;
     public Camera cam;
-    public bool check = true;
 
     public float PlateauSpeed;
 
     private float Bordure = 15f;
-    private float MinHauteur = 10f;
+    private float MinHauteur = 15f;
     private float MaxHauteur = 100f;
-    // Start is called before the first frame update
 
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -39,11 +32,11 @@ public class InputManager : MonoBehaviour
             DeplacementX -= PlateauSpeed;
 
         }
-        if (PositionX < Screen.width && PositionX > Screen.width - Bordure)
+        if (PositionX < Screen.width && PositionX > Screen.width - Bordure - 20)
         {
             DeplacementX += PlateauSpeed;
         }
-        if (PositionY < Screen.height && PositionY > Screen.height - Bordure)
+        if (PositionY < Screen.height && PositionY > Screen.height - Bordure - 20)
         {
             DeplacementZ += PlateauSpeed;
         }

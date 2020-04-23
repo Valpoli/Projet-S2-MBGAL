@@ -6,7 +6,7 @@ using UnityEngine;
 public class Guerrier : MonoBehaviour
 {
     private int vie = 50;
-    private int dégat = 10;
+    private int dégat = 100;
     public const int logement = 1;
     public const long prixOr = 100;
     public const long prixNouriture = 100;
@@ -57,8 +57,10 @@ public class Guerrier : MonoBehaviour
             Chateau.chateau Cible = other.gameObject.GetComponent<Chateau.chateau>();
             int CibleVie = Cible.Vie;
             CibleVie -= dégat;
+            Debug.Log(CibleVie);
             if (CibleVie < 0)
             {
+                Debug.Log("detruit");
                 Destroy(other.gameObject);
             }
         }

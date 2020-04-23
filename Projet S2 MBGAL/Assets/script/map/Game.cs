@@ -13,7 +13,8 @@ public class Game : MonoBehaviour
     public long nourriture;
     public Map map = new Map();
     private Camera cam;
-    private int cameraCurrentZoom = 15;
+    private int cameraCurrentZoom = 20;
+    public int nbCaserne;
     
     /// prefabs nécessaires
     public GameObject ObjMaison;
@@ -111,7 +112,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateMaison(Vector3 clic)
     {
-        clic.y = (float)0.5;
+        clic.y = (float)1.0;
         Instantiate(ObjMaison, clic, Quaternion.identity);
     }
     #endregion
@@ -128,6 +129,7 @@ public class Game : MonoBehaviour
                     if (map.Construire(i, j, ref argent, ref logementTot, TypeBatiment.BatimentType.CASERNE))
                     {
                         InstantiateCaserne(Construction.calcCentre(clic));
+                        nbCaserne += 1;
                     }
                     else
                     {
@@ -155,7 +157,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateCaserne(Vector3 clic)
     {
-        clic.y = (float)0.5;
+        clic.y = (float)1.0;
         Instantiate(ObjCaserne, clic, Quaternion.identity);
     }
     #endregion
@@ -198,7 +200,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateTour(Vector3 clic)
     {
-        clic.y = (float)0.5;
+        clic.y = (float)1.0;
         Instantiate(ObjTour, clic, Quaternion.identity);
     }
     #endregion
@@ -242,7 +244,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateChamp(Vector3 clic)
     {
-        clic.y = (float)0;
+        clic.y = (float)0.05;
         Instantiate(ObjChamp, clic, Quaternion.identity);
     }
     #endregion

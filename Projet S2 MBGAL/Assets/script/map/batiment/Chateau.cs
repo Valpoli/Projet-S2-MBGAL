@@ -6,7 +6,7 @@ public class Chateau : MonoBehaviour
 {
     public class chateau : TypeBatiment
     {
-        private int vie = 300;
+        private int vie = 500;
         public const int logement = 50;
         public const int prixVillageois = 10;
 

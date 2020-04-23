@@ -15,7 +15,7 @@ public class Construction : MonoBehaviour
     }
     public static bool DansleChateau(Vector3 clic)
     {
-        bool res = !(clic.x <= 24 && clic.x >= 20 && clic.z<= 16 && clic.z >= 12);
+        bool res = !(clic.x <= 24 && clic.x >= 10 && clic.z<= 20 && clic.z >= 10);
         if (clic.x <= 64 && clic.x >= 56 && clic.z<= 64 && clic.z >= 56)
         {
             res = false;
@@ -57,4 +57,5 @@ public class Construction : MonoBehaviour
         (int, int) res = (i, j);
         return res;
     }
+
 }

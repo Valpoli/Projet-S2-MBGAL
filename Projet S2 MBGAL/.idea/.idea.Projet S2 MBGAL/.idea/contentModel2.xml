@@ -14,9 +14,11 @@
               <e p="Boutons.cs" t="Include" />
             </e>
             <e p="Food.cs" t="Include" />
-            <e p="Gold1.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
-            <e p="Population1.cs" t="Include" />
+<<<<<<< HEAD
+=======
+            <e p="Pop.cs" t="Include" />
+>>>>>>> ec9bf73f2831535d7f931bc7018aabc68f6c9d3c
           </e>
         </e>
         <e p="script" t="Include">
