@@ -47,7 +47,6 @@ public class Boutons : MonoBehaviour
                     clic.x = 18;
                     clic.y = (float) 0.5;
                     clic.z = 14;
-                    Debug.Log(clic);
                     Instantiate(unité, clic, Quaternion.identity);
                 }
             }

@@ -11,9 +11,7 @@
         </e>
         <e p="prefabs" t="Include">
           <e p="HUD" t="Include">
-            <e p="bouton" t="Include">
-              <e p="Boutons.cs" t="Include" />
-            </e>
+            <e p="Boutons.cs" t="Include" />
             <e p="Food.cs" t="Include" />
             <e p="Gold.cs" t="Include" />
             <e p="Population.cs" t="Include" />
