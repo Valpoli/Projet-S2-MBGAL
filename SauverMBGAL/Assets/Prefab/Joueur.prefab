@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4493937964718303297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4493937964718303359}
+  - component: {fileID: 4493937964718303358}
+  m_Layer: 0
+  m_Name: Joueur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4493937964718303359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493937964718303297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4493937964718303358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493937964718303297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc255a02e951f0d4799addd14337d1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  logementTot: 500
+  popAct: 0
+  argent: 20000
+  nourriture: 20000
+  nbCaserne: 0
+  ObjMaison: {fileID: 7558771174337540458, guid: 49fdf2e1441257246a89db9f3220de50,
+    type: 3}
+  ObjCaserne: {fileID: 6277876437374866807, guid: e180ef572f2b1204bb37ec3d686e6bb4,
+    type: 3}
+  ObjTour: {fileID: 94795240502115766, guid: a72cf50956a187042867bccb2dbb7df4, type: 3}
+  ObjChamp: {fileID: 4945809883103381846, guid: 0c702d69f140db944870d8c495409f13,
+    type: 3}
+  needMaison: 0
+  needCaserne: 0
+  needTour: 0
+  needChamp: 0

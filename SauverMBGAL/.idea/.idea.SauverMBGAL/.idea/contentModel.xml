@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\valpo\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\valpo\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SauverMBGAL.-2119841877.00" t="ExcludeRecursive" />
+    <e p="C:\Users\valpo\OneDrive\Documents\AA\SauverMBGAL" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Script" t="Include">
+          <e p="Batiment" t="Include">
+            <e p="Caserne.cs" t="Include" />
+            <e p="Champ.cs" t="Include" />
+            <e p="Chateau.cs" t="Include" />
+            <e p="Maison.cs" t="Include" />
+            <e p="Tour.cs" t="Include" />
+            <e p="TypeBatiment.cs" t="Include" />
+          </e>
+          <e p="Bouton" t="Include">
+            <e p="Boutons.cs" t="Include" />
+            <e p="Food.cs" t="Include" />
+            <e p="Gold.cs" t="Include" />
+            <e p="Population.cs" t="Include" />
+          </e>
+          <e p="Carte" t="Include">
+            <e p="Case.cs" t="Include" />
+            <e p="Map.cs" t="Include" />
+          </e>
+          <e p="Construction" t="Include">
+            <e p="Construction.cs" t="Include" />
+          </e>
+          <e p="Joueur" t="Include">
+            <e p="DeplaceCam.cs" t="Include" />
+            <e p="Game.cs" t="Include" />
+          </e>
+          <e p="Unite" t="Include">
+            <e p="Deplacement.cs" t="Include" />
+            <e p="Guerrier.cs" t="Include" />
+            <e p="TypeUnité.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SauverMBGAL.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
