@@ -48,4 +48,9 @@ public class Construction : MonoBehaviour
         return res;
     }
 
+    public static Vector3 posSurlaMap(int x, int y)
+    {
+        return new Vector3(2 + x * 4, (float) 0.75, 2 + y * 4);
+    }
+
 }

@@ -17,12 +17,16 @@ public class Game : MonoBehaviour
     private int cameraCurrentZoom = 20;
     public int nbCaserne;
     
-    /// prefabs nécessaires
+    /// prefabs nécessaires (batiments)
     public GameObject ObjMaison;
     public GameObject ObjCaserne;
     public GameObject ObjTour;
     public GameObject ObjChamp;
-    
+
+    /// prefabs nécessaires (biome)
+    public GameObject Foret;
+    public GameObject Rocher;
+    public GameObject Mer;
     
     /// si il faut un construire
     public bool needMaison;
@@ -39,6 +43,7 @@ public class Game : MonoBehaviour
     }
     void Start()
     {
+        GenerationMap();
         cam = Camera.main;
         Camera.main.orthographicSize = cameraCurrentZoom;
     }
@@ -74,6 +79,7 @@ public class Game : MonoBehaviour
             ConstruireChamp(clic);
         }
     }
+    
     #region Maison
     public void ConstruireMaison(Vector3 clic)
     {
@@ -216,4 +222,10 @@ public class Game : MonoBehaviour
     }
     #endregion
     #endregion
+
+    public void GenerationMap()
+    {
+        map.matrix[0,0] = new Case(Case.Biome.MER); 
+        Instantiate(Mer,Construction.posSurlaMap(0, 0), Quaternion.identity);
+    }
 }
