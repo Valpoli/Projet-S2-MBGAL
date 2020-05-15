@@ -36,13 +36,13 @@ public class Boutons : MonoBehaviour
         }
         else
         {
-            if (cloneGame.argent >= Guerrier.guerrier.prixOr && cloneGame.nourriture >= Guerrier.guerrier.prixNouriture)
+            if (cloneGame.argent >= Guerrier.prixOr && cloneGame.nourriture >= Guerrier.prixNouriture)
             {
                 if (CheckPopmax(cloneGame.logementTot))
                 {
-                    cloneGame.argent -= Guerrier.guerrier.prixOr / cloneGame.nbCaserne;
-                    cloneGame.nourriture -= Guerrier.guerrier.prixNouriture / cloneGame.nbCaserne;
-                    cloneGame.popAct += Guerrier.guerrier.logement;
+                    cloneGame.argent -= Guerrier.prixOr / cloneGame.nbCaserne;
+                    cloneGame.nourriture -= Guerrier.prixNouriture / cloneGame.nbCaserne;
+                    cloneGame.popAct += Guerrier.logement;
                     Vector3 clic;
                     clic.x = 18;
                     clic.y = (float) 0.5;
