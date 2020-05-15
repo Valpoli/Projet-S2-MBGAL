@@ -5,106 +5,137 @@ using UnityEngine;
 
 public class Guerrier : MonoBehaviour
 {
-    
-    private int vie = 50;
-    private int dégat = 100;
-    public const int logement = 1;
-    public const long prixOr = 100;
-    public const long prixNouriture = 100;
-    private bool isKO = false;
+    public class guerrier: TypeUnité
+    {
 
-    public int Vie
-    {
-        get => vie;
-        set => vie = value;
-    }
+        private int vie = 50;
+        private int dégat = 100;
+        public const int logement = 1;
+        public const long prixOr = 100;
+        public const long prixNouriture = 100;
+        private bool isKO = false;
+        private bool ally;
+        private bool selectionDéplacement = false;
+        private int range = 50;
 
-    public int Dégat
-    {
-        get => dégat;
-        set => dégat = value;
-    }
-    
-    public bool IsKO
-    {
-        get => isKO;
-        set => isKO = value;
-    }
 
-    private void Update()
-    {
-        if (Vie < 0)
+        public guerrier()
         {
-            Destroy(this.gameObject);
+            type = UnitéType.GUERRIER;
         }
-    }
-    
-    
-    private void OnTriggerEnter(Collider other)
-    {
-        
-        if (other.gameObject.name == "Maison")
+
+        public guerrier(guerrier guerrier)
         {
-            Maison.maison Cible = other.gameObject.GetComponent<Maison.maison>();
-            int CibleVie = Cible.Vie;
-            CibleVie -= dégat;
-            if (CibleVie < 0)
-            {
-                Destroy(other.gameObject);
-            }
+            type = guerrier.type;
         }
-        if (other.gameObject.name == "Chateau")
+
+        public int Vie
         {
-            Chateau.chateau Cible = other.gameObject.GetComponent<Chateau.chateau>();
-            int CibleVie = Cible.Vie;
-            CibleVie -= dégat;
-            if (CibleVie < 0)
-            {
-                Destroy(other.gameObject);
-            }
+            get => vie;
+            set => vie = value;
         }
-        if (other.gameObject.name == "Caserne")
+
+        public int Dégat
         {
-            Caserne.caserne Cible = other.gameObject.GetComponent<Caserne.caserne>();
-            int CibleVie = Cible.Vie;
-            CibleVie -= dégat;
-            if (CibleVie < 0)
-            {
-                Destroy(other.gameObject);
-            }
+            get => dégat;
+            set => dégat = value;
         }
-        if (other.gameObject.name == "Champ")
+
+        public bool IsKO
         {
-            Champ.champ Cible = other.gameObject.GetComponent<Champ.champ>();
-            int CibleVie = Cible.Vie;
-            CibleVie -= dégat;
-            if (CibleVie < 0)
-            {
-                Destroy(other.gameObject);
-            };
+            get => isKO;
+            set => isKO = value;
         }
-        if (other.gameObject.name == "Tour")
+
+        public bool SelectionDéplacement
         {
-            Tour.tour Cible = other.gameObject.GetComponent<Tour.tour>();
-            int CibleVie = Cible.Vie;
-            CibleVie -= dégat;
-            if (CibleVie < 0)
-            {
-                Destroy(other.gameObject);
-            }
+            get => selectionDéplacement;
+            set => selectionDéplacement = value;
         }
-        if (other.gameObject.name == "Guerrier")
+
+        private void Update()
         {
-            Guerrier Cible = other.gameObject.GetComponent<Guerrier>();
-            int CibleVie = Cible.Vie;
-            CibleVie -= dégat;
-            if (CibleVie < 0)
+            if (Vie < 0)
             {
-                Destroy(other.gameObject);
+                Destroy(this.gameObject);
             }
         }
 
-        
-        
+
+
+
+
+
+        private void OnTriggerEnter(Collider other)
+        {
+
+            if (other.gameObject.name == "Maison")
+            {
+                Maison.maison Cible = other.gameObject.GetComponent<Maison.maison>();
+                int CibleVie = Cible.Vie;
+                CibleVie -= dégat;
+                if (CibleVie < 0)
+                {
+                    Destroy(other.gameObject);
+                }
+            }
+
+            if (other.gameObject.name == "Chateau")
+            {
+                Chateau.chateau Cible = other.gameObject.GetComponent<Chateau.chateau>();
+                int CibleVie = Cible.Vie;
+                CibleVie -= dégat;
+                if (CibleVie < 0)
+                {
+                    Destroy(other.gameObject);
+                }
+            }
+
+            if (other.gameObject.name == "Caserne")
+            {
+                Caserne.caserne Cible = other.gameObject.GetComponent<Caserne.caserne>();
+                int CibleVie = Cible.Vie;
+                CibleVie -= dégat;
+                if (CibleVie < 0)
+                {
+                    Destroy(other.gameObject);
+                }
+            }
+
+            if (other.gameObject.name == "Champ")
+            {
+                Champ.champ Cible = other.gameObject.GetComponent<Champ.champ>();
+                int CibleVie = Cible.Vie;
+                CibleVie -= dégat;
+                if (CibleVie < 0)
+                {
+                    Destroy(other.gameObject);
+                }
+
+                ;
+            }
+
+            if (other.gameObject.name == "Tour")
+            {
+                Tour.tour Cible = other.gameObject.GetComponent<Tour.tour>();
+                int CibleVie = Cible.Vie;
+                CibleVie -= dégat;
+                if (CibleVie < 0)
+                {
+                    Destroy(other.gameObject);
+                }
+            }
+
+            if (other.gameObject.name == "Guerrier")
+            {
+                Guerrier.guerrier Cible = other.gameObject.GetComponent<Guerrier.guerrier>();
+                int CibleVie = Cible.Vie;
+                CibleVie -= dégat;
+                if (CibleVie < 0)
+                {
+                    Destroy(other.gameObject);
+                }
+            }
+        }
     }
 }
