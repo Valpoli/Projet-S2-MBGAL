@@ -105,7 +105,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateMaison(Vector3 clic)
     {
-        clic.y = (float)0;
+        clic.y = (float)1;
         Instantiate(ObjMaison, clic, Quaternion.identity);
     }
     #endregion
@@ -141,7 +141,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateCaserne(Vector3 clic)
     {
-        clic.y = (float)0;
+        clic.y = (float)1;
         Instantiate(ObjCaserne, clic, Quaternion.identity);
     }
     #endregion
@@ -176,7 +176,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateTour(Vector3 clic)
     {
-        clic.y = (float)0;
+        clic.y = (float)1;
         Instantiate(ObjTour, clic, Quaternion.identity);
     }
     #endregion
@@ -211,7 +211,7 @@ public class Game : MonoBehaviour
     
     public void InstantiateChamp(Vector3 clic)
     {
-        clic.y = (float)0;
+        clic.y = (float)1;
         Instantiate(ObjChamp, clic, Quaternion.identity);
     }
     #endregion
