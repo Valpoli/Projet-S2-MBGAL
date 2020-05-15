@@ -11,13 +11,17 @@ public class TypeUnité : MonoBehaviour
         GUERRIER,
         ARCHER
     }
-
+    
+    
     protected UnitéType type;
 
     public UnitéType Type
     {
         get { return type; }
     }
+    
+
+    
     
     
 }
