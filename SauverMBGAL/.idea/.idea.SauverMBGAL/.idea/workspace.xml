@@ -4,10 +4,16 @@
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Caserne.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Caserne.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Maison.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Maison.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Tour.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Tour.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Couleur/Vert.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Couleur/Vert.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Sol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Sol.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Soldat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Soldat.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +24,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/TypeBatiment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Carte/Map.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Carte/Case.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Chateau.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Construction/Construction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,16 +37,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Population.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/TypeBatiment.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Carte/Map.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Carte/Case.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Chateau.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Controller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Construction/Construction.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,18 +54,18 @@
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Carte/Case.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Construction/Construction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Bouton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Food.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Gold.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Carte/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Population.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Carte/Map.cs" />
       </list>
     </option>
   </component>
@@ -103,10 +109,7 @@
       <updated>1589369690475</updated>
       <workItem from="1589369692262" duration="2384000" />
       <workItem from="1589381617031" duration="4077000" />
-      <workItem from="1589457567603" duration="4545000" />
-      <workItem from="1589530325292" duration="362000" />
-      <workItem from="1589531144841" duration="2943000" />
-      <workItem from="1589549548625" duration="176000" />
+      <workItem from="1589457272097" duration="4476000" />
     </task>
     <servers />
   </component>
@@ -115,15 +118,4 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
 </project>

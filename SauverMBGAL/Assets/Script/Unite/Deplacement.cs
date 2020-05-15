@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +19,7 @@ public class Deplacement : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out destination))
             {
-                NewPosition = destination.point;
+                NewPosition = new Vector3(destination.point.x,(float)0.5,destination.point.z);
             }
         }
 
@@ -53,3 +54,4 @@ public class Deplacement : MonoBehaviour
         
     }    
 }
+
