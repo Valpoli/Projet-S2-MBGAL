@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 1775868000977732818}
   - component: {fileID: 6133214762470937978}
   - component: {fileID: 354339317504281762}
-  - component: {fileID: 4597032317652666354}
+  - component: {fileID: 741362679149724850}
   - component: {fileID: 54915194095713866}
   m_Layer: 0
   m_Name: Soldat
-  m_TagString: Untagged
+  m_TagString: Guerrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!114 &4597032317652666354
+  "d\xE9gat": 15
+  range: 100
+  team: 1
+--- !u!114 &741362679149724850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

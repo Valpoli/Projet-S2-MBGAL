@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Guerrier : MonoBehaviour
 {
-    public class guerrier: TypeUnité
-    {
+    
 
         private int vie = 50;
         private int dégat = 100;
@@ -19,15 +18,7 @@ public class Guerrier : MonoBehaviour
         private int range = 50;
 
 
-        public guerrier()
-        {
-            type = UnitéType.GUERRIER;
-        }
-
-        public guerrier(guerrier guerrier)
-        {
-            type = guerrier.type;
-        }
+    
 
         public int Vie
         {
@@ -60,82 +51,6 @@ public class Guerrier : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-
-
-
-
-
-
-        private void OnTriggerEnter(Collider other)
-        {
-
-            if (other.gameObject.name == "Maison")
-            {
-                Maison.maison Cible = other.gameObject.GetComponent<Maison.maison>();
-                int CibleVie = Cible.Vie;
-                CibleVie -= dégat;
-                if (CibleVie < 0)
-                {
-                    Destroy(other.gameObject);
-                }
-            }
-
-            if (other.gameObject.name == "Chateau")
-            {
-                Chateau.chateau Cible = other.gameObject.GetComponent<Chateau.chateau>();
-                int CibleVie = Cible.Vie;
-                CibleVie -= dégat;
-                if (CibleVie < 0)
-                {
-                    Destroy(other.gameObject);
-                }
-            }
-
-            if (other.gameObject.name == "Caserne")
-            {
-                Caserne.caserne Cible = other.gameObject.GetComponent<Caserne.caserne>();
-                int CibleVie = Cible.Vie;
-                CibleVie -= dégat;
-                if (CibleVie < 0)
-                {
-                    Destroy(other.gameObject);
-                }
-            }
-
-            if (other.gameObject.name == "Champ")
-            {
-                Champ.champ Cible = other.gameObject.GetComponent<Champ.champ>();
-                int CibleVie = Cible.Vie;
-                CibleVie -= dégat;
-                if (CibleVie < 0)
-                {
-                    Destroy(other.gameObject);
-                }
-
-                ;
-            }
-
-            if (other.gameObject.name == "Tour")
-            {
-                Tour.tour Cible = other.gameObject.GetComponent<Tour.tour>();
-                int CibleVie = Cible.Vie;
-                CibleVie -= dégat;
-                if (CibleVie < 0)
-                {
-                    Destroy(other.gameObject);
-                }
-            }
-
-            if (other.gameObject.name == "Guerrier")
-            {
-                Guerrier.guerrier Cible = other.gameObject.GetComponent<Guerrier.guerrier>();
-                int CibleVie = Cible.Vie;
-                CibleVie -= dégat;
-                if (CibleVie < 0)
-                {
-                    Destroy(other.gameObject);
-                }
-            }
-        }
-    }
+    
+    
 }

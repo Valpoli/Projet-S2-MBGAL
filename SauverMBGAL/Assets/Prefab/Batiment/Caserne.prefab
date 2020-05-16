@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 54488029765955648}
   m_Layer: 0
   m_Name: Caserne
-  m_TagString: Untagged
+  m_TagString: Caserne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
