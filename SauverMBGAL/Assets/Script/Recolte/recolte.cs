@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class recolte : MonoBehaviour
 {
+    public GameObject textBois;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class recolte : MonoBehaviour
 
     private void OnMouseDown()
     {
+        print("Bonjours, etes vous la pour un coatching ?");
         Debug.Log(this.gameObject.name);
     }
 }
