@@ -36,8 +36,9 @@
             <e p="recolte.cs" t="Include" />
           </e>
           <e p="Unite" t="Include">
-            <e p="Deplacement.cs" t="Include" />
+            <e p="Archer.cs" t="Include" />
             <e p="Guerrier.cs" t="Include" />
+            <e p="Ouvrier.cs" t="Include" />
             <e p="TypeUnité.cs" t="Include" />
           </e>
         </e>

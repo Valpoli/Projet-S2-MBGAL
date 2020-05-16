@@ -1,26 +1,29 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Guerrier : MonoBehaviour
+
+public class Archer : MonoBehaviour
 {
-
-
     private int vie = 50;
     private int dégat = 20;
     public const int logement = 1;
     public const long prixOr = 100;
     public const long prixNouriture = 100;
     private bool isKO = false;
-    public bool ally;
-    private bool selectionDéplacement = false;
     private int range = 50;
-    private Vector3 NewPosition = Vector3.zero;
+    private bool selectionDéplacement = false;
     public int speed;
+    private Vector3 NewPosition = Vector3.zero;
+    public bool ally;
+    
 
 
-
+    public bool SelectionDéplacement
+    {
+        get => selectionDéplacement;
+        set => selectionDéplacement = value;
+    }
 
     public int Vie
     {
@@ -34,36 +37,12 @@ public class Guerrier : MonoBehaviour
         set => dégat = value;
     }
 
-
-
     public bool IsKO
     {
         get => isKO;
         set => isKO = value;
     }
-
-    public bool SelectionDéplacement
-    {
-        get => selectionDéplacement;
-        set => selectionDéplacement = value;
-    }
-
-
-    private void OnCollisionEnter(Collision other)
-    {
-
-        if (other.gameObject.name == "Soldat ennemie")
-        {
-            Guerrier unité2 = other.gameObject.GetComponent<Guerrier>();
-            unité2.Vie -= dégat;
-            if (unité2.Vie < 0)
-            {
-                Destroy(gameObject);
-            }
-
-        }
-    }
-
+    
     public void deplacement()
     {
         if (ally)
@@ -74,20 +53,19 @@ public class Guerrier : MonoBehaviour
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out destination))
                 {
-                    NewPosition = new Vector3(destination.point.x, (float) 0.5, destination.point.z);
-
+                    NewPosition = new Vector3(destination.point.x,(float)0.5,destination.point.z);
+                    
                 }
             }
-
             if (Input.GetMouseButtonUp(1))
             {
                 selectionDéplacement = false;
             }
-
-
+            
+            
             if (NewPosition != Vector3.zero)
             {
-
+                
                 transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
             }
         }
@@ -106,11 +84,8 @@ public class Guerrier : MonoBehaviour
         }
 
     }
-
     private void OnMouseDown()
     {
         selectionDéplacement = true;
     }
 }
-
-
