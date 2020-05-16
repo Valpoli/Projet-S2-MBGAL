@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Guerrier : MonoBehaviour
+public class Ouvrier : MonoBehaviour
 {
-
-
-    private int vie = 50;
-    private int dégat = 20;
+    // Start is called before the first frame update
+    private int vie = 40;
+    private int dégat = 3;
     public const int logement = 1;
     public const long prixOr = 100;
     public const long prixNouriture = 100;
@@ -112,5 +110,4 @@ public class Guerrier : MonoBehaviour
         selectionDéplacement = true;
     }
 }
-
 
