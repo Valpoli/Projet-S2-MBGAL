@@ -40,7 +40,6 @@ public class Controller : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            Debug.Log("#####");
             Collider2D[] collider2DArray = Physics2D.OverlapAreaAll(StartPosition, GetMouseWorldPosition());
             foreach (Collider2D collider2D in collider2DArray)
             {

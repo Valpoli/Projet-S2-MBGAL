@@ -32,6 +32,9 @@
             <e p="DeplaceCam.cs" t="Include" />
             <e p="Game.cs" t="Include" />
           </e>
+          <e p="Recolte" t="Include">
+            <e p="recolte.cs" t="Include" />
+          </e>
           <e p="Unite" t="Include">
             <e p="Controller.cs" t="Include" />
             <e p="Deplacement.cs" t="Include" />

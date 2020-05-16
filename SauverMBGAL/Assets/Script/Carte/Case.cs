@@ -5,7 +5,8 @@
             BOIS,
             MER,
             MONTAGNE,
-            PLAINE
+            PLAINE,
+            MINE
         }
 
         private TypeBatiment batiment;
