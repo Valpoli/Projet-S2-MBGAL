@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Archer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/mine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/mine.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/riviere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/riviere.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/rocher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/rocher.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Sol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Sol.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/piou.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/piou.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BEC26B5-CBC7-4715-8442-F1499E984732/61/f6cdfed7/Single.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Gold.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Food.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Population.cs" root0="FORCE_HIGHLIGHTING" />
@@ -29,7 +34,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5AC29B9D-5193-4DD3-9A8D-CE946B9985A7/e7/fa70d660/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/TypeBatiment.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,13 +65,13 @@
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Carte/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Controller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/LA BOULE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
       </list>
     </option>
   </component>
@@ -119,6 +126,8 @@
       <workItem from="1589639306515" duration="39000" />
       <workItem from="1589639756381" duration="2638000" />
       <workItem from="1589642446031" duration="2106000" />
+      <workItem from="1589723866738" duration="5612000" />
+      <workItem from="1589729513285" duration="607000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,19 +13,21 @@ public class Archer : MonoBehaviour
     public const long prixNouriture = 100;
     private bool isKO = false;
     public int range;
-    private bool selectionDéplacement = false;
+    private bool selection = false;
     public int speed;
     private Vector3 NewPosition = Vector3.zero;
     public bool ally;
     private bool possibleAttack = false;
     public GameObject LABALLE2;
-    
+    private bool deplacement_attack = false;
+    private bool click = false;
+    private bool tiré = false;
 
 
     public bool SelectionDéplacement
     {
-        get => selectionDéplacement;
-        set => selectionDéplacement = value;
+        get => selection;
+        set => selection = value;
     }
 
     public int Vie
@@ -44,6 +47,8 @@ public class Archer : MonoBehaviour
         get => isKO;
         set => isKO = value;
     }
+    
+    
     public void AttackRange(GameObject cible)
     {
         Vector3 posCible = cible.transform.position;
@@ -56,85 +61,85 @@ public class Archer : MonoBehaviour
                 guerrier.Vie -= dégat;
                 
             }
-
-            selectionDéplacement = false;
-
-
         }
-        
     }
     public void LABALLE(GameObject LABALLE, Vector3 posDépart, Vector3 posFinal)
     {
         LABALLE.transform.position = Vector3.MoveTowards(posDépart, posFinal, Time.deltaTime);
-        Debug.Log("ENVOYER");
-    }
-    
-    public void deplacement()
-    {
-        if (ally)
-        {
-            if (Input.GetMouseButtonUp(0))
-            {
-                RaycastHit destination;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out destination))
-                {
-                    NewPosition = new Vector3(destination.point.x,(float)0.5,destination.point.z);
-                    
-                }
-            }
-            
-            
-            
-            if (NewPosition != Vector3.zero)
-            {
-                
-                transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
-            }
-        }
     }
 
-    
+
 
     private void Update()
     {
+        
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
         if (Vie < 0)
         {
             Destroy(gameObject);
         }
-        if (Input.GetMouseButtonUp(1))
+        
+        if (ally && selection)
         {
-            selectionDéplacement = false;
+            if (Input.GetMouseButtonUp(1))
+            {
+                if (Physics.Raycast(ray, out hit))
+                {
+                    NewPosition = new Vector3(hit.point.x,(float)0.5,hit.point.z);
+                    click = true;
+                }
+            }
+        }
+        if (NewPosition != Vector3.zero && click)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
 
-        if (selectionDéplacement)
-        {
-            deplacement();
-        }
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 100)) 
         {
-            if(hit.collider.tag == "Ennemie")
+            if (selection)
             {
-                possibleAttack = true;
+                if(hit.collider.gameObject.tag == "Ennemie")
+                {
+                    possibleAttack = true;
+                    
+                }
+                else
+                {
+                    possibleAttack = false;
+                }
+            }
 
-            }
-            else
+            if (hit.collider.gameObject.name == "Archer")
             {
-                possibleAttack = false;
+                if (Input.GetMouseButtonUp(0))
+                {
+                    selection = true;
+                }
             }
+
+            if (hit.collider.gameObject.tag == "Map")
+            {
+                if (Input.GetMouseButtonUp(0))
+                {
+                    selection = false;
+                    
+                }
+            }
+            
         }
 
-        if (possibleAttack && Input.GetMouseButtonUp(0))
+        
+
+        if (possibleAttack && Input.GetMouseButtonUp(1))
         {
             AttackRange(hit.collider.gameObject);
-            LABALLE2.transform.position = gameObject.transform.position;
-            LABALLE(LABALLE2,LABALLE2.transform.position,hit.collider.gameObject.transform.position);
+            LABALLE2 = Instantiate(LABALLE2, gameObject.transform.position, Quaternion.identity);
+            deplacement_attack = true;
+            
         }
+
     }
-    private void OnMouseDown()
-    {
-        selectionDéplacement = true;
-    }
+    
 }
