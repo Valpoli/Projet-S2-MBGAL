@@ -11,11 +11,13 @@ public class Archer : MonoBehaviour
     public const long prixOr = 100;
     public const long prixNouriture = 100;
     private bool isKO = false;
-    private int range = 50;
+    public int range;
     private bool selectionDéplacement = false;
     public int speed;
     private Vector3 NewPosition = Vector3.zero;
     public bool ally;
+    private bool possibleAttack = false;
+    public GameObject LABALLE2;
     
 
 
@@ -42,6 +44,30 @@ public class Archer : MonoBehaviour
         get => isKO;
         set => isKO = value;
     }
+    public void AttackRange(GameObject cible)
+    {
+        Vector3 posCible = cible.transform.position;
+        Vector3 posArcher = gameObject.transform.position;
+        if (range > Vector3.Distance(posCible, posArcher))
+        {
+            if (cible.name == "Soldat ennemie")
+            {
+                Guerrier guerrier = cible.GetComponent<Guerrier>();
+                guerrier.Vie -= dégat;
+                
+            }
+
+            selectionDéplacement = false;
+
+
+        }
+        
+    }
+    public void LABALLE(GameObject LABALLE, Vector3 posDépart, Vector3 posFinal)
+    {
+        LABALLE.transform.position = Vector3.MoveTowards(posDépart, posFinal, Time.deltaTime);
+        Debug.Log("ENVOYER");
+    }
     
     public void deplacement()
     {
@@ -57,10 +83,7 @@ public class Archer : MonoBehaviour
                     
                 }
             }
-            if (Input.GetMouseButtonUp(1))
-            {
-                selectionDéplacement = false;
-            }
+            
             
             
             if (NewPosition != Vector3.zero)
@@ -71,18 +94,44 @@ public class Archer : MonoBehaviour
         }
     }
 
+    
+
     private void Update()
     {
         if (Vie < 0)
         {
             Destroy(gameObject);
         }
+        if (Input.GetMouseButtonUp(1))
+        {
+            selectionDéplacement = false;
+        }
 
         if (selectionDéplacement)
         {
             deplacement();
         }
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100)) 
+        {
+            if(hit.collider.tag == "Ennemie")
+            {
+                possibleAttack = true;
 
+            }
+            else
+            {
+                possibleAttack = false;
+            }
+        }
+
+        if (possibleAttack && Input.GetMouseButtonUp(0))
+        {
+            AttackRange(hit.collider.gameObject);
+            LABALLE2.transform.position = gameObject.transform.position;
+            LABALLE(LABALLE2,LABALLE2.transform.position,hit.collider.gameObject.transform.position);
+        }
     }
     private void OnMouseDown()
     {

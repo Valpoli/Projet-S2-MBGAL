@@ -13,7 +13,7 @@ public class Ouvrier : MonoBehaviour
     private bool isKO = false;
     public bool ally;
     private bool selectionDéplacement = false;
-    private int range = 50;
+    private int range = 4;
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
 

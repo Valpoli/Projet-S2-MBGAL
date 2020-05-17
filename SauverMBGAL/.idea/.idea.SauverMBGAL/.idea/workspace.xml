@@ -4,12 +4,10 @@
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Soldat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Soldat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Archer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +60,11 @@
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Controller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Deplacement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/LA BOULE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" />
       </list>
     </option>
   </component>
@@ -118,6 +117,8 @@
       <workItem from="1589632717002" duration="7000" />
       <workItem from="1589632850608" duration="6185000" />
       <workItem from="1589639306515" duration="39000" />
+      <workItem from="1589639756381" duration="2638000" />
+      <workItem from="1589642446031" duration="2106000" />
     </task>
     <servers />
   </component>
