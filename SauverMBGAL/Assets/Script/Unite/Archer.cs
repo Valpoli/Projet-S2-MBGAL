@@ -19,10 +19,11 @@ public class Archer : MonoBehaviour
     public bool ally;
     private bool possibleAttack = false;
     public GameObject LABALLE2;
-    private bool deplacement_attack = false;
+    private bool deplacement_attack = true;
     private bool click = false;
     private bool tiré = false;
-
+    private bool enCoursDattaque = true;
+    private Vector3 posEnnemy = Vector3.zero;
 
     public bool SelectionDéplacement
     {
@@ -49,6 +50,7 @@ public class Archer : MonoBehaviour
     }
     
     
+    
     public void AttackRange(GameObject cible)
     {
         Vector3 posCible = cible.transform.position;
@@ -59,19 +61,15 @@ public class Archer : MonoBehaviour
             {
                 Guerrier guerrier = cible.GetComponent<Guerrier>();
                 guerrier.Vie -= dégat;
-                
             }
         }
-    }
-    public void LABALLE(GameObject LABALLE, Vector3 posDépart, Vector3 posFinal)
-    {
-        LABALLE.transform.position = Vector3.MoveTowards(posDépart, posFinal, Time.deltaTime);
     }
 
 
 
     private void Update()
     {
+
         
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -80,7 +78,7 @@ public class Archer : MonoBehaviour
             Destroy(gameObject);
         }
         
-        if (ally && selection)
+        if (ally && selection )
         {
             if (Input.GetMouseButtonUp(1))
             {
@@ -91,7 +89,7 @@ public class Archer : MonoBehaviour
                 }
             }
         }
-        if (NewPosition != Vector3.zero && click)
+        if (NewPosition != Vector3.zero && click && deplacement_attack)
         {
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
@@ -104,6 +102,14 @@ public class Archer : MonoBehaviour
                 {
                     possibleAttack = true;
                     
+                    Vector3 posCible = hit.collider.gameObject.transform.position;
+                    Vector3 posArcher = gameObject.transform.position;
+                    if (range > Vector3.Distance(posCible, posArcher))
+                    {
+                        deplacement_attack = false;
+                    }
+
+                    posEnnemy = hit.collider.gameObject.transform.position;
                 }
                 else
                 {
@@ -130,14 +136,18 @@ public class Archer : MonoBehaviour
             
         }
 
-        
-
         if (possibleAttack && Input.GetMouseButtonUp(1))
         {
             AttackRange(hit.collider.gameObject);
-            LABALLE2 = Instantiate(LABALLE2, gameObject.transform.position, Quaternion.identity);
             deplacement_attack = true;
-            
+            tiré = true;
+            LABALLE2 = Instantiate(LABALLE2, transform.position, Quaternion.identity);
+
+        }
+
+        if (tiré)
+        {
+            LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, NewPosition, 50* Time.deltaTime);
         }
 
     }

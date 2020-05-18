@@ -5,7 +5,10 @@ using UnityEngine;
 public class Boutons : MonoBehaviour
 {
     public GameObject clone;
-    public GameObject unité;
+    public GameObject guerrier;
+    public GameObject archer;
+    public GameObject ouvrier;
+    
     public void ConstrMaison()
     {
         Game cloneGame = clone.GetComponent<Game>();
@@ -47,7 +50,7 @@ public class Boutons : MonoBehaviour
                     clic.x = 18;
                     clic.y = (float) 0.5;
                     clic.z = 14;
-                    Instantiate(unité, clic, Quaternion.identity);
+                    Instantiate(guerrier, clic, Quaternion.identity);
                 }
             }
             else
@@ -77,7 +80,7 @@ public class Boutons : MonoBehaviour
                     clic.x = 18;
                     clic.y = (float) 0.5;
                     clic.z = 14;
-                    Instantiate(unité, clic, Quaternion.identity);
+                    Instantiate(archer, clic, Quaternion.identity);
                 }
             }
             else
@@ -107,7 +110,7 @@ public class Boutons : MonoBehaviour
                     clic.x = 18;
                     clic.y = (float) 0.5;
                     clic.z = 14;
-                    Instantiate(unité, clic, Quaternion.identity);
+                    Instantiate(ouvrier, clic, Quaternion.identity);
                 }
             }
             else
