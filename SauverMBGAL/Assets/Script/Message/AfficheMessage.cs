@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEngine;
+
+public class AfficheMessage : MonoBehaviour
+{
+    public Text ManqueArgent;
+    public Text DejaBatiment;
+    public Text PasDansCarte;
+    public Text ManqueNourriture;
+    public Text PasDeCaserne;
+    public Text PopMax;
+
+    private void Update()
+    {
+        
+    }
+
+    public void MessageErreur(string error)
+    {
+        if (ManqueArgent.enabled)
+        {
+            ManqueArgent.enabled = false;
+        }
+        if (DejaBatiment.enabled)
+        {
+            DejaBatiment.enabled = false;
+        }
+        if (PasDansCarte.enabled)
+        {
+            PasDansCarte.enabled = false;
+        }
+        if (ManqueNourriture.enabled)
+        {
+            ManqueNourriture.enabled = false;
+        }
+        if (PasDeCaserne.enabled)
+        {
+            PasDeCaserne.enabled = false;
+        }
+        if (PopMax.enabled)
+        {
+            PopMax.enabled = false;
+        }
+        if (error == "ManqueArgent")
+        {
+            StartCoroutine(ManqueArgentTempo());
+        }
+        if (error == "DejaBatiment")
+        {
+            StartCoroutine(DejaBatimentTempo());
+        }
+        if (error == "PasDansCarte")
+        {
+            StartCoroutine(PasDansCarteTempo());
+        }
+        if (error == "ManqueNourriture")
+        {
+            StartCoroutine(ManqueNourritureTempo());
+        }
+        if (error == "PasDeCaserne")
+        {
+            StartCoroutine(PasDeCaserneTempo());
+        }
+        if (error == "PopMax")
+        {
+            StartCoroutine(PopMaxTempo());
+        }
+    }
+
+    IEnumerator ManqueArgentTempo()
+    {
+        ManqueArgent.enabled = true;
+        yield return new WaitForSeconds(3);
+        ManqueArgent.enabled = false;
+    }
+    IEnumerator DejaBatimentTempo()
+    {
+        DejaBatiment.enabled = true;
+        yield return new WaitForSeconds(3);
+        DejaBatiment.enabled = false;
+    }
+    IEnumerator PasDansCarteTempo()
+    {
+        PasDansCarte.enabled = true;
+        yield return new WaitForSeconds(3);
+        PasDansCarte.enabled = false;
+    }
+    IEnumerator ManqueNourritureTempo()
+    {
+        ManqueNourriture.enabled = true;
+        yield return new WaitForSeconds(3);
+        ManqueNourriture.enabled = false;
+    }
+        
+    IEnumerator PasDeCaserneTempo()
+    {
+        PasDeCaserne.enabled = true;
+        yield return new WaitForSeconds(3);
+        PasDeCaserne.enabled = false;
+    }
+        
+    IEnumerator PopMaxTempo()
+    {
+        PopMax.enabled = true;
+        yield return new WaitForSeconds(3);
+        PopMax.enabled = false;
+    }
+    
+}

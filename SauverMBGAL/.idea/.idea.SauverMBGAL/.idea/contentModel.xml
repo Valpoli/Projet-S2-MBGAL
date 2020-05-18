@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\evanp\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\evanp\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SauverMBGAL.-742218059.00" t="ExcludeRecursive" />
-    <e p="C:\Users\evanp\OneDrive\Documents\Projet-S2-MBGAL\SauverMBGAL" t="IncludeRecursive">
+    <e p="C:\Users\valpo\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\valpo\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_SauverMBGAL.-1031487009.00" t="ExcludeRecursive" />
+    <e p="C:\Users\valpo\OneDrive\Documents\CC\Projet-S2-MBGAL\SauverMBGAL" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Script" t="Include">
@@ -14,6 +14,10 @@
             <e p="Maison.cs" t="Include" />
             <e p="Tour.cs" t="Include" />
             <e p="TypeBatiment.cs" t="Include" />
+          </e>
+          <e p="Biome" t="Include">
+            <e p="Arbre.cs" t="Include" />
+            <e p="RecolteChamp.cs" t="Include" />
           </e>
           <e p="Bouton" t="Include">
             <e p="Boutons.cs" t="Include" />
@@ -32,8 +36,8 @@
             <e p="DeplaceCam.cs" t="Include" />
             <e p="Game.cs" t="Include" />
           </e>
-          <e p="Recolte" t="Include">
-            <e p="recolte.cs" t="Include" />
+          <e p="Message" t="Include">
+            <e p="AfficheMessage.cs" t="Include" />
           </e>
           <e p="Unite" t="Include">
             <e p="Archer.cs" t="Include" />

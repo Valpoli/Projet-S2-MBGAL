@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Experimental.UIElements;
 
 public class Game : MonoBehaviour
@@ -29,7 +30,11 @@ public class Game : MonoBehaviour
     public GameObject Rocher;
     public GameObject Mer;
     public GameObject Mine;
-
+   
+    
+    /// prefabs nécessaires (Message d'erreur)
+    public GameObject ErrorManager;
+    
     /// si il faut un construire
     public bool needMaison;
 
@@ -102,17 +107,17 @@ public class Game : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    ErrorManager.GetComponent<AfficheMessage>().MessageErreur("DejaBatiment");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                ErrorManager.GetComponent<AfficheMessage>().MessageErreur("ManqueArgent");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            ErrorManager.GetComponent<AfficheMessage>().MessageErreur("PasDansCarte");
         }
 
         needMaison = false;
@@ -142,17 +147,17 @@ public class Game : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    ErrorManager.GetComponent<AfficheMessage>().MessageErreur("DejaBatiment");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                ErrorManager.GetComponent<AfficheMessage>().MessageErreur("ManqueArgent");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            ErrorManager.GetComponent<AfficheMessage>().MessageErreur("PasDansCarte");
         }
 
         needCaserne = false;
@@ -181,17 +186,17 @@ public class Game : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    ErrorManager.GetComponent<AfficheMessage>().MessageErreur("DejaBatiment");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                ErrorManager.GetComponent<AfficheMessage>().MessageErreur("ManqueArgent");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            ErrorManager.GetComponent<AfficheMessage>().MessageErreur("PasDansCarte");
         }
 
         needTour = false;
@@ -220,17 +225,17 @@ public class Game : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Il y a déjà un batiment à cet endroit");
+                    ErrorManager.GetComponent<AfficheMessage>().MessageErreur("DejaBatiment");
                 }
             }
             else
             {
-                Debug.Log("Il manque de l'argent");
+                ErrorManager.GetComponent<AfficheMessage>().MessageErreur("ManqueArgent");
             }
         }
         else
         {
-            Debug.Log("Pas dans la carte");
+            ErrorManager.GetComponent<AfficheMessage>().MessageErreur("PasDansCarte");
         }
 
         needChamp = false;
