@@ -726,8 +726,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6bf21b2b129f04fb3d57eb55f8679e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clone: {fileID: 0}
+  clone: {fileID: 4493937964718303297, guid: e30663a6f4ad68e44bfee4b6f6a696d4, type: 3}
+  guerrier: {fileID: 3328003142970487516, guid: a79e10f8a0ebbd3488cf20e0d479bb76,
+    type: 3}
+  archer: {fileID: 8395626781734247588, guid: e5b23f8df5412424d8fbc347e520fb24, type: 3}
+  ouvrier: {fileID: 3328003142970487516, guid: a79e10f8a0ebbd3488cf20e0d479bb76, type: 3}
   "unit\xE9": {fileID: 3328003142970487516, guid: a79e10f8a0ebbd3488cf20e0d479bb76,
+    type: 3}
+  ErrorManager: {fileID: 5700637620506256677, guid: 38e88661632e32247a81d1744ec9b447,
     type: 3}
 --- !u!1 &3687725509914775122
 GameObject:

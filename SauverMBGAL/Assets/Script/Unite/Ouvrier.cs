@@ -12,10 +12,11 @@ public class Ouvrier : MonoBehaviour
     public const long prixNouriture = 100;
     private bool isKO = false;
     public bool ally;
-    private bool selectionDéplacement = false;
+    private bool selection = false;
     private int range = 4;
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
+    private bool click = false;
 
 
 
@@ -40,12 +41,7 @@ public class Ouvrier : MonoBehaviour
         set => isKO = value;
     }
 
-    public bool SelectionDéplacement
-    {
-        get => selectionDéplacement;
-        set => selectionDéplacement = value;
-    }
-
+    
 
     private void OnCollisionEnter(Collision other)
     {
@@ -62,52 +58,33 @@ public class Ouvrier : MonoBehaviour
         }
     }
 
-    public void deplacement()
-    {
-        if (ally)
-        {
-            if (Input.GetMouseButtonUp(0))
-            {
-                RaycastHit destination;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out destination))
-                {
-                    NewPosition = new Vector3(destination.point.x, (float) 0.5, destination.point.z);
-
-                }
-            }
-
-            if (Input.GetMouseButtonUp(1))
-            {
-                selectionDéplacement = false;
-            }
-
-
-            if (NewPosition != Vector3.zero)
-            {
-
-                transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
-            }
-        }
-    }
-
     private void Update()
     {
+
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
         if (Vie < 0)
         {
             Destroy(gameObject);
         }
 
-        if (selectionDéplacement)
+        if (ally && selection)
         {
-            deplacement();
+            if (Input.GetMouseButtonUp(1))
+            {
+                if (Physics.Raycast(ray, out hit))
+                {
+                    NewPosition = new Vector3(hit.point.x, (float) 0.5, hit.point.z);
+                    click = true;
+                }
+            }
         }
 
+        if (NewPosition != Vector3.zero && click)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
+        }
     }
 
-    private void OnMouseDown()
-    {
-        selectionDéplacement = true;
-    }
 }
-

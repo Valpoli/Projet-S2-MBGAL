@@ -6,15 +6,14 @@ using UnityEngine.UI;
 public class Boutons : MonoBehaviour
 {
     public GameObject clone;
-<<<<<<< HEAD
+
     public GameObject guerrier;
     public GameObject archer;
     public GameObject ouvrier;
-    
-=======
+
     public GameObject unité;
     public GameObject ErrorManager;
->>>>>>> a134e5f850ac899c767fa211d2589de859f80f6f
+
     public void ConstrMaison()
     {
         Game cloneGame = clone.GetComponent<Game>();
