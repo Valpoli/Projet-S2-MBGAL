@@ -5,9 +5,15 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - clone: {fileID: 4493937964718303297, guid: e30663a6f4ad68e44bfee4b6f6a696d4, type: 3}
+  - guerrier: {fileID: 8395626781734247588, guid: e5b23f8df5412424d8fbc347e520fb24,
+      type: 3}
+  - archer: {fileID: 8395626781734247588, guid: e5b23f8df5412424d8fbc347e520fb24,
+      type: 3}
+  - ouvrier: {fileID: 8395626781734247588, guid: e5b23f8df5412424d8fbc347e520fb24,
+      type: 3}
   - "unit\xE9": {fileID: 3328003142970487516, guid: a79e10f8a0ebbd3488cf20e0d479bb76,
       type: 3}
-  - MessageErreur: {fileID: 5700637620506256677, guid: 38e88661632e32247a81d1744ec9b447,
+  - ErrorManager: {fileID: 5700637620506256677, guid: 38e88661632e32247a81d1744ec9b447,
       type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
