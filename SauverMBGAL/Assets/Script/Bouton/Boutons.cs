@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boutons : MonoBehaviour
 {
     public GameObject clone;
     public GameObject unité;
+    public GameObject ErrorManager;
     public void ConstrMaison()
     {
         Game cloneGame = clone.GetComponent<Game>();
@@ -32,7 +34,7 @@ public class Boutons : MonoBehaviour
         Game cloneGame = clone.GetComponent<Game>();
         if (cloneGame.nbCaserne == 0)
         {
-            Debug.Log("Construisez des casernes pour produire des unités");
+            ErrorManager.GetComponent<AfficheMessage>().MessageErreur("PasDeCaserne");
         }
         else
         {
@@ -52,7 +54,7 @@ public class Boutons : MonoBehaviour
             }
             else
             {
-                Debug.Log("il vous manque des ressources");
+                ErrorManager.GetComponent<AfficheMessage>().MessageErreur("ManqueNourriture");
             }
         }
     }
@@ -67,7 +69,7 @@ public class Boutons : MonoBehaviour
         }
         else
         {
-            Debug.Log("population maximum atteinte");
+            ErrorManager.GetComponent<AfficheMessage>().MessageErreur("PopMax");
         }
 
         return res;

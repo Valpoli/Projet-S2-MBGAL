@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5d72ad7af14f7794099d3262aec54360
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ManqueArgent: {fileID: 9216653562136979277, guid: e7698f26b00b72a4c89929d23b5af5f4,
+      type: 3}
+  - DejaBatiment: {fileID: 8973824145345077735, guid: 21dc417b51ba9244eb404fb716133310,
+      type: 3}
+  - PasDansCarte: {fileID: 54816613767398332, guid: 5d68557267d9978449985756d032569a,
+      type: 3}
+  - ManqueNourriture: {fileID: 6770947398585750043, guid: 475208fecf8c3974d985da546f748f36,
+      type: 3}
+  - PasDeCaserne: {fileID: 4461426473688615651, guid: 66aa92a8e60b58448ac74cd654cb4b52,
+      type: 3}
+  - PopMax: {fileID: 2885711541282556826, guid: a18ec256abc11b94ea399c2ebc20c091,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
