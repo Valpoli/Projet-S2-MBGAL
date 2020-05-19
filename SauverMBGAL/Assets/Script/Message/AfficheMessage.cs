@@ -12,6 +12,7 @@ public class AfficheMessage : MonoBehaviour
     public Text ManqueNourriture;
     public Text PasDeCaserne;
     public Text PopMax;
+    public Text RienADetruire;
 
     private void Update()
     {
@@ -68,6 +69,10 @@ public class AfficheMessage : MonoBehaviour
         {
             StartCoroutine(PopMaxTempo());
         }
+        if (error == "RienADetruire")
+        {
+            StartCoroutine(RienADetruireTempo());
+        }
     }
 
     IEnumerator ManqueArgentTempo()
@@ -107,6 +112,12 @@ public class AfficheMessage : MonoBehaviour
         PopMax.enabled = true;
         yield return new WaitForSeconds(3);
         PopMax.enabled = false;
+    }
+    IEnumerator RienADetruireTempo()
+    {
+        RienADetruire.enabled = true;
+        yield return new WaitForSeconds(3);
+        RienADetruire.enabled = false;
     }
     
 }
