@@ -88,6 +88,26 @@ public class Guerrier : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
+        
+        if (Physics.Raycast(ray, out hit, 100)) 
+        {
+
+            if (hit.collider.gameObject.name == "guerrier")
+            {
+                if (Input.GetMouseButtonUp(0))
+                {
+                    selection = true;
+                }
+            }
+
+            if (hit.collider.gameObject.tag == "Map")
+            {
+                if (Input.GetMouseButtonUp(0))
+                {
+                    selection = false;
+                    
+                }
+            }
     }
     
 
