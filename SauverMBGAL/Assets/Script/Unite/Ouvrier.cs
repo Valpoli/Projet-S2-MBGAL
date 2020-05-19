@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -88,14 +89,7 @@ public class Ouvrier : MonoBehaviour
         }
         if (Physics.Raycast(ray, out hit, 100)) 
         {
-
-            if (hit.collider.gameObject.name == "Villageoi")
-            {
-                if (Input.GetMouseButtonUp(0))
-                {
-                    selection = true;
-                }
-            }
+            
 
             if (hit.collider.gameObject.tag == "Map")
             {
@@ -109,4 +103,8 @@ public class Ouvrier : MonoBehaviour
         }
     }
 
+    private void OnMouseDown()
+    {
+        selection = true;
+    }
 }

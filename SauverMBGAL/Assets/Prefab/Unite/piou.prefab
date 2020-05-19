@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2070490742648376755}
   - component: {fileID: 4110568748681974597}
   - component: {fileID: 5231396495854443728}
-  - component: {fileID: 114253205427805764}
+  - component: {fileID: 114989322037129892}
   m_Layer: 0
   m_Name: piou
   m_TagString: Untagged
@@ -78,7 +78,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &114253205427805764
+--- !u!114 &114989322037129892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

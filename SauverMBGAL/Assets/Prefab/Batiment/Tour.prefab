@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1892694352016012388}
   - component: {fileID: 5879791105992634122}
   - component: {fileID: 54410572138765208}
+  - component: {fileID: 114204947949362440}
   m_Layer: 0
   m_Name: Tour
   m_TagString: Tour
@@ -108,3 +109,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &114204947949362440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94795240502115766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f280cd83c44244badf5c7b5d26da97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  range: 10
+  LABALLE2: {fileID: 6963235861096307273, guid: 57faf17c38c8c8f439ebf1e8e305f346,
+    type: 3}

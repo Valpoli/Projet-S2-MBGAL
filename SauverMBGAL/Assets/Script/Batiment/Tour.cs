@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
+
 public class Tour : MonoBehaviour
 {
     public class tour : TypeBatiment
@@ -10,6 +12,8 @@ public class Tour : MonoBehaviour
         private int tpsRecharge = 3;
         public const int degatTour = 30;
         public const long prix = 100;
+        private bool target = false;
+        
 
         public int Vie
         {
@@ -33,16 +37,94 @@ public class Tour : MonoBehaviour
             type = tour.type;
         }
 
-        public long degatInflige()
+        
+    }
+
+    public GameObject target;
+    public int range;
+    private int dégat = 5;
+    private bool attente = false;
+    public GameObject LABALLE2;
+    
+    
+    public void AttackRange()
+    {
+        if (target != null)
         {
-            if (tpsRecharge <= 0)
+            Vector3 posCible = target.transform.position;
+            Vector3 posArcher = gameObject.transform.position;
+            if (range > Vector3.Distance(posCible, posArcher))
             {
-                return degatTour;
-            }
-            else
-            {
-                return 0;
+                if (target.tag == "Archer")
+                {
+                    Archer guerrier = target.GetComponent<Archer>();
+                    guerrier.Vie -= dégat;
+                    Debug.Log(guerrier.Vie);
+                    LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
+                    LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, posCible, 50* Time.deltaTime);
+                }
             }
         }
+        
     }
+    
+    private void Start()
+    {
+        InvokeRepeating("UpdateTarget", 0f , 0.5f );
+        InvokeRepeating("AttackRange", 0f, 1f);
+        
+    }
+
+    void UpdateTarget()
+    {
+        GameObject[] enemiesarcher = GameObject.FindGameObjectsWithTag("Archer");
+        GameObject[] enemiesGuerrier = GameObject.FindGameObjectsWithTag("Guerrier Allié");
+        GameObject[] enemiesouvrier = GameObject.FindGameObjectsWithTag("Villageois Allié");
+        
+        float minDist = Mathf.Infinity;
+        GameObject enemy = null;
+        foreach (GameObject Target in enemiesarcher)
+        {
+            float distance = Vector3.Distance(transform.position, Target.transform.position);
+            if (distance < minDist)
+            {
+                minDist = distance;
+                enemy = Target;
+            }
+            
+        }
+        foreach (GameObject Target in enemiesGuerrier)
+        {
+            float distance = Vector3.Distance(transform.position, Target.transform.position);
+            if (distance < minDist)
+            {
+                minDist = distance;
+                enemy = Target;
+            }
+            
+        }
+        foreach (GameObject Target in enemiesouvrier)
+        {
+            float distance = Vector3.Distance(transform.position, Target.transform.position);
+            if (distance < minDist)
+            {
+                minDist = distance;
+                enemy = Target;
+            }
+            
+        }
+
+        if (enemy != null && minDist <= range)
+        {
+            target = enemy;
+        }
+        else
+        {
+            target = null;
+        }
+        
+    }
+    
+
+    
 }
