@@ -18,6 +18,8 @@ public class Ouvrier : MonoBehaviour
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
     private bool click = false;
+    private int stockressource = 0;
+    private int dégatrecolte = 5;
 
 
 
@@ -57,12 +59,27 @@ public class Ouvrier : MonoBehaviour
             }
 
         }
+        
+        if (other.gameObject.name == "arbre(Clone)")
+        {
+            Arbre cible = other.gameObject.GetComponent<Arbre>();
+            cible.pv -= dégatrecolte;
+            stockressource += dégatrecolte;
+            Debug.Log(stockressource);
+            Debug.Log(cible.pv);
+        }
+        if (other.gameObject.tag == "Chateau")
+        {
+            Arbre cible = other.gameObject.GetComponent<Arbre>();
+            cible.pv -= dégatrecolte;
+            stockressource += dégatrecolte;
+        }
     }
 
     private void Update()
     {
 
-
+        
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Vie < 0)
@@ -107,4 +124,6 @@ public class Ouvrier : MonoBehaviour
     {
         selection = true;
     }
+
+    
 }

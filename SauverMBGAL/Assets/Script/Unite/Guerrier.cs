@@ -48,7 +48,8 @@ public class Guerrier : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-
+        
+        Debug.Log(other.gameObject.name );
         if (other.gameObject.name == "Soldat ennemie")
         {
             Guerrier unité2 = other.gameObject.GetComponent<Guerrier>();
