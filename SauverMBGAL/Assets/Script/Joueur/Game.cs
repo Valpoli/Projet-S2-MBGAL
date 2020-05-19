@@ -20,7 +20,6 @@ public class Game : MonoBehaviour
 
     /// prefabs nécessaires (batiments)
     public GameObject ObjMaison;
-
     public GameObject ObjCaserne;
     public GameObject ObjTour;
     public GameObject ObjChamp;
@@ -37,10 +36,11 @@ public class Game : MonoBehaviour
     
     /// si il faut un construire
     public bool needMaison;
-
     public bool needCaserne;
     public bool needTour;
     public bool needChamp;
+    public bool needDestruction;
+    public bool prefabDetruite;
 
     public Game()
     {
@@ -48,6 +48,8 @@ public class Game : MonoBehaviour
         needCaserne = false;
         needTour = false;
         needChamp = false;
+        needDestruction = false;
+        prefabDetruite = false;
     }
 
     void Start()
@@ -89,6 +91,12 @@ public class Game : MonoBehaviour
         {
             Vector3 clic = cam.ScreenToWorldPoint(Input.mousePosition);
             ConstruireChamp(clic);
+        }
+        
+        if (needDestruction && Input.GetMouseButtonDown(0))
+        {
+            Vector3 clic = cam.ScreenToWorldPoint(Input.mousePosition);
+            destruction(clic);
         }
     }
 
@@ -249,6 +257,30 @@ public class Game : MonoBehaviour
 
     #endregion
 
+    #endregion
+    
+    #region Destruction
+
+    public void destruction(Vector3 clic)
+    {
+        if (Construction.DanslaCarte(clic))
+        {
+            (int i, int j) = Construction.posDansMatrice(Construction.calcCentre(clic));
+            if (map.matrix[i,j].Detruire())
+            {
+                needDestruction = false;
+            }
+            else
+            {
+                ErrorManager.GetComponent<AfficheMessage>().MessageErreur("RienADetruire");
+            }
+        }
+        else
+        {
+            ErrorManager.GetComponent<AfficheMessage>().MessageErreur("RienADetruire");
+        }
+        needDestruction = false;
+    }
     #endregion
 
     #region Generation

@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Arbre : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int pv;
+    private int ressource;
+
+    public Arbre()
     {
-        
+        pv = 100;
+        ressource = 100;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void detruire()
     {
-        
+        Destroy(this.gameObject);
     }
+
 }

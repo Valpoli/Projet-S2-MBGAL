@@ -11,6 +11,7 @@
             <e p="Caserne.cs" t="Include" />
             <e p="Champ.cs" t="Include" />
             <e p="Chateau.cs" t="Include" />
+            <e p="DetruireBat.cs" t="Include" />
             <e p="Maison.cs" t="Include" />
             <e p="Tour.cs" t="Include" />
             <e p="TypeBatiment.cs" t="Include" />

@@ -9,7 +9,6 @@ public class Boutons : MonoBehaviour
     public GameObject guerrier;
     public GameObject archer;
     public GameObject ouvrier;
-    public GameObject unité;
     public GameObject ErrorManager;
 
     public void ConstrMaison()
@@ -31,6 +30,11 @@ public class Boutons : MonoBehaviour
     {
         Game cloneGame = clone.GetComponent<Game>();
         cloneGame.needTour = true;
+    }
+    public void DetruireBat()
+    {
+        Game cloneGame = clone.GetComponent<Game>();
+        cloneGame.needDestruction = true;
     }
 
     public void instancierGuerrier()
@@ -138,7 +142,5 @@ public class Boutons : MonoBehaviour
 
         return res;
     }
-    
-    
 }
 
