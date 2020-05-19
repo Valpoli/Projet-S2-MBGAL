@@ -10,6 +10,12 @@ TagManager:
   - Tour
   - Guerrier
   - Ennemie
+  - Map
+  - "Guerrier Alli\xE9"
+  - "Archer Alli\xE9 "
+  - "Villageois Alli\xE9"
+  - Archer
+  - "Archer Alli\xE9"
   layers:
   - Default
   - TransparentFX
