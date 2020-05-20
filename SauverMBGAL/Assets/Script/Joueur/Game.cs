@@ -251,7 +251,7 @@ public class Game : MonoBehaviour
 
     public void InstantiateChamp(Vector3 clic)
     {
-        clic.y = (float) 1;
+        clic.y = (float) 0;
         Instantiate(ObjChamp, clic, Quaternion.identity);
     }
 

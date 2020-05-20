@@ -61,7 +61,7 @@ public class Guerrier : MonoBehaviour
         }
     }
 
-    
+
 
     private void Update()
     {
@@ -88,8 +88,8 @@ public class Guerrier : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
-        
-        if (Physics.Raycast(ray, out hit, 100)) 
+
+        if (Physics.Raycast(ray, out hit, 100))
         {
 
             if (hit.collider.gameObject.name == "guerrier")
@@ -105,13 +105,14 @@ public class Guerrier : MonoBehaviour
                 if (Input.GetMouseButtonUp(0))
                 {
                     selection = false;
-                    
+
                 }
             }
-    }
-    
+        }
 
-    
+
+
+    }
 }
 
 

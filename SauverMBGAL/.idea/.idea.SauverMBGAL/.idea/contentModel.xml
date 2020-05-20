@@ -18,6 +18,7 @@
           </e>
           <e p="Biome" t="Include">
             <e p="Arbre.cs" t="Include" />
+            <e p="ChampRecolte.cs" t="Include" />
           </e>
           <e p="Bouton" t="Include">
             <e p="Boutons.cs" t="Include" />
