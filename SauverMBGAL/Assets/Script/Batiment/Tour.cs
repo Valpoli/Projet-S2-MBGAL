@@ -45,6 +45,7 @@ public class Tour : MonoBehaviour
     private int dégat = 5;
     private bool attente = false;
     public GameObject LABALLE2;
+    private Vector3 cible = Vector3.zero;
     
     
     public void AttackRange()
@@ -59,9 +60,9 @@ public class Tour : MonoBehaviour
                 {
                     Archer guerrier = target.GetComponent<Archer>();
                     guerrier.Vie -= dégat;
-                    Debug.Log(guerrier.Vie);
                     LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
-                    LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, posCible, 50* Time.deltaTime);
+                    cible = posCible;
+
                 }
             }
         }
@@ -123,8 +124,11 @@ public class Tour : MonoBehaviour
             target = null;
         }
         
+        
     }
-    
 
-    
+    private void Update()
+    {
+        LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, cible, 50* Time.deltaTime);
+    }
 }

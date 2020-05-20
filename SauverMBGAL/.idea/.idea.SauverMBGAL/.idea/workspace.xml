@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Biome/Arbre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Biome/Arbre.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,6 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/TypeBatiment.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Chateau.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" />
@@ -78,6 +76,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Biome/Arbre.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +140,8 @@
       <workItem from="1589818581755" duration="239000" />
       <workItem from="1589890706151" duration="8040000" />
       <workItem from="1589903502569" duration="121000" />
-      <workItem from="1589903697294" duration="1769000" />
+      <workItem from="1589903697294" duration="1878000" />
+      <workItem from="1589967415016" duration="646000" />
     </task>
     <servers />
   </component>

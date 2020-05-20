@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 534669904}
-  PlateauSpeed: 3
+  PlateauSpeed: 1
 --- !u!1 &1168978581
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +790,16 @@ PrefabInstance:
       propertyPath: Or
       value: 
       objectReference: {fileID: 1119133343}
+    - target: {fileID: 4307875386264078116, guid: f0204247cb5e4934fb25b0c6c2ffe71c,
+        type: 3}
+      propertyPath: m_Text
+      value: "Cr\xE9ation unit\xE9\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6634465041897145631, guid: f0204247cb5e4934fb25b0c6c2ffe71c,
+        type: 3}
+      propertyPath: m_Text
+      value: "Cr\xE9ation b\xE2timent\n\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 8785670630921544775, guid: f0204247cb5e4934fb25b0c6c2ffe71c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
