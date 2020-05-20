@@ -13,7 +13,7 @@ public class balle : MonoBehaviour
     IEnumerator DESTROY(GameObject Piou)
     {
         yield return new WaitForSeconds(1);
-        Destroy(Piou);
+        Piou.SetActive(false);
     }
 
     private void Start()

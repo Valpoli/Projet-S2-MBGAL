@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 741362679149724850}
   - component: {fileID: 54915194095713866}
   m_Layer: 0
-  m_Name: Soldat
-  m_TagString: Guerrier
+  m_Name: Guerrier
+  m_TagString: "Guerrier Alli\xE9"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

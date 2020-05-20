@@ -69,11 +69,9 @@ public class Archer : MonoBehaviour
 
     private void Update()
     {
-
-        
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Vie < 0)
+        if (Vie <= 0)
         {
             Destroy(gameObject);
         }
@@ -89,7 +87,7 @@ public class Archer : MonoBehaviour
                 }
             }
         }
-        if (NewPosition != Vector3.zero && click && deplacement_attack)
+        if (NewPosition != Vector3.zero && click)
         {
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
@@ -116,15 +114,7 @@ public class Archer : MonoBehaviour
                     possibleAttack = false;
                 }
             }
-
-            if (hit.collider.gameObject.name == "Archer")
-            {
-                if (Input.GetMouseButtonUp(0))
-                {
-                    selection = true;
-                }
-            }
-
+            
             if (hit.collider.gameObject.tag == "Map")
             {
                 if (Input.GetMouseButtonUp(0))
@@ -151,5 +141,9 @@ public class Archer : MonoBehaviour
         }
 
     }
-    
+
+    private void OnMouseDown()
+    {
+        selection = true;
+    }
 }

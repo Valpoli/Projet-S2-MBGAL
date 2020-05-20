@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5819624950215779998}
   m_Layer: 0
   m_Name: Archer
-  m_TagString: Guerrier
+  m_TagString: Archer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,8 @@ MonoBehaviour:
   range: 5
   speed: 5
   ally: 1
-  LABALLE2: {fileID: 0}
+  LABALLE2: {fileID: 6963235861096307273, guid: 57faf17c38c8c8f439ebf1e8e305f346,
+    type: 3}
 --- !u!54 &5819624950215779998
 Rigidbody:
   m_ObjectHideFlags: 0

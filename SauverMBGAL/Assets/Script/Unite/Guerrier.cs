@@ -48,7 +48,8 @@ public class Guerrier : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-
+        
+        Debug.Log(other.gameObject.name );
         if (other.gameObject.name == "Soldat ennemie")
         {
             Guerrier unité2 = other.gameObject.GetComponent<Guerrier>();
@@ -91,14 +92,7 @@ public class Guerrier : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100))
         {
-
-            if (hit.collider.gameObject.name == "guerrier")
-            {
-                if (Input.GetMouseButtonUp(0))
-                {
-                    selection = true;
-                }
-            }
+            
 
             if (hit.collider.gameObject.tag == "Map")
             {
@@ -110,9 +104,12 @@ public class Guerrier : MonoBehaviour
             }
         }
 
-
-
     }
+    private void OnMouseDown()
+    {
+        selection = true;
+    }
+
 }
 
 
