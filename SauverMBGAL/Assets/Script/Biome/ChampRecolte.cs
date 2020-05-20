@@ -21,6 +21,10 @@ public class ChampRecolte : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if (other.gameObject.CompareTag("Guerrier"))
+        {
+            Debug.Log("je peux recolter");
+        }
         Debug.Log("je suis collisionné!");
     }
 
