@@ -25,6 +25,7 @@
           </e>
           <e p="Carte" t="Include">
             <e p="Case.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
             <e p="Map.cs" t="Include" />
           </e>
           <e p="Construction" t="Include">
@@ -36,6 +37,7 @@
           </e>
           <e p="Menu" t="Include">
             <e p="MainMenu.cs" t="Include" />
+            <e p="MenuInGame.cs" t="Include" />
           </e>
           <e p="Message" t="Include">
             <e p="AfficheMessage.cs" t="Include" />
