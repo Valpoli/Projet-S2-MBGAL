@@ -84,7 +84,7 @@
 
         public bool Detruire()
         {
-            if (batiment != null)
+            if (batiment != null && batiment.Type != TypeBatiment.BatimentType.CHATEAU)
             {
                 batiment = null;
                 return true;

@@ -8,7 +8,6 @@ using UnityEngine.Experimental.UIElements;
 
 public class Game : MonoBehaviour
 {
-    public long score;
     public long logementTot;
     public long popAct;
     public long argent;
@@ -23,6 +22,7 @@ public class Game : MonoBehaviour
     public GameObject ObjCaserne;
     public GameObject ObjTour;
     public GameObject ObjChamp;
+    public GameObject ObjChateau;
 
     /// prefabs nécessaires (biome)
     public GameObject Foret;
@@ -40,7 +40,6 @@ public class Game : MonoBehaviour
     public bool needTour;
     public bool needChamp;
     public bool needDestruction;
-    public bool prefabDetruite;
 
     public Game()
     {
@@ -49,7 +48,6 @@ public class Game : MonoBehaviour
         needTour = false;
         needChamp = false;
         needDestruction = false;
-        prefabDetruite = false;
     }
 
     void Start()
@@ -307,14 +305,16 @@ public class Game : MonoBehaviour
 
         (int, int)[] listRocher =
         {
-            (0, 14), (0, 15), (0, 16), (0, 17), (0, 18), (0, 19), (1, 14), (1, 15), (1, 16), (1, 17), (1, 18), (1, 19),
-            (3, 14), (4, 14), (5, 14), (6, 14), (7, 14), (8, 14), (3, 15), (4, 15), (5, 15), (6, 15), (7, 15), (8, 15),
+            (10, 15), (9, 14), (10, 14), (0, 14), (0, 15), (0, 16), (0, 17), (0, 18), (0, 19), (1, 14), (1, 15),
+            (1, 16), (1, 17), (1, 18), (1, 19), (3, 14), (4, 14), (5, 14), (6, 14), (7, 14), (8, 14), (3, 15), (4, 15),
+            (5, 15), (6, 15), (7, 15), (8, 15),
             (9, 15), (3, 16), (4, 16), (5, 16), (6, 16), (7, 16), (8, 16), (9, 16), (10, 16), (3, 17), (4, 17), (5, 17),
             (6, 17), (7, 17), (8, 17), (9, 17), (10, 17), (3, 18), (4, 18), (5, 18), (6, 18), (7, 18), (8, 18), (9, 18),
             (10, 18), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (10, 19), (5, 20), (6, 20),
             (7, 20), (8, 20), (9, 20), (10, 20), (5, 21), (6, 21), (7, 21), (8, 21), (9, 21), (10, 21), (5, 23),
             (6, 23), (7, 23), (8, 23), (9, 23), (10, 23), (5, 24), (6, 24), (7, 24), (8, 24), (9, 24), (10, 24)
         };
+        
         int nbRocher = listRocher.Length;
         for (int j = 0; j < nbRocher; j++)
         {
@@ -325,7 +325,7 @@ public class Game : MonoBehaviour
 
         (int, int)[] listMer =
         {
-            (10, 15), (9, 14), (10, 14), (11, 14), (10, 13), (11, 13), (12, 13), (11, 12), (12, 12), (13, 12), (12, 11),
+            (11, 14), (10, 13), (11, 13), (12, 13), (11, 12), (12, 12), (13, 12), (12, 11),
             (13, 11), (14, 11), (13, 10), (14, 10), (15, 10), (14, 9), (15, 9), (16, 9), (15, 8), (16, 8), (17, 8),
             (16, 7), (17, 7), (19, 5), (20, 5), (19, 4), (20, 4), (21, 4), (20, 3), (21, 3), (10, 6), (11, 6), (10, 5),
             (11, 5), (18, 13), (19, 13), (18, 14), (19, 14)
@@ -349,6 +349,21 @@ public class Game : MonoBehaviour
             map.matrix[x, y] = new Case(Case.Biome.MINE);
             Instantiate(Mine, Construction.posSurlaMap(x, y), Quaternion.identity);
         }
+        
+        (int, int)[] listChateau =
+        {
+            (2,2), (3,2), (2,3), (3,3),(22,22), (21,22), (22,21), (21,21)
+        };
+        int nbChateau = listChateau.Length;
+        for (int j = 0; j < nbChateau; j++)
+        {
+            (x, y) = listChateau[j];
+            map.Construire(x, y, ref argent, ref logementTot, TypeBatiment.BatimentType.CHATEAU);
+        }
+        Vector3 ChateauA = new Vector3(12,1,12);
+        Vector3 ChateauE = new Vector3(88,1,88);
+        Instantiate(ObjChateau, ChateauA, Quaternion.identity);
+        Instantiate(ObjChateau, ChateauE, Quaternion.identity);
         
     }
     #endregion
