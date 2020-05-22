@@ -18,7 +18,7 @@ public class Ouvrier : MonoBehaviour
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
     private bool click = false;
-    private int stockressource = 0;
+    public int stockressource = 0;
     private int dégatrecolte = 5;
 
 
@@ -35,16 +35,12 @@ public class Ouvrier : MonoBehaviour
         get => dégat;
         set => dégat = value;
     }
-
-
-
     public bool IsKO
     {
         get => isKO;
         set => isKO = value;
     }
 
-    
 
     private void OnCollisionEnter(Collision other)
     {

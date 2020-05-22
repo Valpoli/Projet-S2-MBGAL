@@ -12,12 +12,13 @@ public class DeplaceCam : MonoBehaviour
     private float MinHauteur = 15f;
     private float MaxHauteur = 100f;
 
-    
+
     // Update is called once per frame
     void Update()
     {
         MoveCamera();
     }
+
     void MoveCamera()
     {
         float DeplacementX = Camera.main.transform.position.x;
@@ -27,28 +28,37 @@ public class DeplaceCam : MonoBehaviour
         float PositionX = Input.mousePosition.x;
         float PositionY = Input.mousePosition.y;
 
-        if (PositionX > - Bordure && PositionX < Bordure)
+        if (DeplacementX > -10 && DeplacementX < 110 && DeplacementZ > -10 && DeplacementZ < 110)
         {
-            DeplacementX -= PlateauSpeed;
+            if (PositionX > -Bordure && PositionX < Bordure)
+            {
+                DeplacementX -= PlateauSpeed;
 
-        }
-        if (PositionX < Screen.width && PositionX > Screen.width - Bordure)
-        {
-            DeplacementX += PlateauSpeed;
-        }
-        if (PositionY < Screen.height && PositionY > Screen.height - Bordure)
-        {
-            DeplacementZ += PlateauSpeed;
-        }
-        if (PositionY > - Bordure && PositionY < Bordure)
-        {
-            DeplacementZ -= PlateauSpeed;
-        }
+            }
 
-        DeplacementY = Input.GetAxis("Mouse ScrollWheel")* (PlateauSpeed * 50);
+            if (PositionX < Screen.width && PositionX > Screen.width - Bordure)
+            {
+                DeplacementX += PlateauSpeed;
+            }
 
-        DeplacementY = Mathf.Clamp(DeplacementY, MinHauteur, MaxHauteur);
+            if (PositionY < Screen.height && PositionY > Screen.height - Bordure)
+            {
+                DeplacementZ += PlateauSpeed;
+            }
 
-        Camera.main.transform.position = new Vector3(DeplacementX, DeplacementY, DeplacementZ);
+            if (PositionY > -Bordure && PositionY < Bordure)
+            {
+                DeplacementZ -= PlateauSpeed;
+            }
+
+            DeplacementY = Input.GetAxis("Mouse ScrollWheel") * (PlateauSpeed * 50);
+
+            DeplacementY = Mathf.Clamp(DeplacementY, MinHauteur, MaxHauteur);
+            if (DeplacementX > -10 && DeplacementX < 110 && DeplacementZ > -10 && DeplacementZ < 110)
+            {
+                Camera.main.transform.position = new Vector3(DeplacementX, DeplacementY, DeplacementZ);
+            }
+        }
     }
 }
+

@@ -11,14 +11,11 @@
             <e p="Caserne.cs" t="Include" />
             <e p="Champ.cs" t="Include" />
             <e p="Chateau.cs" t="Include" />
+            <e p="ChateauGestion.cs" t="Include" />
             <e p="DetruireBat.cs" t="Include" />
             <e p="Maison.cs" t="Include" />
             <e p="Tour.cs" t="Include" />
             <e p="TypeBatiment.cs" t="Include" />
-          </e>
-          <e p="Biome" t="Include">
-            <e p="Arbre.cs" t="Include" />
-            <e p="ChampRecolte.cs" t="Include" />
           </e>
           <e p="Bouton" t="Include">
             <e p="Boutons.cs" t="Include" />
@@ -44,6 +41,10 @@
           </e>
           <e p="Message" t="Include">
             <e p="AfficheMessage.cs" t="Include" />
+          </e>
+          <e p="Recolte" t="Include">
+            <e p="Arbre.cs" t="Include" />
+            <e p="ChampRecolte.cs" t="Include" />
           </e>
           <e p="Unite" t="Include">
             <e p="Archer.cs" t="Include" />

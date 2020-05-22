@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -695,6 +695,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -36.39
       objectReference: {fileID: 0}
+    - target: {fileID: 4732962334650540521, guid: f396e7bfce8f8dd4e85073763f63d7ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732962334805528317, guid: f396e7bfce8f8dd4e85073763f63d7ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732962334807099210, guid: f396e7bfce8f8dd4e85073763f63d7ac,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -180
+      objectReference: {fileID: 0}
     - target: {fileID: 4732962335200012307, guid: f396e7bfce8f8dd4e85073763f63d7ac,
         type: 3}
       propertyPath: pop
@@ -714,7 +729,7 @@ PrefabInstance:
         type: 3}
       propertyPath: guerrier
       value: 
-      objectReference: {fileID: 8395626781734247588, guid: e5b23f8df5412424d8fbc347e520fb24,
+      objectReference: {fileID: 3328003142970487516, guid: a79e10f8a0ebbd3488cf20e0d479bb76,
         type: 3}
     - target: {fileID: 4732962335212334048, guid: f396e7bfce8f8dd4e85073763f63d7ac,
         type: 3}
@@ -726,7 +741,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ouvrier
       value: 
-      objectReference: {fileID: 8395626781734247588, guid: e5b23f8df5412424d8fbc347e520fb24,
+      objectReference: {fileID: 967542262191595975, guid: 1c47ed282b8b4544b8aa6b9d9c4be499,
         type: 3}
     - target: {fileID: 4732962335212334048, guid: f396e7bfce8f8dd4e85073763f63d7ac,
         type: 3}
@@ -856,6 +871,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f396e7bfce8f8dd4e85073763f63d7ac, type: 3}
+--- !u!1001 &939439528258108760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 939439529762590211, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_Name
+      value: Chateau
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.2553
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -70.79553
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 57.492447
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 880f0dcc186c00f4f94899c39a79ecd6, type: 3}
 --- !u!114 &1928001242847481604 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9172215752496527630, guid: 011448b64184cc045bee8fad9779e92a,
@@ -1027,6 +1111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Joueur
       objectReference: {fileID: 0}
+    - target: {fileID: 4493937964718303297, guid: e30663a6f4ad68e44bfee4b6f6a696d4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4493937964718303358, guid: e30663a6f4ad68e44bfee4b6f6a696d4,
         type: 3}
       propertyPath: logementTot
@@ -1087,6 +1176,12 @@ PrefabInstance:
       propertyPath: nourriture
       value: 20000
       objectReference: {fileID: 0}
+    - target: {fileID: 4493937964718303358, guid: e30663a6f4ad68e44bfee4b6f6a696d4,
+        type: 3}
+      propertyPath: ObjChateau
+      value: 
+      objectReference: {fileID: 939439529762590211, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
     - target: {fileID: 4493937964718303359, guid: e30663a6f4ad68e44bfee4b6f6a696d4,
         type: 3}
       propertyPath: m_LocalPosition.x
