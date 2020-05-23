@@ -10,7 +10,8 @@ public class ChateauGestion : MonoBehaviour
     private int vie = 50;
     public const int logement = 10;
     public const long prix = 100;
-    public int recolte = 0;
+    public int recolteor = 0;
+    public int recoltenourriture = 0;
     public GameObject joueur; 
 
     public int Vie
@@ -21,11 +22,21 @@ public class ChateauGestion : MonoBehaviour
     
     void Update()
     {
-        if (recolte != 0)
+        if (recolteor != 0)
         {
-            Game game = joueur.gameObject.GetComponent<Game>();
-            game.argent += recolte;
-            recolte = 0;
+            Debug.Log("chateau or :" + recolteor);
+            GameObject clone = GameObject.FindGameObjectWithTag("Player");
+            Game player = clone.GetComponent<Game>();
+            player.argent += recolteor;
+            recolteor = 0;
+        }
+        if (recoltenourriture != 0)
+        {
+            Debug.Log("chateau food :" + recoltenourriture);
+            GameObject clone = GameObject.FindGameObjectWithTag("Player");
+            Game player = clone.GetComponent<Game>();
+            player.nourriture += recoltenourriture;
+            recoltenourriture = 0;
         }
 
         if (Vie < 0)
@@ -41,9 +52,12 @@ public class ChateauGestion : MonoBehaviour
     {
         if (other.gameObject.tag == "Villageois Allié")
         {
+            Debug.Log("touché");
             Ouvrier ouvrier = other.gameObject.GetComponent<Ouvrier>();
-            recolte += ouvrier.stockressource;
-            ouvrier.stockressource = 0;
+            recolteor += ouvrier.stockor;
+            recoltenourriture += ouvrier.stocknourriture;
+            ouvrier.stockor = 0;
+            
         }
     }
 }

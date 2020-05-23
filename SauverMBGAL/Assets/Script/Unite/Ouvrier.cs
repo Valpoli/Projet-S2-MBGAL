@@ -18,7 +18,8 @@ public class Ouvrier : MonoBehaviour
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
     private bool click = false;
-    public int stockressource = 0;
+    public int stockor = 0;
+    public int stocknourriture = 0;
     private int dégatrecolte = 5;
 
 
@@ -60,16 +61,11 @@ public class Ouvrier : MonoBehaviour
         {
             Arbre cible = other.gameObject.GetComponent<Arbre>();
             cible.pv -= dégatrecolte;
-            stockressource += dégatrecolte;
-            Debug.Log(stockressource);
+            stockor += dégatrecolte;
+            Debug.Log(stockor);
             Debug.Log(cible.pv);
         }
-        if (other.gameObject.tag == "Chateau")
-        {
-            Arbre cible = other.gameObject.GetComponent<Arbre>();
-            cible.pv -= dégatrecolte;
-            stockressource += dégatrecolte;
-        }
+        
     }
 
     private void Update()
