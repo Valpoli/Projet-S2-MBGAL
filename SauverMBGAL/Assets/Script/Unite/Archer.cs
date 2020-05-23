@@ -25,7 +25,7 @@ public class Archer : MonoBehaviour
     private bool enCoursDattaque = true;
     private Vector3 posEnnemy = Vector3.zero;
 
-    public bool SelectionDéplacement
+    public bool Selection
     {
         get => selection;
         set => selection = value;
@@ -93,18 +93,9 @@ public class Archer : MonoBehaviour
         {
             if (selection)
             {
-                if(hit.collider.gameObject.tag == "Ennemie")
+                if(hit.collider.gameObject.tag == "Chateau")
                 {
                     possibleAttack = true;
-                    
-                    Vector3 posCible = hit.collider.gameObject.transform.position;
-                    Vector3 posArcher = gameObject.transform.position;
-                    if (range > Vector3.Distance(posCible, posArcher))
-                    {
-                        deplacement_attack = false;
-                    }
-
-                    posEnnemy = hit.collider.gameObject.transform.position;
                 }
                 else
                 {
@@ -137,13 +128,13 @@ public class Archer : MonoBehaviour
             deplacement_attack = true;
             tiré = true;
             LABALLE2 = Instantiate(LABALLE2, transform.position, Quaternion.identity);
+            LABALLE2.SetActive(true);
 
         }
 
-        if (tiré)
-        {
-            LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, NewPosition, 50* Time.deltaTime);
-        }
+        
+        LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, NewPosition, 50* Time.deltaTime);
+        
 
     }
 

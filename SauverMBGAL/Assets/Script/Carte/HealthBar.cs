@@ -36,7 +36,6 @@ public class HealthBar : MonoBehaviour
         {
             ChateauGestion chateau2 = chateau.GetComponent<ChateauGestion>();
             SetHealth(chateau2.Vie);
-            
         }
 
     }
