@@ -8,9 +8,8 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
-    public GameObject chateau;
-
-    private Chateau.chateau chateau2;
+    private int Maxhealth = 50;
+    
 
     public void MaxValue(int health)
     {
@@ -18,6 +17,7 @@ public class HealthBar : MonoBehaviour
         slider.value = health;
     }
  
+        
 
     public void SetHealth(int health)
     {
@@ -26,13 +26,18 @@ public class HealthBar : MonoBehaviour
 
     private void Start()
     {
-        chateau2 = chateau.GetComponent<Chateau.chateau>();
-        MaxValue(chateau2.Vie);
+        MaxValue(Maxhealth);
     }
 
     private void Update()
     {
-        chateau2 = chateau.GetComponent<Chateau.chateau>();
-        SetHealth(chateau2.Vie);
+        GameObject chateau = GameObject.FindGameObjectWithTag("Chateau");
+        if (chateau != null)
+        {
+            ChateauGestion chateau2 = chateau.GetComponent<ChateauGestion>();
+            SetHealth(chateau2.Vie);
+            
+        }
+
     }
 }
