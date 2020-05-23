@@ -14,7 +14,7 @@ public class Game : MonoBehaviour
     public long nourriture;
     public Map map = new Map();
     private Camera cam;
-    private int cameraCurrentZoom = 20;
+    private int cameraCurrentZoom = 50;
     public int nbCaserne;
 
     /// prefabs nécessaires (batiments)

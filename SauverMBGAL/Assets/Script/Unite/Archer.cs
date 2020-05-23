@@ -62,6 +62,13 @@ public class Archer : MonoBehaviour
                 Guerrier guerrier = cible.GetComponent<Guerrier>();
                 guerrier.Vie -= dégat;
             }
+
+            if (cible.tag == "Chateau")
+            {
+                ChateauGestion chateau = cible.GetComponent<ChateauGestion>();
+                chateau.Vie -= dégat;
+                Debug.Log(chateau.Vie);
+            }
         }
     }
 
@@ -76,17 +83,7 @@ public class Archer : MonoBehaviour
             Destroy(gameObject);
         }
         
-        if (ally && selection )
-        {
-            if (Input.GetMouseButtonUp(1))
-            {
-                if (Physics.Raycast(ray, out hit))
-                {
-                    NewPosition = new Vector3(hit.point.x,(float)0.5,hit.point.z);
-                    click = true;
-                }
-            }
-        }
+        
         if (NewPosition != Vector3.zero && click)
         {
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
@@ -120,7 +117,15 @@ public class Archer : MonoBehaviour
                 if (Input.GetMouseButtonUp(0))
                 {
                     selection = false;
-                    
+                }
+                if (ally && selection)
+                {
+                    if (Input.GetMouseButtonUp(1))
+                    {
+                        
+                        NewPosition = new Vector3(hit.point.x,(float)0.5,hit.point.z);
+                        click = true;
+                    }
                 }
             }
             
