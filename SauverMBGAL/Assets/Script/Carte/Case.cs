@@ -77,6 +77,10 @@
                     batiment = new Caserne.caserne();
                     bois -= Caserne.caserne.prix;
                 }
+                if (type == TypeBatiment.BatimentType.CHATEAU)
+                {
+                    batiment = new Chateau.chateau();
+                }
 
                 return true;
             }

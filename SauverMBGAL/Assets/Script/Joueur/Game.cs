@@ -352,7 +352,7 @@ public class Game : MonoBehaviour
         
         (int, int)[] listChateau =
         {
-            (2,2), (3,2), (2,3), (3,3),(22,22), (21,22), (22,21), (21,21)
+            (2,2), (3,2), (2,3), (3,3),(22,22), (21,22), (22,21), (21,21),(4,3), (5,3), (4,2), (5,2)
         };
         int nbChateau = listChateau.Length;
         for (int j = 0; j < nbChateau; j++)

@@ -27,12 +27,12 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         chateau2 = chateau.GetComponent<Chateau.chateau>();
-        MaxValue(chateau2.Vie);
+        /// MaxValue(chateau2.Vie);
     }
 
     private void Update()
     {
         chateau2 = chateau.GetComponent<Chateau.chateau>();
-        SetHealth(chateau2.Vie);
+        /// SetHealth(chateau2.Vie);
     }
 }

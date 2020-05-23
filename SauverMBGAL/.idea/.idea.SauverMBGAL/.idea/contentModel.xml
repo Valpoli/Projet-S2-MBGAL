@@ -17,6 +17,9 @@
             <e p="Tour.cs" t="Include" />
             <e p="TypeBatiment.cs" t="Include" />
           </e>
+          <e p="Bot" t="Include">
+            <e p="Bot.cs" t="Include" />
+          </e>
           <e p="Bouton" t="Include">
             <e p="Boutons.cs" t="Include" />
             <e p="Food.cs" t="Include" />

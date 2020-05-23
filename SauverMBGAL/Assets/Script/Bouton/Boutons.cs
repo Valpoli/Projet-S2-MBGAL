@@ -56,7 +56,7 @@ public class Boutons : MonoBehaviour
                     Vector3 clic;
                     clic.x = 18;
                     clic.y = (float) 0.5;
-                    clic.z = 14;
+                    clic.z = (float)12.5;
                     Instantiate(guerrier, clic, Quaternion.identity);
                 }
             }
