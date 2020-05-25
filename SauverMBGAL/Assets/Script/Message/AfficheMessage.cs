@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -13,11 +11,7 @@ public class AfficheMessage : MonoBehaviour
     public Text PasDeCaserne;
     public Text PopMax;
     public Text RienADetruire;
-
-    private void Update()
-    {
-        
-    }
+    public Text BougerTroupe;
 
     public void MessageErreur(string error)
     {
@@ -44,6 +38,14 @@ public class AfficheMessage : MonoBehaviour
         if (PopMax.enabled)
         {
             PopMax.enabled = false;
+        }
+        if (RienADetruire.enabled)
+        {
+            RienADetruire.enabled = false;
+        }
+        if (BougerTroupe.enabled)
+        {
+            BougerTroupe.enabled = false;
         }
         if (error == "ManqueArgent")
         {
@@ -72,6 +74,10 @@ public class AfficheMessage : MonoBehaviour
         if (error == "RienADetruire")
         {
             StartCoroutine(RienADetruireTempo());
+        }
+        if (error == "BougerTroupe")
+        {
+            StartCoroutine(BougerTroupeTempo());
         }
     }
 
@@ -119,5 +125,10 @@ public class AfficheMessage : MonoBehaviour
         yield return new WaitForSeconds(3);
         RienADetruire.enabled = false;
     }
-    
+    IEnumerator BougerTroupeTempo()
+    {
+        BougerTroupe.enabled = true;
+        yield return new WaitForSeconds(3);
+        BougerTroupe.enabled = false;
+    }
 }

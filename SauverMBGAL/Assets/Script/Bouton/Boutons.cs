@@ -1,8 +1,6 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 public class Boutons : MonoBehaviour
 {
     public GameObject clone;
@@ -10,6 +8,14 @@ public class Boutons : MonoBehaviour
     public GameObject archer;
     public GameObject ouvrier;
     public GameObject ErrorManager;
+    public List<(int,int)> pointSpawn;
+    public List<bool> emplacementLibre;
+
+    private void Start()
+    {
+        pointSpawn = new List<(int, int)>{(17,9),(17,12),(17,15),(20,9),(20,12),(20,15),(23,9),(23,12),(23,15)};
+        emplacementLibre = new List<bool>{false,false,false,false,false,false,false,false,false};
+    }
 
     public void ConstrMaison()
     {
@@ -37,6 +43,28 @@ public class Boutons : MonoBehaviour
         cloneGame.needDestruction = true;
     }
 
+    public bool placeDispo()
+    {
+        bool res = (!emplacementLibre[0] || !emplacementLibre[1] || !emplacementLibre[2] || !emplacementLibre[3] || !emplacementLibre[4] || !emplacementLibre[5] || !emplacementLibre[6] || !emplacementLibre[7] || !emplacementLibre[8]);
+        return res;
+    }
+    public int CheckPos()
+    {
+        int res = 0;
+        bool trouve = false;
+        while (res < 9 && !trouve)
+        {
+            if (emplacementLibre[res])
+            {
+                res += 1;
+            }
+            else
+            {
+                trouve = true;
+            }
+        }
+        return res;
+    }
     public void instancierGuerrier()
     {
         Game cloneGame = clone.GetComponent<Game>();
@@ -50,14 +78,24 @@ public class Boutons : MonoBehaviour
             {
                 if (CheckPopmax(cloneGame.logementTot))
                 {
-                    cloneGame.argent -= Guerrier.prixOr / cloneGame.nbCaserne;
-                    cloneGame.nourriture -= Guerrier.prixNouriture / cloneGame.nbCaserne;
-                    cloneGame.popAct += Guerrier.logement;
-                    Vector3 clic;
-                    clic.x = 18;
-                    clic.y = (float) 0.5;
-                    clic.z = (float)12.5;
-                    Instantiate(guerrier, clic, Quaternion.identity);
+                    if (placeDispo())
+                    {
+                        cloneGame.argent -= Guerrier.prixOr / cloneGame.nbCaserne;
+                        cloneGame.nourriture -= Guerrier.prixNouriture / cloneGame.nbCaserne;
+                        cloneGame.popAct += Guerrier.logement;
+                        int pos = CheckPos();
+                        Debug.Log(pointSpawn[pos]);
+                        float x = (float) pointSpawn[pos].Item1;
+                        float z = (float) pointSpawn[pos].Item2;
+                        float y = (float) 0.5;
+                        emplacementLibre[pos] = true;
+                        Vector3 clic = new Vector3(x,y,z);
+                        Instantiate(guerrier, clic, Quaternion.identity);
+                    }
+                    else
+                    {
+                        ErrorManager.GetComponent<AfficheMessage>().MessageErreur("BougerTroupe");
+                    }
                 }
             }
             else
@@ -76,18 +114,28 @@ public class Boutons : MonoBehaviour
         }
         else
         {
-            if (cloneGame.argent >= Archer.prixOr && cloneGame.nourriture >= Archer.prixNouriture)
+            if (cloneGame.argent >= Guerrier.prixOr && cloneGame.nourriture >= Guerrier.prixNouriture)
             {
                 if (CheckPopmax(cloneGame.logementTot))
                 {
-                    cloneGame.argent -= Archer.prixOr / cloneGame.nbCaserne;
-                    cloneGame.nourriture -= Archer.prixNouriture / cloneGame.nbCaserne;
-                    cloneGame.popAct += Archer.logement;
-                    Vector3 clic;
-                    clic.x = 18;
-                    clic.y = (float) 0.5;
-                    clic.z = 14;
-                    Instantiate(archer, clic, Quaternion.identity);
+                    if (placeDispo())
+                    {
+                        cloneGame.argent -= Guerrier.prixOr / cloneGame.nbCaserne;
+                        cloneGame.nourriture -= Guerrier.prixNouriture / cloneGame.nbCaserne;
+                        cloneGame.popAct += Guerrier.logement;
+                        int pos = CheckPos();
+                        Debug.Log(pointSpawn[pos]);
+                        float x = (float) pointSpawn[pos].Item1;
+                        float z = (float) pointSpawn[pos].Item2;
+                        float y = (float) 0.5;
+                        emplacementLibre[pos] = true;
+                        Vector3 clic = new Vector3(x,y,z);
+                        Instantiate(archer, clic, Quaternion.identity);
+                    }
+                    else
+                    {
+                        ErrorManager.GetComponent<AfficheMessage>().MessageErreur("BougerTroupe");
+                    }
                 }
             }
             else
@@ -106,18 +154,28 @@ public class Boutons : MonoBehaviour
         }
         else
         {
-            if (cloneGame.argent >= Ouvrier.prixOr && cloneGame.nourriture >= Guerrier.prixNouriture)
+            if (cloneGame.argent >= Guerrier.prixOr && cloneGame.nourriture >= Guerrier.prixNouriture)
             {
                 if (CheckPopmax(cloneGame.logementTot))
                 {
-                    cloneGame.argent -= Ouvrier.prixOr / cloneGame.nbCaserne;
-                    cloneGame.nourriture -= Ouvrier.prixNouriture / cloneGame.nbCaserne;
-                    cloneGame.popAct += Ouvrier.logement;
-                    Vector3 clic;
-                    clic.x = 18;
-                    clic.y = (float) 0.5;
-                    clic.z = 14;
-                    Instantiate(ouvrier, clic, Quaternion.identity);
+                    if (placeDispo())
+                    {
+                        cloneGame.argent -= Guerrier.prixOr / cloneGame.nbCaserne;
+                        cloneGame.nourriture -= Guerrier.prixNouriture / cloneGame.nbCaserne;
+                        cloneGame.popAct += Guerrier.logement;
+                        int pos = CheckPos();
+                        Debug.Log(pointSpawn[pos]);
+                        float x = (float) pointSpawn[pos].Item1;
+                        float z = (float) pointSpawn[pos].Item2;
+                        float y = (float) 0.5;
+                        emplacementLibre[pos] = true;
+                        Vector3 clic = new Vector3(x,y,z);
+                        Instantiate(ouvrier, clic, Quaternion.identity);
+                    }
+                    else
+                    {
+                        ErrorManager.GetComponent<AfficheMessage>().MessageErreur("BougerTroupe");
+                    }
                 }
             }
             else
@@ -139,7 +197,6 @@ public class Boutons : MonoBehaviour
         {
             ErrorManager.GetComponent<AfficheMessage>().MessageErreur("PopMax");
         }
-
         return res;
     }
 }

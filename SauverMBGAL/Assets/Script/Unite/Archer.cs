@@ -25,6 +25,10 @@ public class Archer : MonoBehaviour
     private bool enCoursDattaque = true;
     private Vector3 posEnnemy = Vector3.zero;
 
+    /// pour position de départ
+    private bool dejaBouge;
+    private Vector3 posDepart;
+
     public bool Selection
     {
         get => selection;
@@ -72,7 +76,32 @@ public class Archer : MonoBehaviour
         }
     }
 
+    public int reactPositionnement(float x,float z, List <(int,int)> list)
+    {
+        int res = 0;
+        bool pasTrouve = true;
+        while (res < 9 && pasTrouve)
+        {
+            if ((float) list[res].Item1 == x && (float) list[res].Item2 == z)
+            {
+                pasTrouve = false;
+            }
+            else
+            {
+                res += 1;
+            }
+        }
 
+        return res;
+    }
+    
+    
+
+    private void Start()
+    {
+        dejaBouge = false;
+        posDepart = gameObject.transform.position;
+    }
 
     private void Update()
     {
@@ -80,12 +109,27 @@ public class Archer : MonoBehaviour
         RaycastHit hit;
         if (Vie <= 0)
         {
+            if (!dejaBouge)
+            {
+                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
+                cloneBoutons.emplacementLibre[pos] = false;
+            }
             Destroy(gameObject);
         }
         
         
         if (NewPosition != Vector3.zero && click)
         {
+            if (!dejaBouge)
+            {
+                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
+                cloneBoutons.emplacementLibre[pos] = false;
+                dejaBouge = true;
+            }
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
 

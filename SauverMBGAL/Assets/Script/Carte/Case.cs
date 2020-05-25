@@ -85,7 +85,6 @@
                 return true;
             }
         }
-
         public bool Detruire()
         {
             if (batiment != null && batiment.Type != TypeBatiment.BatimentType.CHATEAU)
@@ -98,18 +97,4 @@
                 return false;
             }
         }
-
-        public long PrendreRecolte()
-        {
-            if (batiment != null && batiment.Type == TypeBatiment.BatimentType.CHAMP)
-            {
-                Champ.champ c = new Champ.champ();
-                return c.recolte();
-            }
-            else
-            {
-                return 0;
-            } 
-        }
-
-}
+    }

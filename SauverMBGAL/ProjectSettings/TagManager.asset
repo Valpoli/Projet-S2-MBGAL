@@ -9,7 +9,6 @@ TagManager:
   - Maison
   - Tour
   - Guerrier
-  - Ennemie
   - Map
   - "Guerrier Alli\xE9"
   - "Archer Alli\xE9 "
@@ -18,6 +17,9 @@ TagManager:
   - "Archer Alli\xE9"
   - Arbre
   - Chateau
+  - "Alli\xE9"
+  - Ennemi
+  - HUD
   layers:
   - Default
   - TransparentFX

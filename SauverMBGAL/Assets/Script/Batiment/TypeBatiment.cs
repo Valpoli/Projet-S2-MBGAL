@@ -1,5 +1,4 @@
-﻿using System;
-public abstract class TypeBatiment
+﻿public abstract class TypeBatiment
 {
     public enum BatimentType
     {

@@ -8,33 +8,34 @@ using UnityEngine.Experimental.UIElements;
 
 public class Game : MonoBehaviour
 {
+    /// variable de la partie
     public long logementTot;
     public long popAct;
     public long argent;
     public long nourriture;
+    public int nbCaserne;
     public Map map = new Map();
     private Camera cam;
-    private int cameraCurrentZoom = 50;
-    public int nbCaserne;
+    private int cameraCurrentZoom = 20;
 
     /// prefabs nécessaires (batiments)
     public GameObject ObjMaison;
     public GameObject ObjCaserne;
     public GameObject ObjTour;
     public GameObject ObjChamp;
-    public GameObject ObjChateau;
+    public GameObject ObjChateauA;
+    public GameObject ObjChateauE;
 
     /// prefabs nécessaires (biome)
     public GameObject Foret;
     public GameObject Rocher;
     public GameObject Mer;
     public GameObject Mine;
-   
     
     /// prefabs nécessaires (Message d'erreur)
     public GameObject ErrorManager;
     
-    /// si il faut un construire
+    /// s'il faut construire
     public bool needMaison;
     public bool needCaserne;
     public bool needTour;
@@ -61,8 +62,8 @@ public class Game : MonoBehaviour
     {
         BeginConstruction();
     }
-
-
+    
+    
     #region Construction
 
     public void BeginConstruction()
@@ -362,8 +363,8 @@ public class Game : MonoBehaviour
         }
         Vector3 ChateauA = new Vector3(12,1,12);
         Vector3 ChateauE = new Vector3(88,1,88);
-        Instantiate(ObjChateau, ChateauA, Quaternion.identity);
-        Instantiate(ObjChateau, ChateauE, Quaternion.identity);
+        Instantiate(ObjChateauA, ChateauA, Quaternion.identity);
+        Instantiate(ObjChateauE, ChateauE, Quaternion.identity);
         
     }
     #endregion
