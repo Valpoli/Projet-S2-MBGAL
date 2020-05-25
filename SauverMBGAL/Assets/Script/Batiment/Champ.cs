@@ -3,8 +3,9 @@ public class Champ : MonoBehaviour
 {
     public class champ : TypeBatiment
     {
-        private int vie = 10;
+        private int vie = 25;
         public const long prix = 10;
+        public bool Ally;
         public int Vie
         {
             get => vie;
@@ -19,4 +20,6 @@ public class Champ : MonoBehaviour
             type = champ.type;
         }
     }
+    
+    public int vie = 20;
 }

@@ -15,7 +15,12 @@ PrefabInstance:
     - target: {fileID: 94795240502115766, guid: a72cf50956a187042867bccb2dbb7df4,
         type: 3}
       propertyPath: m_TagString
-      value: Ennemi
+      value: Tour Ennemie
+      objectReference: {fileID: 0}
+    - target: {fileID: 114161335134200152, guid: a72cf50956a187042867bccb2dbb7df4,
+        type: 3}
+      propertyPath: Ally
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8793013318971463487, guid: a72cf50956a187042867bccb2dbb7df4,
         type: 3}

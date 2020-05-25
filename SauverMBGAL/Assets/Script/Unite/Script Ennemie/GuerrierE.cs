@@ -1,0 +1,175 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+public class GuerrierE : MonoBehaviour
+{
+    private int vie = 50;
+    private int dégat = 10;
+    public const int logement = 1;
+    public const long prixOr = 100;
+    public const long prixNouriture = 100;
+    private bool isKO = false;
+    public bool ally;
+    private bool selection = false;
+    private Vector3 NewPosition = Vector3.zero;
+    public int speed;
+    private bool click = false;
+
+
+
+
+    public int Vie
+    {
+        get => vie;
+        set => vie = value;
+    }
+
+    public int Dégat
+    {
+        get => dégat;
+        set => dégat = value;
+    }
+
+
+
+    public bool IsKO
+    {
+        get => isKO;
+        set => isKO = value;
+    }
+
+    
+
+
+    private void OnCollisionEnter(Collision other)
+    {
+        
+        
+        if (other.gameObject.tag == "Guerrier Allié")
+        {
+            Guerrier unité2 = other.gameObject.GetComponent<Guerrier>();
+            unité2.Vie -= dégat;
+            if (unité2.Vie <= 0)
+            {
+                Destroy(gameObject);
+            }
+
+        }
+        
+        if (other.gameObject.tag == "Archer")
+        {
+            Archer unité2 = other.gameObject.GetComponent<Archer>();
+            unité2.Vie -= dégat;
+            if (unité2.Vie <= 0)
+            {
+                Destroy(other.gameObject);
+            }
+            
+        }
+        if (other.gameObject.tag == "Ouvrier Allié")
+        {
+            Ouvrier unité2 = other.gameObject.GetComponent<Ouvrier>();
+            unité2.Vie -= dégat;
+            if (unité2.Vie <= 0)
+            {
+                Destroy(other.gameObject);
+            }
+        }
+        if (other.gameObject.tag == "Tour")
+        {
+            Tour unité2 = other.gameObject.GetComponent<Tour>();
+            unité2.vie -= dégat;
+            if (unité2.vie <= 0)
+            {
+                Destroy(other.gameObject);
+            }
+            
+        }
+        if (other.gameObject.tag == "Caserne")
+        {
+            Caserne unité2 = other.gameObject.GetComponent<Caserne>();
+            unité2.vie -= dégat;
+            if (unité2.vie <= 0)
+            {
+                Destroy(other.gameObject);
+            }
+        }
+        if (other.gameObject.tag == "Chateau")
+        {
+            ChateauGestion unité2 = other.gameObject.GetComponent<ChateauGestion>();
+            unité2.Vie -= dégat;
+            if (unité2.Vie <= 0)
+            {
+                Destroy(other.gameObject);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+        if (other.gameObject.tag == "Champ")
+        {
+            Champ unité2 = other.gameObject.GetComponent<Champ>();
+            unité2.vie -= dégat;
+            if (unité2.vie <= 0)
+            {
+                Destroy(other.gameObject);
+            }
+        }
+        if (other.gameObject.tag == "Maison")
+        {
+            Maison unité2 = other.gameObject.GetComponent<Maison>();
+            unité2.vie -= dégat;
+            if (unité2.vie <= 0)
+            {
+                Destroy(other.gameObject);
+            }
+        }
+    }
+
+
+
+    private void Update()
+    {
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Vie < 0)
+        {
+            Destroy(gameObject);
+        }
+
+        if (ally && selection)
+        {
+            if (Input.GetMouseButtonUp(1))
+            {
+                if (Physics.Raycast(ray, out hit))
+                {
+                    NewPosition = new Vector3(hit.point.x, (float) 0.5, hit.point.z);
+                    click = true;
+                }
+            }
+        }
+
+        if (NewPosition != Vector3.zero && click)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
+        }
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            
+
+            if (hit.collider.gameObject.tag == "Map")
+            {
+                if (Input.GetMouseButtonUp(0))
+                {
+                    selection = false;
+
+                }
+            }
+        }
+
+    }
+    private void OnMouseDown()
+    {
+        selection = true;
+    }
+}

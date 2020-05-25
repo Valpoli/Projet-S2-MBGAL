@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114009469914949488, guid: 880f0dcc186c00f4f94899c39a79ecd6,
+        type: 3}
+      propertyPath: Ally
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 939439529762590211, guid: 880f0dcc186c00f4f94899c39a79ecd6,
         type: 3}
       propertyPath: m_Name
@@ -15,7 +20,7 @@ PrefabInstance:
     - target: {fileID: 939439529762590211, guid: 880f0dcc186c00f4f94899c39a79ecd6,
         type: 3}
       propertyPath: m_TagString
-      value: Ennemi
+      value: Chateau Ennemie
       objectReference: {fileID: 0}
     - target: {fileID: 939439529762590215, guid: 880f0dcc186c00f4f94899c39a79ecd6,
         type: 3}

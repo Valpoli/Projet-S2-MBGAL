@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class HealthBar : MonoBehaviour
+public class HealthBar2 : MonoBehaviour
 {
     public Slider slider;
     private int Maxhealth = 200;
@@ -31,13 +29,13 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        GameObject chateau = GameObject.FindGameObjectWithTag("Chateau Allié");
+        GameObject chateau = GameObject.FindGameObjectWithTag("Chateau Ennemie");
         if (chateau != null)
         {
             ChateauGestion chateau2 = chateau.GetComponent<ChateauGestion>();
             SetHealth(chateau2.Vie);
         }
-        
 
     }
 }
+

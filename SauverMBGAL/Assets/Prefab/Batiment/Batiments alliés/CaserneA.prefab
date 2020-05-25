@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 114524153106937366}
   m_Layer: 0
   m_Name: CaserneA
-  m_TagString: "Alli\xE9"
+  m_TagString: Caserne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,12 +4,12 @@ public class Tour : MonoBehaviour
 {
     public class tour : TypeBatiment
     {
-        private int vie = 30;
+        private int vie = 60;
         private int tpsRecharge = 3;
         public const int degatTour = 30;
         public const long prix = 100;
         private bool target = false;
-        
+
 
         public int Vie
         {
@@ -25,6 +25,7 @@ public class Tour : MonoBehaviour
 
         public tour()
         {
+            
             type = BatimentType.TOUR;
         }
 
@@ -42,8 +43,13 @@ public class Tour : MonoBehaviour
     private bool attente = false;
     public GameObject LABALLE2;
     private Vector3 cible = Vector3.zero;
+    public bool Ally;
+    public int vie = 50;
     
-    
+
+
+
+
     public void AttackRange()
     {
         if (target != null)
@@ -52,19 +58,85 @@ public class Tour : MonoBehaviour
             Vector3 posArcher = gameObject.transform.position;
             if (range > Vector3.Distance(posCible, posArcher))
             {
-                if (target.tag == "Archer")
+                if (target.tag == "Archer Allié")
                 {
                     Archer guerrier = target.GetComponent<Archer>();
                     guerrier.Vie -= dégat;
                     LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
                     cible = posCible;
+                    if (guerrier.Vie < 0)
+                    {
+                        Destroy(target);
+                    }
+                }
+
+                if (target.tag == "Guerrier Allié")
+                {
+                    Guerrier guerrier = target.GetComponent<Guerrier>();
+                    guerrier.Vie -= dégat;
+                    LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
+                    cible = posCible;
+                    if (guerrier.Vie < 0)
+                    {
+                        Destroy(target);
+                    }
+                }
+
+                if (target.tag == "Ouvrier Allié")
+                {
+                    Ouvrier guerrier = target.GetComponent<Ouvrier>();
+                    guerrier.Vie -= dégat;
+                    LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
+                    cible = posCible;
+                    if (guerrier.Vie < 0)
+                    {
+                        Destroy(target);
+                    }
+                }
+
+                if (target.tag == "Guerrier Ennemie")
+                {
+                    GuerrierE unité2 = target.GetComponent<GuerrierE>();
+                    unité2.Vie -= dégat;
+                    LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
+                    cible = posCible;
+                    if (unité2.Vie < 0)
+                    {
+                        Destroy(target);
+                    }
+
+                }
+
+                if (target.tag == "Archer Ennemie")
+                {
+                    ArcherE unité2 = target.GetComponent<ArcherE>();
+                    unité2.Vie -= dégat;
+                    LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
+                    cible = posCible;
+                    if (unité2.Vie < 0)
+                    {
+                        Destroy(target);
+                    }
+
+                }
+
+                if (target.tag == "Ouvrier Ennemie")
+                {
+                    OuvrierE unité2 = target.GetComponent<OuvrierE>();
+                    unité2.Vie -= dégat;
+                    LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
+                    cible = posCible;
+                    if (unité2.Vie < 0)
+                    {
+                        Destroy(target);
+                    }
 
                 }
             }
+
         }
-        
     }
-    
+
     private void Start()
     {
         InvokeRepeating("UpdateTarget", 0f , 0.5f );
@@ -74,10 +146,21 @@ public class Tour : MonoBehaviour
 
     void UpdateTarget()
     {
-        GameObject[] enemiesarcher = GameObject.FindGameObjectsWithTag("Archer");
-        GameObject[] enemiesGuerrier = GameObject.FindGameObjectsWithTag("Guerrier Allié");
-        GameObject[] enemiesouvrier = GameObject.FindGameObjectsWithTag("Villageois Allié");
-        
+        GameObject[] enemiesarcher;
+        GameObject[] enemiesGuerrier;
+        GameObject[] enemiesouvrier;
+        if (Ally)
+        {
+            enemiesarcher = GameObject.FindGameObjectsWithTag("Archer Ennemie");
+            enemiesGuerrier = GameObject.FindGameObjectsWithTag("Guerrier Ennemie");
+            enemiesouvrier = GameObject.FindGameObjectsWithTag("Ouvrier Ennemie");
+        }
+        else
+        {
+            enemiesarcher = GameObject.FindGameObjectsWithTag("Archer");
+            enemiesGuerrier = GameObject.FindGameObjectsWithTag("Guerrier Allié");
+            enemiesouvrier = GameObject.FindGameObjectsWithTag("Ouvrier Allié");
+        }
         float minDist = Mathf.Infinity;
         GameObject enemy = null;
         foreach (GameObject Target in enemiesarcher)

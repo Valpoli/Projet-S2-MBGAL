@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 114009469914949488}
   m_Layer: 0
   m_Name: ChateauA
-  m_TagString: "Alli\xE9"
+  m_TagString: "Chateau Alli\xE9"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,3 +107,4 @@ MonoBehaviour:
   recolteor: 0
   recoltenourriture: 0
   joueur: {fileID: 4493937964718303297, guid: e30663a6f4ad68e44bfee4b6f6a696d4, type: 3}
+  Ally: 1

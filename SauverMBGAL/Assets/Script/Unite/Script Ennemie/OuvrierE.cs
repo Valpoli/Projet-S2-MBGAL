@@ -1,24 +1,23 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Guerrier : MonoBehaviour
+public class OuvrierE : MonoBehaviour
 {
-
-
-    private int vie = 50;
-    private int dégat = 20;
+    private int vie = 40;
+    private int dégat = 3;
     public const int logement = 1;
     public const long prixOr = 100;
     public const long prixNouriture = 100;
     private bool isKO = false;
     public bool ally;
     private bool selection = false;
-    private int range = 4;
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
     private bool click = false;
+    public int stockor = 0;
+    public int stocknourriture = 0;
+    private int dégatrecolte = 5;
 
 
 
@@ -34,38 +33,32 @@ public class Guerrier : MonoBehaviour
         get => dégat;
         set => dégat = value;
     }
-
-
-
     public bool IsKO
     {
         get => isKO;
         set => isKO = value;
     }
 
-    
-
 
     private void OnCollisionEnter(Collision other)
     {
         
-        Debug.Log(other.gameObject.name );
-        if (other.gameObject.name == "Soldat ennemie")
+        
+        if (other.gameObject.name == "arbre(Clone)")
         {
-            Guerrier unité2 = other.gameObject.GetComponent<Guerrier>();
-            unité2.Vie -= dégat;
-            if (unité2.Vie < 0)
-            {
-                Destroy(gameObject);
-            }
-
+            Arbre cible = other.gameObject.GetComponent<Arbre>();
+            cible.pv -= dégatrecolte;
+            stockor += dégatrecolte;
+            Debug.Log(stockor);
+            Debug.Log(cible.pv);
         }
+        
     }
-
-
 
     private void Update()
     {
+
+        
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Vie < 0)
@@ -84,13 +77,13 @@ public class Guerrier : MonoBehaviour
                 }
             }
         }
+        
 
         if (NewPosition != Vector3.zero && click)
         {
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
-
-        if (Physics.Raycast(ray, out hit, 100))
+        if (Physics.Raycast(ray, out hit, 100)) 
         {
             
 
@@ -99,17 +92,16 @@ public class Guerrier : MonoBehaviour
                 if (Input.GetMouseButtonUp(0))
                 {
                     selection = false;
-
+                    
                 }
             }
+            
         }
-
     }
+
     private void OnMouseDown()
     {
         selection = true;
     }
 
 }
-
-

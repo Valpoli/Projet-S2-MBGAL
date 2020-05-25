@@ -14,7 +14,6 @@ public class Ouvrier : MonoBehaviour
     private bool isKO = false;
     public bool ally;
     private bool selection = false;
-    private int range = 4;
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
     private bool click = false;
@@ -46,17 +45,6 @@ public class Ouvrier : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
 
-        if (other.gameObject.name == "Soldat ennemie")
-        {
-            Guerrier unité2 = other.gameObject.GetComponent<Guerrier>();
-            unité2.Vie -= dégat;
-            if (unité2.Vie < 0)
-            {
-                Destroy(gameObject);
-            }
-
-        }
-        
         if (other.gameObject.name == "arbre(Clone)")
         {
             Arbre cible = other.gameObject.GetComponent<Arbre>();

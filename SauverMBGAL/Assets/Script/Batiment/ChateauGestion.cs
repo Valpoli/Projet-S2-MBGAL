@@ -1,14 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChateauGestion : MonoBehaviour
 {
-    private int vie = 50;
+    private int vie = 200;
     public const int logement = 10;
     public const long prix = 100;
     public int recolteor = 0;
     public int recoltenourriture = 0;
-    public GameObject joueur; 
+    public GameObject joueur;
+    public bool Ally;
 
     public int Vie
     {
@@ -20,7 +22,7 @@ public class ChateauGestion : MonoBehaviour
     {
         if (recolteor != 0)
         {
-            Debug.Log("chateau or :" + recolteor);
+            
             GameObject clone = GameObject.FindGameObjectWithTag("Player");
             Game player = clone.GetComponent<Game>();
             player.argent += recolteor;
@@ -28,18 +30,14 @@ public class ChateauGestion : MonoBehaviour
         }
         if (recoltenourriture != 0)
         {
-            Debug.Log("chateau food :" + recoltenourriture);
+            
             GameObject clone = GameObject.FindGameObjectWithTag("Player");
             Game player = clone.GetComponent<Game>();
             player.nourriture += recoltenourriture;
             recoltenourriture = 0;
         }
 
-        if (Vie < 0)
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        
         
         
     }
@@ -48,7 +46,6 @@ public class ChateauGestion : MonoBehaviour
     {
         if (other.gameObject.tag == "Villageois Allié")
         {
-            Debug.Log("touché");
             Ouvrier ouvrier = other.gameObject.GetComponent<Ouvrier>();
             recolteor += ouvrier.stockor;
             recoltenourriture += ouvrier.stocknourriture;

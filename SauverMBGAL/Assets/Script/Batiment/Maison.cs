@@ -18,10 +18,11 @@ public class Maison : MonoBehaviour
         {
             type = BatimentType.MAISON;
         }
-
         public maison(maison house)
         {
             type = house.type;
         }
     }
+
+    public int vie = 50;
 }

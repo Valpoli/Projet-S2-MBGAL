@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 4945809883103381846, guid: 0c702d69f140db944870d8c495409f13,
         type: 3}
       propertyPath: m_TagString
-      value: Ennemi
+      value: Champ Ennemie
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c702d69f140db944870d8c495409f13, type: 3}
