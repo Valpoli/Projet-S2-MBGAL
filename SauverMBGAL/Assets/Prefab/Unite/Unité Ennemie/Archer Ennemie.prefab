@@ -106,10 +106,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5
+  range2: 10
   speed: 5
   ally: 0
   LABALLE2: {fileID: 6963235861096307273, guid: 57faf17c38c8c8f439ebf1e8e305f346,
     type: 3}
+  target: {fileID: 0}
 --- !u!54 &2709969987543301304
 Rigidbody:
   m_ObjectHideFlags: 0

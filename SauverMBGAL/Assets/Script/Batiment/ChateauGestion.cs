@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ChateauGestion : MonoBehaviour
 {
-    private int vie = 200;
+    private int vie = 500;
     public const int logement = 10;
     public const long prix = 100;
     public int recolteor = 0;
