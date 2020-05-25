@@ -8,6 +8,10 @@ public class DetruireBat : MonoBehaviour
         Game clonePartie = clone.GetComponent<Game>();
         if (clonePartie.needDestruction)
         {
+            if (gameObject.tag == "Maison")
+            {
+                clonePartie.logementTot -= Maison.maison.logement;
+            }
             Destroy(this.gameObject);
         }
     }

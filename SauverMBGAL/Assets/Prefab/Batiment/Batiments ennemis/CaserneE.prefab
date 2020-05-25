@@ -72,5 +72,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Caserne Ennemie
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114223263562722294, guid: e180ef572f2b1204bb37ec3d686e6bb4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e180ef572f2b1204bb37ec3d686e6bb4, type: 3}

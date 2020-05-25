@@ -294,9 +294,11 @@ public class Game : MonoBehaviour
             (24, 2), (22, 3), (23, 3), (24, 3), (24, 4), (24, 5), (24, 6), (12, 4), (13, 4), (12, 5), (13, 5), (0, 11),
             (0, 12), (0, 13), (1, 11), (1, 12), (1, 13), (0, 20), (0, 21), (0, 22), (0, 23), (0, 24), (1, 24), (2, 24),
             (3, 24), (4, 24), (11, 24), (12, 24), (13, 24), (11, 23), (12, 23), (13, 23), (21, 24), (22, 24), (23, 24),
-            (24, 24), (24, 23), (24, 22), (24, 21), (24, 20), (24, 19), (24, 18), (23, 18), (19, 11), (20, 11), (19, 12), (20, 12)
+            (24, 24), (24, 23), (24, 22), (24, 21), (24, 20), (24, 19), (24, 18), (23, 18), (19, 11), (20, 11),
+            (19, 12), (20, 12), (1, 23), (2, 23), (1, 22), (2, 22), (19, 1), (20, 1), (19, 2), (20, 2), (22, 4),
+            (23, 4), (22, 5), (23, 5)
         };
-        int nbArb = listArb.Length;
+            int nbArb = listArb.Length;
         for (int i = 0; i < nbArb; i++)
         {
             (x, y) = listArb[i];
@@ -337,18 +339,7 @@ public class Game : MonoBehaviour
             map.matrix[x, y] = new Case(Case.Biome.MER);
             Instantiate(Mer, Construction.posSurlaMap(x, y), Quaternion.identity);
         }
-
-        (int, int)[] listMine =
-        {
-            (1, 23), (2, 23), (1, 22), (2, 22), (19, 1), (20, 1), (19, 2), (20, 2), (22, 4), (23, 4), (22, 5), (23, 5)
-        };
-        int nbMine = listMine.Length;
-        for (int j = 0; j < nbMine; j++)
-        {
-            (x, y) = listMine[j];
-            map.matrix[x, y] = new Case(Case.Biome.MINE);
-            Instantiate(Mine, Construction.posSurlaMap(x, y), Quaternion.identity);
-        }
+        
         
         (int, int)[] listChateau =
         {

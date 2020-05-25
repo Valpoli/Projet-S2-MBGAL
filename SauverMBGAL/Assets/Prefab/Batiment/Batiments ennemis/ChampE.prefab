@@ -7,6 +7,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114530871416130384, guid: 0c702d69f140db944870d8c495409f13,
+        type: 3}
+      propertyPath: ouvrierType
+      value: 
+      objectReference: {fileID: 4320110273958029670, guid: 86e7ebc22257b204f8711502a34b389c,
+        type: 3}
     - target: {fileID: 2872094348945652677, guid: 0c702d69f140db944870d8c495409f13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -72,5 +78,7 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Champ Ennemie
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114530871416130384, guid: 0c702d69f140db944870d8c495409f13, type: 3}
+    - {fileID: 114256171229771498, guid: 0c702d69f140db944870d8c495409f13, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c702d69f140db944870d8c495409f13, type: 3}

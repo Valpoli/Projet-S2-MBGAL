@@ -53,6 +53,14 @@ public class Ouvrier : MonoBehaviour
             Debug.Log(stockor);
             Debug.Log(cible.pv);
         }
+        if (other.gameObject.CompareTag("Chateau Allié"))
+        {
+            Game clonePartie = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+            clonePartie.nourriture += stocknourriture;
+            stocknourriture = 0;
+            clonePartie.argent += stockor;
+            stockor = 0;
+        }
         
     }
 

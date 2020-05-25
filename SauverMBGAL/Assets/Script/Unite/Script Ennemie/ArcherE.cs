@@ -12,7 +12,7 @@ public class ArcherE : MonoBehaviour
     public const long prixNouriture = 100;
     private bool isKO = false;
     public int range;
-    private int range2 = 40;
+    private int range2 = 60;
     private bool selection = false;
     public int speed;
     private Vector3 NewPosition = Vector3.zero;
@@ -25,10 +25,8 @@ public class ArcherE : MonoBehaviour
     private Vector3 cible;
     private bool posA = true;
     private bool posB = false;
+    private bool enAttaque = false;
     
-    private bool dejaBouge;
-
-    private Vector3 posDepart;
 
     public bool Selection
     {
@@ -54,10 +52,7 @@ public class ArcherE : MonoBehaviour
         set => isKO = value;
     }
 
-
-
     
-
 
     public void AttackRange()
     {
@@ -315,27 +310,33 @@ public class ArcherE : MonoBehaviour
     }
 
 
-
-        
-
-    
     private void Update()
     {
-        if (transform.position == new Vector3(50 , 1 , 50))
+        Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+        if (cloneBot.Charger)
         {
-            posA = false;
-        }
-        LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, cible, 50 * Time.deltaTime);
-        if (posA)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(50, 1 , 50), 5 * Time.deltaTime);
+            enAttaque = true;
         }
 
-        if (posB)
+        if (enAttaque)
         {
-            transform.position = Vector3.MoveTowards(transform.position, NewPosition, 5 * Time.deltaTime);
-        }
+            if (transform.position == new Vector3(50, 1, 50))
+            {
+                posA = false;
+            }
 
+            LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, cible, 50 * Time.deltaTime);
+            if (posA)
+            {
+                transform.position =
+                    Vector3.MoveTowards(transform.position, new Vector3(50, 1, 50), 5 * Time.deltaTime);
+            }
+
+            if (posB)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, NewPosition, 5 * Time.deltaTime);
+            }
+        }
     }
     private void Start()
     {

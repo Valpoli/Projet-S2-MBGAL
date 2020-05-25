@@ -72,5 +72,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Maison Ennemie
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114851204479354860, guid: 49fdf2e1441257246a89db9f3220de50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 49fdf2e1441257246a89db9f3220de50, type: 3}
