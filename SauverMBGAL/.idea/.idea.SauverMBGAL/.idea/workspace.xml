@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" afterDir="false" />
     </list>
@@ -95,15 +95,15 @@
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
       </list>
     </option>
   </component>
@@ -181,7 +181,7 @@
       <workItem from="1590403414886" duration="3166000" />
       <workItem from="1590407669289" duration="394000" />
       <workItem from="1590408124123" duration="413000" />
-      <workItem from="1590408636502" duration="6624000" />
+      <workItem from="1590408636502" duration="10093000" />
     </task>
     <servers />
   </component>

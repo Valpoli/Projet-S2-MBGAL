@@ -105,8 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 934dbc2602113b149ba09930520baa2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
-  range2: 10
+  range: 8
   speed: 5
   ally: 0
   LABALLE2: {fileID: 6963235861096307273, guid: 57faf17c38c8c8f439ebf1e8e305f346,
