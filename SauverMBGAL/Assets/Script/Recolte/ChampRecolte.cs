@@ -27,7 +27,8 @@ public class ChampRecolte : MonoBehaviour
         {
             if (recoltable)
             {
-                Ouvrier cloneOuvrier = other.gameObject.GetComponent<Ouvrier>();
+                
+                Ouvrier cloneOuvrier = gameObject.GetComponent<Ouvrier>();
                 cloneOuvrier.stocknourriture += rendement;
                 rend.material.mainTexture = champVide;
                 recoltable = false;

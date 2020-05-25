@@ -478,6 +478,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1302989029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302989032}
+  - component: {fileID: 1302989031}
+  - component: {fileID: 1302989030}
+  m_Layer: 0
+  m_Name: Bot
+  m_TagString: Bot
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1302989030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302989029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac872d745dd7e7e439c168c7c2476319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clonePlayer: {fileID: 1119133343}
+  MaisonE: {fileID: 0}
+  CaserneE: {fileID: 0}
+  TourE: {fileID: 0}
+  ChampE: {fileID: 0}
+  GuerrierE: {fileID: 0}
+  ArcherE: {fileID: 0}
+  OuvrierE: {fileID: 4320110273958029670, guid: 86e7ebc22257b204f8711502a34b389c,
+    type: 3}
+  emplacementLibreSoldat: 
+  emplacementLibreOuvrier: 
+  emplacementLibreMetC: 
+  emplacementLibreTour: 
+  emplacementLibreChamp: 
+--- !u!114 &1302989031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302989029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5051168fbb9ca084592b8a3c752730b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  EnAction: 0
+  logementTot: 2000
+  popAct: 0
+  argent: 50000
+  nourriture: 50000
+  nbOuvrier: 0
+  nbBoisDetruit: 0
+  guerrier: []
+  archers: []
+--- !u!4 &1302989032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302989029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 92.28709, y: 17.997198, z: 85.992676}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1642412072
 GameObject:
   m_ObjectHideFlags: 0

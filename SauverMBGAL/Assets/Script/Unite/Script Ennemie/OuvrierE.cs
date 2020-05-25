@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,16 +12,17 @@ public class OuvrierE : MonoBehaviour
     public const long prixNouriture = 100;
     private bool isKO = false;
     public bool ally;
-    private bool selection = false;
     private Vector3 NewPosition = Vector3.zero;
-    public int speed;
-    private bool click = false;
+    public int speed = 1;
     public int stockor = 0;
     public int stocknourriture = 0;
     private int dégatrecolte = 5;
 
-
-
+    /// pour le bot
+    public bool enAction = false;
+    
+    public Vector3 posChateau = new Vector3(88, (float) 0.5, 88);
+    private Vector3 dest = new Vector3(0, 0, 0);
 
     public int Vie
     {
@@ -33,6 +35,7 @@ public class OuvrierE : MonoBehaviour
         get => dégat;
         set => dégat = value;
     }
+
     public bool IsKO
     {
         get => isKO;
@@ -42,66 +45,56 @@ public class OuvrierE : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        
-        
         if (other.gameObject.name == "arbre(Clone)")
         {
             Arbre cible = other.gameObject.GetComponent<Arbre>();
             cible.pv -= dégatrecolte;
             stockor += dégatrecolte;
-            Debug.Log(stockor);
-            Debug.Log(cible.pv);
+            dest = posChateau;
         }
-        
+
+        if (other.gameObject.name == "ChateauE(Clone)")
+        {
+            ouvrierEnAction();
+        }
+    }
+
+    private void Start()
+    {
+        ouvrierEnAction();
     }
 
     private void Update()
     {
-
-        
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
         if (Vie < 0)
         {
             Destroy(gameObject);
         }
-
-        if (ally && selection)
+        Game clonePartie = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+        if (clonePartie.map.matrix[Construction.posDansMatrice(dest).Item1, Construction.posDansMatrice(dest).Item2]
+                .GetBiome == Case.Biome.PLAINE && dest != posChateau)
         {
-            if (Input.GetMouseButtonUp(1))
-            {
-                if (Physics.Raycast(ray, out hit))
-                {
-                    NewPosition = new Vector3(hit.point.x, (float) 0.5, hit.point.z);
-                    click = true;
-                }
-            }
+            ouvrierEnAction();
         }
-        
+        transform.position = Vector3.MoveTowards(transform.position, dest, speed * Time.deltaTime);
 
-        if (NewPosition != Vector3.zero && click)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
-        }
-        if (Physics.Raycast(ray, out hit, 100)) 
-        {
-            
-
-            if (hit.collider.gameObject.tag == "Map")
-            {
-                if (Input.GetMouseButtonUp(0))
-                {
-                    selection = false;
-                    
-                }
-            }
-            
-        }
     }
 
-    private void OnMouseDown()
+    public void ouvrierEnAction()
     {
-        selection = true;
+        GameObject[] listArbres;
+        listArbres = GameObject.FindGameObjectsWithTag("Arbre");
+        float minDist = Mathf.Infinity;
+        GameObject arbreVise = null;
+        foreach (GameObject Target in listArbres)
+        {
+            float distance = Vector3.Distance(transform.position, Target.transform.position);
+            if (distance < minDist)
+            {
+                minDist = distance;
+                arbreVise = Target;
+            }
+        }
+        dest = arbreVise.transform.position;
     }
-
 }

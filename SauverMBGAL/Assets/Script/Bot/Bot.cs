@@ -15,7 +15,6 @@ public class Bot : MonoBehaviour
     public long nourriture;
     public int nbOuvrier;
     public int nbBoisDetruit;
-    public List<(GameObject,bool)> ouvriers = new List<(GameObject, bool)>();
     public List<GameObject> guerrier;
     public List<GameObject> archers;
     
@@ -27,15 +26,15 @@ public class Bot : MonoBehaviour
      }
 
      private void Update()
-    {
-        if (!EnAction)
-        { 
-            Debug.Log("hophop");
-            EnAction = true;
-            BotManager();
-        }
-    }
-     
+     {
+         if (!EnAction)
+         {
+             Debug.Log("hophop");
+             EnAction = true;
+             BotManager();
+         }
+     }
+
      IEnumerator Pause()
      {
          yield return new WaitForSeconds(3);
@@ -45,12 +44,17 @@ public class Bot : MonoBehaviour
     public void BotManager()
     {
         ConstructionBot cloneConstr = gameObject.GetComponent<ConstructionBot>();
-        if (nbOuvrier <= 4)
+        if (nbOuvrier < 5)
         {
-            GameObject unit = cloneConstr.Instancier("Ouvrier",new Vector3(75,(float) 0.5,75)).Item2;
+            int place = cloneConstr.CheckPos("Ouvrier");
+            Debug.Log(place);
+            Debug.Log(nbOuvrier);
+            Debug.Log(cloneConstr.emplacementLibreOuvrier[place]);
+            cloneConstr.emplacementLibreOuvrier[place] = true;
+            Vector3 posi = new Vector3((float)cloneConstr.pointSpawnOuvrier[place].Item1,(float)0.5,(float)cloneConstr.pointSpawnOuvrier[place].Item2);
+            GameObject unit = cloneConstr.Instancier("Ouvrier",posi).Item2;
             if (unit != null)
             {
-                ouvriers.Add((unit,false));
                 nbOuvrier += 1;
             }
         }

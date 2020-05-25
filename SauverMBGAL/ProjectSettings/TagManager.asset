@@ -20,6 +20,11 @@ TagManager:
   - "Alli\xE9"
   - Ennemi
   - HUD
+  - "Ouvrier Alli\xE9"
+  - "Chateau Alli\xE9"
+  - Chateau Ennemie
+  - Bot
+  - Ouvrier Ennemie
   layers:
   - Default
   - TransparentFX
