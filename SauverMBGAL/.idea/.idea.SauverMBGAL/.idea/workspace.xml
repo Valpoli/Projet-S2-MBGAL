@@ -2,64 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Caserne.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Caserne.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Champ.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Champ.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Chateau.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Chateau.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Enclos.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Enclos.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Maison.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Maison.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Tour.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Tour.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Directional Light.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Directional Light.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/Canvas 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/Canvas 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/Canvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/Canvas.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/EventSystem.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/EventSystem.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Main Camera.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Main Camera.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Sol.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Sol.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/AfficheErreur 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/AfficheErreur 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/AfficheErreur.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Texte/AfficheErreur.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/AfficheErreur.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Texte/AfficheErreur.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/piou.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/piou.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/minimap.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/minimap.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Chateau.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Chateau.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/DetruireBat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/DetruireBat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/TypeBatiment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/TypeBatiment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Bot/Bot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bot/Bot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Carte/Case.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Carte/Case.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Carte/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Carte/Map.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Construction/Construction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Construction/Construction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Message/AfficheMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Message/AfficheMessage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Bot/ConstructionBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bot/ConstructionBot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,8 +90,8 @@
         <option value="$PROJECT_DIR$/Assets/Script/Unite/PosDepart.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Bot/Bot.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bot/ConstructionBot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Bot/Bot.cs" />
       </list>
     </option>
   </component>
@@ -215,7 +160,7 @@
       <workItem from="1590151938976" duration="250000" />
       <workItem from="1590223219617" duration="3345000" />
       <workItem from="1590238708254" duration="2436000" />
-      <workItem from="1590257378841" duration="25806000" />
+      <workItem from="1590257378841" duration="36055000" />
     </task>
     <servers />
   </component>

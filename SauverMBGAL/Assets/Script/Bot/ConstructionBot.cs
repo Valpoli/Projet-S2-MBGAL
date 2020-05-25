@@ -18,6 +18,12 @@ public class ConstructionBot : MonoBehaviour
     public List<bool> emplacementLibreOuvrier;
     public List<(int,int)> pointSpawnMetC;
     public List<bool> emplacementLibreMetC;
+    public List<(int,int)> pointSpawnTour;
+    public List<bool> emplacementLibreTour;
+    public List<(int,int)> pointSpawnChamp;
+    public List<bool> emplacementLibreChamp;
+    public List<(double,double)> pointDeplacementArmee;
+    public List<(int,int)> listArbre;
 
     private void Start()
     {
@@ -26,7 +32,12 @@ public class ConstructionBot : MonoBehaviour
         pointSpawnOuvrier = new List<(double,double)>{(93.5,85),(93.5,88),(93.5,91),(95,86.5),(95,89.5)};
         emplacementLibreOuvrier = new List<bool>{false,false,false,false,false};
         pointSpawnMetC = new List<(int,int)>{(19,21),(19,20),(19,19),(18,21),(18,20),(18,19),(17,21),(17,20),(17,19),(16,21),(16,20),(16,19),(15,21),(15,20),(15,19),(14,21),(14,20),(14,19)};
-        emplacementLibreMetC = new List<bool>{false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false};
+        emplacementLibreMetC = new List<bool>{false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}; 
+        pointSpawnTour = new List<(int, int)>{(20,18),(20,23)}; 
+        emplacementLibreTour = new List<bool>{false,false}; 
+        pointSpawnChamp = new List<(int, int)>{(23,21),(23,22),(23,23),(22,23),(21,23)}; 
+        emplacementLibreChamp = new List<bool>{false,false,false,false,false};
+        listArbre = new List<(int, int)>{(23,18),(24,21),(24,20),(24,22),(24,18),(24,19),(23,24),(23,24),(22,24),(21,24),(24,24)};
     }
     
     public int CheckPos(string element)
@@ -35,7 +46,21 @@ public class ConstructionBot : MonoBehaviour
         bool trouve = false;
         if (element == "Guerrier")
         {
-            while (res < 9 && !trouve)
+            while (res < emplacementLibreSoldat.Count && !trouve)
+            {
+                if (emplacementLibreSoldat[res])
+                {
+                    res += 1;
+                }
+                else
+                {
+                    trouve = true;
+                }
+            }
+        }
+        if (element == "Archer")
+        {
+            while (res < emplacementLibreSoldat.Count && !trouve)
             {
                 if (emplacementLibreSoldat[res])
                 {
@@ -49,7 +74,7 @@ public class ConstructionBot : MonoBehaviour
         }
         if (element == "Ouvrier")
         {
-            while (res < 5 && !trouve)
+            while (res < emplacementLibreOuvrier.Count && !trouve)
             {
                 if (emplacementLibreOuvrier[res])
                 {
@@ -63,9 +88,37 @@ public class ConstructionBot : MonoBehaviour
         }
         if (element == "MetC")
         {
-            while (res < 18 && !trouve)
+            while (res < emplacementLibreMetC.Count && !trouve)
             {
-                if (emplacementLibreOuvrier[res])
+                if (emplacementLibreMetC[res])
+                {
+                    res += 1;
+                }
+                else
+                {
+                    trouve = true;
+                }
+            }
+        }
+        if (element == "Tour")
+        {
+            while (res < emplacementLibreTour.Count && !trouve)
+            {
+                if (emplacementLibreTour[res])
+                {
+                    res += 1;
+                }
+                else
+                {
+                    trouve = true;
+                }
+            }
+        }
+        if (element == "Champ")
+        {
+            while (res < emplacementLibreChamp.Count && !trouve)
+            {
+                if (emplacementLibreChamp[res])
                 {
                     res += 1;
                 }
@@ -154,9 +207,10 @@ public class ConstructionBot : MonoBehaviour
         return res;
     }
 
-    public bool Instancier(string unite, Vector3 endroit)
+    public (bool,GameObject) Instancier(string unite, Vector3 endroit)
     {
         bool res = true;
+        GameObject perso = null;
         Bot cloneBot = gameObject.GetComponent<Bot>();
         if (CheckPopmax(cloneBot.logementTot))
         {
@@ -166,7 +220,7 @@ public class ConstructionBot : MonoBehaviour
                 {
                     cloneBot.argent -= Guerrier.prixOr;
                     cloneBot.nourriture -= Guerrier.prixNouriture;
-                    Instantiate(GuerrierE, endroit, Quaternion.identity);
+                    perso = Instantiate(GuerrierE, endroit, Quaternion.identity);
                 }
                 else
                 {
@@ -179,7 +233,7 @@ public class ConstructionBot : MonoBehaviour
                 {
                     cloneBot.argent -= Archer.prixOr;
                     cloneBot.nourriture -= Archer.prixNouriture;
-                    Instantiate(ArcherE, endroit, Quaternion.identity);
+                    perso = Instantiate(ArcherE, endroit, Quaternion.identity);
                 }
                 else
                 {
@@ -192,7 +246,7 @@ public class ConstructionBot : MonoBehaviour
                 {
                     cloneBot.argent -= Ouvrier.prixOr;
                     cloneBot.nourriture -= Ouvrier.prixNouriture;
-                    Instantiate(OuvrierE, endroit, Quaternion.identity);
+                    perso = Instantiate(OuvrierE, endroit, Quaternion.identity);
                 }
                 else
                 {
@@ -204,7 +258,7 @@ public class ConstructionBot : MonoBehaviour
         {
             res = false;
         }
-        return res;
+        return (res,perso);
     }
 
     #endregion
