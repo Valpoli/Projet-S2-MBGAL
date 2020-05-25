@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 1892694352016012388}
   - component: {fileID: 5879791105992634122}
   - component: {fileID: 54410572138765208}
+  - component: {fileID: 114161335134200152}
   - component: {fileID: 114033271217940860}
-  - component: {fileID: 114204947949362440}
   m_Layer: 0
   m_Name: TourA
-  m_TagString: "Alli\xE9"
+  m_TagString: Tour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,19 +110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &114033271217940860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 94795240502115766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1b9d15bf5aec1a4996cadfbaeeba9c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114204947949362440
+--- !u!114 &114161335134200152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,6 +123,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 10
+  range: 5
   LABALLE2: {fileID: 6963235861096307273, guid: 57faf17c38c8c8f439ebf1e8e305f346,
     type: 3}
+  Ally: 1
+--- !u!114 &114033271217940860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94795240502115766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b9d15bf5aec1a4996cadfbaeeba9c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

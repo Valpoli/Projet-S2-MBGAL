@@ -1,10 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
+
 public class Caserne : MonoBehaviour
 {
     public class caserne : TypeBatiment
     {
-        private int vie = 20;
+        private int vie = 50;
         public const long prix = 300;
+        public bool Ally;
         public int Vie
         {
             get => vie;
@@ -20,4 +24,6 @@ public class Caserne : MonoBehaviour
             type = caserne.type;
         }
     }
+
+    public int vie = 50;
 }
