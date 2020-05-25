@@ -106,11 +106,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ally: 0
-  speed: 20
+  speed: 5
   stockor: 0
   stocknourriture: 0
   enAction: 0
-  dest: {x: 88, y: 0.5, z: 88}
   posChateau: {x: 88, y: 0.5, z: 88}
 --- !u!54 &3916008377848673209
 Rigidbody:

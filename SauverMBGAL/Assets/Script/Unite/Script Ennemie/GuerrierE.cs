@@ -18,6 +18,7 @@ public class GuerrierE : MonoBehaviour
     private bool click = false;
     private GameObject target;
     public int range = 40;
+    private bool posA = true;
 
 
 
@@ -257,11 +258,20 @@ public class GuerrierE : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(NewPosition);
+        if (transform.position == new Vector3(50 , 1 , 50))
+        {
+            posA = false;
+        }
         if (range > Vector3.Distance(transform.position, NewPosition))
         {
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
+
+        if (posA)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(50, 1 , 50), 5 * Time.deltaTime);
+        }
+        
 
 
     }

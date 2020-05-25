@@ -23,8 +23,9 @@ public class ArcherE : MonoBehaviour
     private Vector3 posEnnemy = Vector3.zero;
     public GameObject target;
     private Vector3 cible;
-
-    /// pour position de départ
+    private bool posA = true;
+    private bool posB = false;
+    
     private bool dejaBouge;
 
     private Vector3 posDepart;
@@ -201,6 +202,7 @@ public class ArcherE : MonoBehaviour
             {
                 minDist = distance;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
                 enemy = Target;
             }
               
@@ -213,6 +215,7 @@ public class ArcherE : MonoBehaviour
                 minDist = distance;
                 enemy = Target;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
             }
               
         }
@@ -224,6 +227,7 @@ public class ArcherE : MonoBehaviour
                 minDist = distance;
                 enemy = Target;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
             }
               
         }
@@ -235,6 +239,7 @@ public class ArcherE : MonoBehaviour
                 minDist = distance;
                 enemy = Target;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
             }
               
         }
@@ -246,6 +251,7 @@ public class ArcherE : MonoBehaviour
                 minDist = distance;
                 enemy = Target;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
             }
               
         }
@@ -257,6 +263,7 @@ public class ArcherE : MonoBehaviour
                 minDist = distance;
                 enemy = Target;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
             }
               
         }
@@ -269,6 +276,7 @@ public class ArcherE : MonoBehaviour
                 minDist = distance;
                 enemy = Target;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
             }
         }
 
@@ -280,22 +288,27 @@ public class ArcherE : MonoBehaviour
                 minDist = distance;
                 enemy = Target;
                 pos = Target.transform.position;
+                NewPosition = Target.transform.position;
             }
               
         }
-              
-        if (enemy != null && minDist <= range2)
+        bool x;
+        if (enemy != null && minDist <= range)
         {
             target = enemy;
+            posB = false;
+            x = false;
+
         }
         else
         {
-            if (range2 > Vector3.Distance(transform.position, pos) )
-            {
-                transform.position = Vector3.MoveTowards(transform.position, pos ,   50 * Time.deltaTime);
-            }
-
             target = null;
+            x = true;
+        }
+
+        if (range2 > Vector3.Distance(transform.position, pos) && x)
+        {
+            posB = true;
         }
         
               
@@ -308,13 +321,26 @@ public class ArcherE : MonoBehaviour
     
     private void Update()
     {
+        if (transform.position == new Vector3(50 , 1 , 50))
+        {
+            posA = false;
+        }
         LABALLE2.transform.position = Vector3.MoveTowards(LABALLE2.transform.position, cible, 50 * Time.deltaTime);
+        if (posA)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(50, 1 , 50), 5 * Time.deltaTime);
+        }
+
+        if (posB)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, NewPosition, 5 * Time.deltaTime);
+        }
+
     }
     private void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
         InvokeRepeating("AttackRange", 0f, 1f);
-
     }
     
 }
