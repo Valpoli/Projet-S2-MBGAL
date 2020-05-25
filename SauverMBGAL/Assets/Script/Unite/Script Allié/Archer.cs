@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Archer : MonoBehaviour
 {
-    private int vie = 50;
+    private int vie = 75;
     private int dégat = 5;
     public const int logement = 1;
     public const long prixOr = 100;

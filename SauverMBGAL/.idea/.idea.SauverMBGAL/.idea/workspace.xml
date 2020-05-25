@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/CaserneA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/CaserneA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChampA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChampA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChateauA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChateauA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/MaisonA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/MaisonA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/TourA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/TourA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/CaserneE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/CaserneE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChampE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChampE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChateauE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChateauE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/MaisonE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/MaisonE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/TourE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/TourE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Archer.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Archer.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Guerrier.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Guerrier.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Soldat ennemie.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Soldat ennemie.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/villageois.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/villageois.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Carte/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Carte/HealthBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/TypeUnité.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/balle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/balle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,15 +95,15 @@
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar2.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" />
       </list>
     </option>
   </component>
@@ -210,6 +181,7 @@
       <workItem from="1590403414886" duration="3166000" />
       <workItem from="1590407669289" duration="394000" />
       <workItem from="1590408124123" duration="413000" />
+      <workItem from="1590408636502" duration="6624000" />
     </task>
     <servers />
   </component>
@@ -219,6 +191,10 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="WindowStateProjectService">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1590411549165">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1590411549165" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590241153021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

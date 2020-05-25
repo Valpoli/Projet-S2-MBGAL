@@ -44,7 +44,7 @@ public class Tour : MonoBehaviour
     public GameObject LABALLE2;
     private Vector3 cible = Vector3.zero;
     public bool Ally;
-    public int vie = 50;
+    public int vie = 200;
     
 
 
