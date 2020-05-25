@@ -534,7 +534,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5051168fbb9ca084592b8a3c752730b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   EnAction: 0
   logementTot: 2000
   popAct: 0
@@ -542,8 +541,9 @@ MonoBehaviour:
   nourriture: 50000
   nbOuvrier: 0
   nbBoisDetruit: 0
-  guerrier: []
-  archers: []
+  needNourriture: 0
+  needArgent: 0
+  needPopmax: 0
 --- !u!4 &1302989032
 Transform:
   m_ObjectHideFlags: 0
@@ -1339,7 +1339,7 @@ PrefabInstance:
     - target: {fileID: 7349049440940314529, guid: 3f4c75605958b6a41ac4516bfe49e8f3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 7349049440940314529, guid: 3f4c75605958b6a41ac4516bfe49e8f3,
         type: 3}
@@ -1349,7 +1349,7 @@ PrefabInstance:
     - target: {fileID: 7349049440940314529, guid: 3f4c75605958b6a41ac4516bfe49e8f3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 7349049440940314529, guid: 3f4c75605958b6a41ac4516bfe49e8f3,
         type: 3}

@@ -29,8 +29,8 @@ public class ConstructionBot : MonoBehaviour
     {
         pointSpawnSoldat = new List<(int,int)>{(85,83),(88,83),(91,83),(85,80),(88,80),(91,80),(85,77),(88,77),(91,77)};
         emplacementLibreSoldat = new List<bool>{false,false,false,false,false,false,false,false,false};
-        pointSpawnOuvrier = new List<(double,double)>{(93.5,85),(93.5,88),(93.5,91),(95,86.5),(95,89.5)};
-        emplacementLibreOuvrier = new List<bool>{false,false,false,false,false};
+        pointSpawnOuvrier = new List<(double,double)>{(93.5,85),(93.5,88),(93.5,91)};
+        emplacementLibreOuvrier = new List<bool>{false,false,false};
         pointSpawnMetC = new List<(int,int)>{(19,21),(19,20),(19,19),(18,21),(18,20),(18,19),(17,21),(17,20),(17,19),(16,21),(16,20),(16,19),(15,21),(15,20),(15,19),(14,21),(14,20),(14,19)};
         emplacementLibreMetC = new List<bool>{false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}; 
         pointSpawnTour = new List<(int, int)>{(20,18),(20,23)}; 
