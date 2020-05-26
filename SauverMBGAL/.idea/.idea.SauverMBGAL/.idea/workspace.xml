@@ -3,41 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/inutile.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/inutile/Enclos.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/inutile/Enclos.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/EventSystem.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/EventSystem.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/HUD22.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/HUD22.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur/inutile.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur/inutile/Main Camera.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur/inutile/Main Camera.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/inutile.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/inutile/AfficheErreur2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/inutile/AfficheErreur2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/peut etre inutile.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/peut etre inutile/Directional Light.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/peut etre inutile/Directional Light.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene Principale.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene Principale.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scene test.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scene test/Scene3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scene test/Scene3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,13 +98,13 @@
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/camMinimap.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" />
       </list>
     </option>
   </component>
@@ -217,7 +183,7 @@
       <workItem from="1590407669289" duration="394000" />
       <workItem from="1590408124123" duration="413000" />
       <workItem from="1590408636502" duration="10093000" />
-      <workItem from="1590489865861" duration="3048000" />
+      <workItem from="1590489865861" duration="3833000" />
     </task>
     <servers />
   </component>
