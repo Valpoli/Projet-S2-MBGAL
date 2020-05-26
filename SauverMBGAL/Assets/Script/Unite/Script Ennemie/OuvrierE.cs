@@ -66,18 +66,24 @@ public class OuvrierE : MonoBehaviour
 
     private void Update()
     {
+        Bot cloneBot= GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
         if (Vie < 0)
         {
+            cloneBot.popAct -= 1;
             Destroy(gameObject);
         }
+        
         Game clonePartie = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
         if (clonePartie.map.matrix[Construction.posDansMatrice(dest).Item1, Construction.posDansMatrice(dest).Item2]
-                .GetBiome == Case.Biome.PLAINE && dest != posChateau)
+            .GetBiome == Case.Biome.PLAINE && dest != posChateau)
         {
             ouvrierEnAction();
         }
         transform.position = Vector3.MoveTowards(transform.position, dest, speed * Time.deltaTime);
-
+        if (cloneBot.needNourriture)
+        {
+            cloneBot.nourriture += 2;
+        }
     }
 
     public void ouvrierEnAction()

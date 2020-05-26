@@ -18,6 +18,9 @@ public class Guerrier : MonoBehaviour
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
     private bool click = false;
+    /// pour position de départ
+    private bool dejaBouge;
+    private Vector3 posDepart;
 
 
 
@@ -131,15 +134,44 @@ public class Guerrier : MonoBehaviour
             }
         }
     }
+    
+    public int reactPositionnement(float x, float z, List<(int, int)> list)
+    {
+        int res = 0;
+        bool pasTrouve = true;
+        while (res < 9 && pasTrouve)
+        {
+            if ((float) list[res].Item1 == x && (float) list[res].Item2 == z)
+            {
+                pasTrouve = false;
+            }
+            else
+            {
+                res += 1;
+            }
+        }
 
+        return res;
+    }
 
-
+    private void Start()
+    {
+        dejaBouge = false;
+        posDepart = gameObject.transform.position;
+    }
     private void Update()
     {
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Vie < 0)
         {
+            if (!dejaBouge)
+            {
+                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
+                cloneBoutons.emplacementLibre[pos] = false;
+            }
             Destroy(gameObject);
         }
 
@@ -157,6 +189,14 @@ public class Guerrier : MonoBehaviour
 
         if (NewPosition != Vector3.zero && click)
         {
+            if (!dejaBouge)
+            {
+                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
+                cloneBoutons.emplacementLibre[pos] = false;
+                dejaBouge = true;
+            }
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
 

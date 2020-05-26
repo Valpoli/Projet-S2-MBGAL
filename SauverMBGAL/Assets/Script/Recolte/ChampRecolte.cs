@@ -11,7 +11,6 @@ public class ChampRecolte : MonoBehaviour
     private bool recoltable = false;
     private int tpsDePousse = 5;
     private int rendement = 200;
-    private bool enCours = false;
     private Renderer rend;
     // Start is called before the first frame update
     void Start()
@@ -27,8 +26,7 @@ public class ChampRecolte : MonoBehaviour
         {
             if (recoltable)
             {
-                
-                Ouvrier cloneOuvrier = gameObject.GetComponent<Ouvrier>();
+                Ouvrier cloneOuvrier = other.gameObject.GetComponent<Ouvrier>();
                 cloneOuvrier.stocknourriture += rendement;
                 rend.material.mainTexture = champVide;
                 recoltable = false;
@@ -38,10 +36,8 @@ public class ChampRecolte : MonoBehaviour
     }
     IEnumerator ChampPousse()
     {
-        enCours = true;
         yield return new WaitForSeconds(tpsDePousse);
         recoltable = true;
-        enCours = false;
         rend.material.mainTexture = champPlein;
     }
 }

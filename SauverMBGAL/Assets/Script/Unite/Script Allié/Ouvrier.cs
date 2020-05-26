@@ -20,7 +20,9 @@ public class Ouvrier : MonoBehaviour
     public int stockor = 0;
     public int stocknourriture = 0;
     private int dégatrecolte = 5;
-
+    /// pour position de départ
+    private bool dejaBouge;
+    private Vector3 posDepart;
 
 
 
@@ -50,12 +52,42 @@ public class Ouvrier : MonoBehaviour
             Arbre cible = other.gameObject.GetComponent<Arbre>();
             cible.pv -= dégatrecolte;
             stockor += dégatrecolte;
-            Debug.Log(stockor);
-            Debug.Log(cible.pv);
+        }
+        if (other.gameObject.CompareTag("Chateau Allié"))
+        {
+            Game clonePartie = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+            clonePartie.nourriture += stocknourriture;
+            stocknourriture = 0;
+            clonePartie.argent += stockor;
+            stockor = 0;
         }
         
     }
+    
+    public int reactPositionnement(float x, float z, List<(int, int)> list)
+    {
+        int res = 0;
+        bool pasTrouve = true;
+        while (res < 9 && pasTrouve)
+        {
+            if ((float) list[res].Item1 == x && (float) list[res].Item2 == z)
+            {
+                pasTrouve = false;
+            }
+            else
+            {
+                res += 1;
+            }
+        }
 
+        return res;
+    }
+
+    private void Start()
+    {
+        dejaBouge = false;
+        posDepart = gameObject.transform.position;
+    }
     private void Update()
     {
 
@@ -64,6 +96,13 @@ public class Ouvrier : MonoBehaviour
         RaycastHit hit;
         if (Vie < 0)
         {
+            if (!dejaBouge)
+            {
+                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
+                cloneBoutons.emplacementLibre[pos] = false;
+            }
             Destroy(gameObject);
         }
 
@@ -82,6 +121,14 @@ public class Ouvrier : MonoBehaviour
 
         if (NewPosition != Vector3.zero && click)
         {
+            if (!dejaBouge)
+            {
+                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
+                cloneBoutons.emplacementLibre[pos] = false;
+                dejaBouge = true;
+            }
             transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
         }
         if (Physics.Raycast(ray, out hit, 100)) 

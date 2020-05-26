@@ -12,17 +12,14 @@ public class GuerrierE : MonoBehaviour
     public const long prixNouriture = 100;
     private bool isKO = false;
     public bool ally;
-    private bool selection = false;
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
-    private bool click = false;
     private GameObject target;
-    public int range = 40;
+    public int range = 60;
     private bool posA = true;
-
-
-
-
+    private bool enAttaque;
+    
+    
     public int Vie
     {
         get => vie;
@@ -258,20 +255,30 @@ public class GuerrierE : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position == new Vector3(50 , 1 , 50))
+        Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+        if (cloneBot.Charger)
         {
-            posA = false;
+            enAttaque = true;
         }
-        if (range > Vector3.Distance(transform.position, NewPosition))
+        if (enAttaque)
         {
-            transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
+            if (transform.position == new Vector3(50, 1, 50))
+            {
+                posA = false;
+            }
+
+            if (range > Vector3.Distance(transform.position, NewPosition))
+            {
+                transform.position = Vector3.MoveTowards(transform.position, NewPosition, speed * Time.deltaTime);
+            }
+
+            if (posA)
+            {
+                transform.position =
+                    Vector3.MoveTowards(transform.position, new Vector3(50, 1, 50), 5 * Time.deltaTime);
+            }
         }
 
-        if (posA)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(50, 1 , 50), 5 * Time.deltaTime);
-        }
-        
 
 
     }

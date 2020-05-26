@@ -5,7 +5,6 @@ using UnityEngine;
 public class DeplaceCam : MonoBehaviour
 {
     public Camera cam;
-
     public float PlateauSpeed;
 
     private float Bordure = 15f;
