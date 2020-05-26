@@ -323,7 +323,7 @@ public class Game : MonoBehaviour
         {
             (x, y) = listRocher[j];
             map.matrix[x, y] = new Case(Case.Biome.MONTAGNE);
-            Instantiate(Rocher, Construction.posSurlaMap(x, y), Quaternion.identity);
+            GameObject nouvArb = Instantiate(Rocher, Construction.posSurlaMap(x, y), Quaternion.identity);
         }
 
         (int, int)[] listMer =
