@@ -12,10 +12,8 @@ public class GuerrierE : MonoBehaviour
     public const long prixNouriture = 100;
     private bool isKO = false;
     public bool ally;
-    private bool selection = false;
     private Vector3 NewPosition = Vector3.zero;
     public int speed;
-    private bool click = false;
     private GameObject target;
     public int range = 60;
     private bool posA = true;

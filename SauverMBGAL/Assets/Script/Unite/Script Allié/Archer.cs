@@ -25,7 +25,6 @@ public class Archer : MonoBehaviour
 
     /// pour position de départ
     private bool dejaBouge;
-
     private Vector3 posDepart;
 
     public bool Selection
@@ -184,6 +183,7 @@ public class Archer : MonoBehaviour
                 Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
                 int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
                 cloneBoutons.emplacementLibre[pos] = false;
+                Destroy(gameObject);
             }
         }
 

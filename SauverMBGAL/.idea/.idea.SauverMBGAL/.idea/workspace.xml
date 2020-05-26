@@ -3,11 +3,41 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/arbre.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/riviere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/riviere.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/riviere.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Biome/riviere.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/inutile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/inutile/Enclos.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/inutile/Enclos.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/Canvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/EventSystem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/EventSystem.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/HUD22.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/peut etre inutile/HUD22.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur/inutile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur/inutile/Main Camera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Joueur/inutile/Main Camera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/inutile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/inutile/AfficheErreur2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Texte/inutile/AfficheErreur2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/peut etre inutile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/peut etre inutile/Directional Light.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/peut etre inutile/Directional Light.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene Principale.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene Principale.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scene test.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scene test/Scene3.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/scene test/Scene3.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bot/Bot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefab/Texte/AfficheErreur.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scene Principale.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Carte/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Population.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefab/Biome/riviere.prefab" root0="FORCE_HIGHLIGHTING" />
@@ -30,12 +61,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Carte/Case.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bouton/Gold.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Carte/Map.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Menu/MenuInGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Construction/Construction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Menu/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/Chateau.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Script Allié/balle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Batiment/TypeBatiment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bot/ConstructionBot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,7 +107,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Bouboutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Biome/Arbre.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Guerrier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Biome/ChampRecolte.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Ouvrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Carte/Map.cs" />
@@ -86,25 +118,27 @@
         <option value="$PROJECT_DIR$/Assets/Script/Unite/PosDepart.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Archer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Allié.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Caserne.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Champ.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/Maison.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/ChateauGestion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bot/ConstructionBot.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bot/Bot.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/OuvrierE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/DetruireBat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Joueur/camMinimap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" />
       </list>
     </option>
   </component>
@@ -183,6 +217,7 @@
       <workItem from="1590407669289" duration="394000" />
       <workItem from="1590408124123" duration="413000" />
       <workItem from="1590408636502" duration="10093000" />
+      <workItem from="1590489865861" duration="3048000" />
     </task>
     <servers />
   </component>

@@ -16,6 +16,7 @@ public class Game : MonoBehaviour
     public int nbCaserne;
     public Map map = new Map();
     private Camera cam;
+    public Camera minimap;
     private int cameraCurrentZoom = 20;
 
     /// prefabs nécessaires (batiments)
@@ -56,6 +57,7 @@ public class Game : MonoBehaviour
         GenerationMap();
         cam = Camera.main;
         Camera.main.orthographicSize = cameraCurrentZoom;
+        minimap.orthographicSize = 75;
     }
 
     void Update()

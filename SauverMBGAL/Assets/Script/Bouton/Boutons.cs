@@ -84,7 +84,6 @@ public class Boutons : MonoBehaviour
                         cloneGame.nourriture -= Guerrier.prixNouriture / cloneGame.nbCaserne;
                         cloneGame.popAct += Guerrier.logement;
                         int pos = CheckPos();
-                        Debug.Log(pointSpawn[pos]);
                         float x = (float) pointSpawn[pos].Item1;
                         float z = (float) pointSpawn[pos].Item2;
                         float y = (float) 0.5;
@@ -163,7 +162,6 @@ public class Boutons : MonoBehaviour
                         cloneGame.nourriture -= Guerrier.prixNouriture / cloneGame.nbCaserne;
                         cloneGame.popAct += Guerrier.logement;
                         int pos = CheckPos();
-                        Debug.Log(pointSpawn[pos]);
                         float x = (float) pointSpawn[pos].Item1;
                         float z = (float) pointSpawn[pos].Item2;
                         float y = (float) 0.5;

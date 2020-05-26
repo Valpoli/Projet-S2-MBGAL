@@ -8,9 +8,7 @@ public class Tour : MonoBehaviour
         private int tpsRecharge = 3;
         public const int degatTour = 30;
         public const long prix = 100;
-        private bool target = false;
-
-
+        
         public int Vie
         {
             get => vie;
@@ -40,7 +38,6 @@ public class Tour : MonoBehaviour
     public GameObject target;
     public int range;
     private int dégat = 5;
-    private bool attente = false;
     public GameObject LABALLE2;
     private Vector3 cible = Vector3.zero;
     public bool Ally;

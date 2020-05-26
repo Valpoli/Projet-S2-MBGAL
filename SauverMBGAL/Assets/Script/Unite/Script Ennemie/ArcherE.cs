@@ -17,9 +17,7 @@ public class ArcherE : MonoBehaviour
     public int speed;
     private Vector3 NewPosition = Vector3.zero;
     public bool ally;
-    private bool possibleAttack = false;
     public GameObject LABALLE2;
-    private bool click = false;
     private Vector3 posEnnemy = Vector3.zero;
     public GameObject target;
     private Vector3 cible;
