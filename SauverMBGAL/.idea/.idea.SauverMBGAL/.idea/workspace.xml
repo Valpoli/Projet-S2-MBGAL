@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/HUD/HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Win.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Win.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +178,8 @@
       <workItem from="1590407669289" duration="394000" />
       <workItem from="1590408124123" duration="413000" />
       <workItem from="1590408636502" duration="10093000" />
+      <workItem from="1590418980829" duration="1206000" />
+      <workItem from="1590494871268" duration="56000" />
     </task>
     <servers />
   </component>
