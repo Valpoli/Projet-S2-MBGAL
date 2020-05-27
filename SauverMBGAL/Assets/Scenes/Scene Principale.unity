@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 115053923}
   - component: {fileID: 115053922}
   m_Layer: 5
-  m_Name: Destruction
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1581,12 +1581,12 @@ PrefabInstance:
     - target: {fileID: 783557301868207090, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -203
+      value: -422.47
       objectReference: {fileID: 0}
     - target: {fileID: 2811410235557922418, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -203
+      value: -422.47
       objectReference: {fileID: 0}
     - target: {fileID: 3819329071883465655, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
@@ -1623,17 +1623,17 @@ PrefabInstance:
     - target: {fileID: 4143652590984776683, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -203
+      value: -422.47
       objectReference: {fileID: 0}
     - target: {fileID: 4143652590986347100, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -203
+      value: -422.47
       objectReference: {fileID: 0}
     - target: {fileID: 4143652591132962120, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -203
+      value: -422
       objectReference: {fileID: 0}
     - target: {fileID: 4143652591420881658, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
@@ -1827,7 +1827,7 @@ PrefabInstance:
     - target: {fileID: 8795415973490011230, guid: a17cea746860f274992ff5b668506a78,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.32
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a17cea746860f274992ff5b668506a78, type: 3}
