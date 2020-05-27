@@ -67,6 +67,10 @@ public class OuvrierE : MonoBehaviour
     private void Update()
     {
         Bot cloneBot= GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+        if (vie <= 0)
+        {
+            cloneBot.popAct -= 1;
+        }
         if (Vie < 0)
         {
             cloneBot.popAct -= 1;

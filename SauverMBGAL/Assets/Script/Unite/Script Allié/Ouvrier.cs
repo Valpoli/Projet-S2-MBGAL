@@ -21,8 +21,8 @@ public class Ouvrier : MonoBehaviour
     public int stocknourriture = 0;
     private int dégatrecolte = 5;
     /// pour position de départ
-    private bool dejaBouge;
-    private Vector3 posDepart;
+    public bool dejaBouge;
+    public Vector3 posDepart;
 
 
 
@@ -94,18 +94,6 @@ public class Ouvrier : MonoBehaviour
         
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Vie < 0)
-        {
-            if (!dejaBouge)
-            {
-                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
-                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
-                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
-                cloneBoutons.emplacementLibre[pos] = false;
-            }
-            Destroy(gameObject);
-        }
-
         if (ally && selection)
         {
             if (Input.GetMouseButtonUp(1))

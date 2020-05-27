@@ -2,134 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6f0196-cc2c-470f-a6da-1a29d846d96f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SauverMBGAL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Arbre (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Arbre (2).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Arbre (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Arbre (3).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Arbre.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Arbre.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Back.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Bois.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Bois.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Arbre (2).mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Arbre (2).mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Arbre (3).mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Arbre (3).mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Arbre.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Image/Materials/Arbre.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Arbre.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Image/Materials/Arbre.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Mer (1).mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Mer (1).mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Mer 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Mer 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Mer.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Mer.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/New Piskel.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/New Piskel.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Roche.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Roche.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Roches.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/Roches.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/espace.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/espace.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/gold.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/gold.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/map aaaa.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/map aaaa.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/pelouse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Image/Materials/pelouse.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/pelouse.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Image/Materials/pelouse.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/pelouse2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/pelouse2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/pelouse3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Materials/pelouse3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Mer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Mer.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Online.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Online.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Or.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Or.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Orc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Orc.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Quit 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Quit 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Roche.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Roche.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Rochers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Rochers.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Roches.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Roches.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Start.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Start.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Test.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Tyrande.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Tyrande.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Varian.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Varian.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Varian2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/Varian2.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/bg.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/champaspousse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/champaspousse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/champousse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/champousse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/espace.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/espace.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/gold.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/gold.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/grand espace.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/grand espace.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/map aaaa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/map aaaa.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/paysan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/paysan.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/pelouse2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/pelouse2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/pelouse3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/pelouse3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/rivere.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/rivere.gif.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/viande.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Image/viande.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/CaserneA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/CaserneA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/CaserneA.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/CaserneA.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChampA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChampA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChateauA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChateauA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChateauA.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/ChateauA.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/MaisonA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/MaisonA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/MaisonA.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/MaisonA.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/TourA.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/TourA.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/TourA.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments alliés/TourA.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/CaserneE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/CaserneE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/CaserneE.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/CaserneE.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChampE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChampE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChampE.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChampE.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChateauE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChateauE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChateauE.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/ChateauE.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/MaisonE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/MaisonE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/MaisonE.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/MaisonE.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/TourE.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/TourE.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/TourE.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Batiment/Batiments ennemis/TourE.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/mine.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Biome/mine.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Couleur/Jaune.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Couleur/Jaune.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Couleur/Rouge.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Couleur/Rouge.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Couleur/rouge 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Couleur/rouge 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Archer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/Guerrier.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/villageois.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/villageois.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/villageois.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Allié/villageois.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Archer Ennemie.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Guerrier Ennemie.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Unite/Unité Ennemie/Villageois Ennemie.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene Principale.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene Principale.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/OuvrierE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/OuvrierE.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,19 +107,19 @@
         <option value="$PROJECT_DIR$/Assets/Script/Carte/HealthBar2.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bot/ConstructionBot.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bot/Bot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/OuvrierE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Batiment/DetruireBat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/camMinimap.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/DeplaceCam.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bouton/Boutons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Recolte/ChampRecolte.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Joueur/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/OuvrierE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Ouvrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Guerrier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Allié/Archer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/ArcherE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Unite/Script Ennemie/GuerrierE.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Batiment/Tour.cs" />
       </list>
     </option>
   </component>
@@ -309,7 +198,9 @@
       <workItem from="1590407669289" duration="394000" />
       <workItem from="1590408124123" duration="413000" />
       <workItem from="1590408636502" duration="10093000" />
-      <workItem from="1590489865861" duration="4063000" />
+      <workItem from="1590489865861" duration="4065000" />
+      <workItem from="1590527206978" duration="70000" />
+      <workItem from="1590572545411" duration="7063000" />
     </task>
     <servers />
   </component>

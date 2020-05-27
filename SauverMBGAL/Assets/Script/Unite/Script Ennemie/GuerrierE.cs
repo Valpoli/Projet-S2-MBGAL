@@ -53,7 +53,19 @@ public class GuerrierE : MonoBehaviour
             unité2.Vie -= dégat;
             if (unité2.Vie <= 0)
             {
-                Destroy(gameObject);
+                Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                {
+                    cloneJoueur.popAct -= 1;
+                }
+                Guerrier cloneGuerrier = target.GetComponent<Guerrier>();
+                if (!cloneGuerrier.dejaBouge)
+                {
+                    GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                    Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                    int pos = cloneGuerrier.reactPositionnement(cloneGuerrier.posDepart.x, cloneGuerrier.posDepart.z, cloneBoutons.pointSpawn);
+                    cloneBoutons.emplacementLibre[pos] = false;
+                }
+                Destroy(other.gameObject);
             }
 
         }
@@ -64,6 +76,18 @@ public class GuerrierE : MonoBehaviour
             unité2.Vie -= dégat;
             if (unité2.Vie <= 0)
             {
+                Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                {
+                    cloneJoueur.popAct -= 1;
+                }
+                Archer cloneArcher = target.GetComponent<Archer>();
+                if (!cloneArcher.dejaBouge)
+                {
+                    GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                    Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                    int pos = cloneArcher.reactPositionnement(cloneArcher.posDepart.x, cloneArcher.posDepart.z, cloneBoutons.pointSpawn);
+                    cloneBoutons.emplacementLibre[pos] = false;
+                }
                 Destroy(other.gameObject);
             }
             
@@ -74,6 +98,18 @@ public class GuerrierE : MonoBehaviour
             unité2.Vie -= dégat;
             if (unité2.Vie <= 0)
             {
+                Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                {
+                    cloneJoueur.popAct -= 1;
+                }
+                Ouvrier cloneOuvrier = target.GetComponent<Ouvrier>();
+                if (!cloneOuvrier.dejaBouge)
+                {
+                    GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                    Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                    int pos = cloneOuvrier.reactPositionnement(cloneOuvrier.posDepart.x, cloneOuvrier.posDepart.z, cloneBoutons.pointSpawn);
+                    cloneBoutons.emplacementLibre[pos] = false;
+                }
                 Destroy(other.gameObject);
             }
         }

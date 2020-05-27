@@ -37,15 +37,11 @@ public class Tour : MonoBehaviour
 
     public GameObject target;
     public int range;
-    private int dégat = 5;
+    private int dégat = 30;
     public GameObject LABALLE2;
     private Vector3 cible = Vector3.zero;
     public bool Ally;
     public int vie = 200;
-    
-
-
-
 
     public void AttackRange()
     {
@@ -55,7 +51,7 @@ public class Tour : MonoBehaviour
             Vector3 posArcher = gameObject.transform.position;
             if (range > Vector3.Distance(posCible, posArcher))
             {
-                if (target.tag == "Archer Allié")
+                if (target.tag == "Archer")
                 {
                     Archer guerrier = target.GetComponent<Archer>();
                     guerrier.Vie -= dégat;
@@ -63,6 +59,18 @@ public class Tour : MonoBehaviour
                     cible = posCible;
                     if (guerrier.Vie < 0)
                     {
+                        Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                        {
+                            cloneJoueur.popAct -= 1;
+                        }
+                        Archer cloneArcher = target.GetComponent<Archer>();
+                        if (!cloneArcher.dejaBouge)
+                        {
+                            GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                            Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                            int pos = cloneArcher.reactPositionnement(cloneArcher.posDepart.x, cloneArcher.posDepart.z, cloneBoutons.pointSpawn);
+                            cloneBoutons.emplacementLibre[pos] = false;
+                        }
                         Destroy(target);
                     }
                 }
@@ -75,6 +83,18 @@ public class Tour : MonoBehaviour
                     cible = posCible;
                     if (guerrier.Vie < 0)
                     {
+                        Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                        {
+                            cloneJoueur.popAct -= 1;
+                        }
+                        Guerrier cloneGuerrier = target.GetComponent<Guerrier>();
+                        if (!cloneGuerrier.dejaBouge)
+                        {
+                            GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                            Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                            int pos = cloneGuerrier.reactPositionnement(cloneGuerrier.posDepart.x, cloneGuerrier.posDepart.z, cloneBoutons.pointSpawn);
+                            cloneBoutons.emplacementLibre[pos] = false;
+                        }
                         Destroy(target);
                     }
                 }
@@ -87,6 +107,18 @@ public class Tour : MonoBehaviour
                     cible = posCible;
                     if (guerrier.Vie < 0)
                     {
+                        Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                        {
+                            cloneJoueur.popAct -= 1;
+                        }
+                        Ouvrier cloneOuvrier = target.GetComponent<Ouvrier>();
+                        if (!cloneOuvrier.dejaBouge)
+                        {
+                            GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                            Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                            int pos = cloneOuvrier.reactPositionnement(cloneOuvrier.posDepart.x, cloneOuvrier.posDepart.z, cloneBoutons.pointSpawn);
+                            cloneBoutons.emplacementLibre[pos] = false;
+                        }
                         Destroy(target);
                     }
                 }
@@ -99,6 +131,8 @@ public class Tour : MonoBehaviour
                     cible = posCible;
                     if (unité2.Vie < 0)
                     {
+                        Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+                        cloneBot.popAct -= 1;
                         Destroy(target);
                     }
 
@@ -112,6 +146,8 @@ public class Tour : MonoBehaviour
                     cible = posCible;
                     if (unité2.Vie < 0)
                     {
+                        Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+                        cloneBot.popAct -= 1;
                         Destroy(target);
                     }
 
@@ -125,6 +161,8 @@ public class Tour : MonoBehaviour
                     cible = posCible;
                     if (unité2.Vie < 0)
                     {
+                        Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+                        cloneBot.popAct -= 1;
                         Destroy(target);
                     }
 

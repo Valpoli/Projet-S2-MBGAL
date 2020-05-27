@@ -24,8 +24,8 @@ public class Archer : MonoBehaviour
     private Vector3 posEnnemy = Vector3.zero;
 
     /// pour position de départ
-    private bool dejaBouge;
-    private Vector3 posDepart;
+    public bool dejaBouge;
+    public Vector3 posDepart;
 
     public bool Selection
     {
@@ -65,6 +65,8 @@ public class Archer : MonoBehaviour
                 unité2.Vie -= dégat;
                 if (unité2.Vie <= 0)
                 {
+                    Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+                    cloneBot.popAct -= 1;
                     Destroy(cible.gameObject);
                 }
 
@@ -76,6 +78,8 @@ public class Archer : MonoBehaviour
                 unité2.Vie -= dégat;
                 if (unité2.Vie <= 0)
                 {
+                    Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+                    cloneBot.popAct -= 1;
                     Destroy(cible.gameObject);
                 }
 
@@ -87,6 +91,8 @@ public class Archer : MonoBehaviour
                 unité2.Vie -= dégat;
                 if (unité2.Vie <= 0)
                 {
+                    Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
+                    cloneBot.popAct -= 1;
                     Destroy(cible.gameObject);
                 }
 
@@ -175,19 +181,6 @@ public class Archer : MonoBehaviour
     {
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Vie <= 0)
-        {
-            if (!dejaBouge)
-            {
-                GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
-                Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
-                int pos = reactPositionnement(posDepart.x, posDepart.z, cloneBoutons.pointSpawn);
-                cloneBoutons.emplacementLibre[pos] = false;
-                Destroy(gameObject);
-            }
-        }
-
-
         if (NewPosition != Vector3.zero && click)
         {
             if (!dejaBouge)

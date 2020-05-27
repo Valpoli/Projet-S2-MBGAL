@@ -69,7 +69,19 @@ public class ArcherE : MonoBehaviour
                     LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
                     if (unité2.Vie <= 0)
                     {
-                        Destroy(target.gameObject);
+                        Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                        {
+                            cloneJoueur.popAct -= 1;
+                        }
+                        Guerrier cloneGuerrier = target.GetComponent<Guerrier>();
+                        if (!cloneGuerrier.dejaBouge)
+                        {
+                            GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                            Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                            int pos = cloneGuerrier.reactPositionnement(cloneGuerrier.posDepart.x, cloneGuerrier.posDepart.z, cloneBoutons.pointSpawn);
+                            cloneBoutons.emplacementLibre[pos] = false;
+                        }
+                        Destroy(target);
                     }
                 }
 
@@ -84,7 +96,19 @@ public class ArcherE : MonoBehaviour
                     LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
                     if (unité2.Vie <= 0)
                     {
-                        Destroy(target.gameObject);
+                        Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                        {
+                            cloneJoueur.popAct -= 1;
+                        }
+                        Archer cloneArcher = target.GetComponent<Archer>();
+                        if (!cloneArcher.dejaBouge)
+                        {
+                            GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                            Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                            int pos = cloneArcher.reactPositionnement(cloneArcher.posDepart.x, cloneArcher.posDepart.z, cloneBoutons.pointSpawn);
+                            cloneBoutons.emplacementLibre[pos] = false;
+                        }
+                        Destroy(target);
                     }
                 }
 
@@ -97,7 +121,19 @@ public class ArcherE : MonoBehaviour
                     LABALLE2 = Instantiate(LABALLE2, posArcher, Quaternion.identity);
                     if (unité2.Vie <= 0)
                     {
-                        Destroy(target.gameObject);
+                        Game cloneJoueur = GameObject.FindGameObjectWithTag("Player").GetComponent<Game>();
+                        {
+                            cloneJoueur.popAct -= 1;
+                        }
+                        Ouvrier cloneOuvrier = target.GetComponent<Ouvrier>();
+                        if (!cloneOuvrier.dejaBouge)
+                        {
+                            GameObject cloneHUD = GameObject.FindGameObjectWithTag("HUD");
+                            Boutons cloneBoutons = cloneHUD.GetComponent<Boutons>();
+                            int pos = cloneOuvrier.reactPositionnement(cloneOuvrier.posDepart.x, cloneOuvrier.posDepart.z, cloneBoutons.pointSpawn);
+                            cloneBoutons.emplacementLibre[pos] = false;
+                        }
+                        Destroy(target);
                     }
                 }
 
@@ -310,6 +346,7 @@ public class ArcherE : MonoBehaviour
 
     private void Update()
     {
+
         Bot cloneBot = GameObject.FindGameObjectWithTag("Bot").GetComponent<Bot>();
         if (cloneBot.Charger)
         {
