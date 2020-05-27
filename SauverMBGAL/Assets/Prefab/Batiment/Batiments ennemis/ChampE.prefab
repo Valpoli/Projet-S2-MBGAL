@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7428219474262846723
+--- !u!1001 &5250133927052264047
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: 2872094348945652677, guid: 0c702d69f140db944870d8c495409f13,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 64.4699
       objectReference: {fileID: 0}
     - target: {fileID: 2872094348945652677, guid: 0c702d69f140db944870d8c495409f13,
         type: 3}
@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 2872094348945652677, guid: 0c702d69f140db944870d8c495409f13,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 66.094345
       objectReference: {fileID: 0}
     - target: {fileID: 2872094348945652677, guid: 0c702d69f140db944870d8c495409f13,
         type: 3}
@@ -68,6 +68,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2872094348945652677, guid: 0c702d69f140db944870d8c495409f13,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2872094348945652677, guid: 0c702d69f140db944870d8c495409f13,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4945809883103381846, guid: 0c702d69f140db944870d8c495409f13,
         type: 3}
       propertyPath: m_Name
@@ -78,6 +88,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Champ Ennemie
       objectReference: {fileID: 0}
+    - target: {fileID: 5342484703921048282, guid: 0c702d69f140db944870d8c495409f13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4040e9556978c494a98ca335a8ce6ddb, type: 2}
     m_RemovedComponents:
     - {fileID: 114530871416130384, guid: 0c702d69f140db944870d8c495409f13, type: 3}
     - {fileID: 114256171229771498, guid: 0c702d69f140db944870d8c495409f13, type: 3}

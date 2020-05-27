@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4945809883103381846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 0.1, z: 2}
+  m_LocalScale: {x: 4, y: 0.1, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8ab255bf0a153f45a340ad510a4252a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vie: 20
 --- !u!114 &114530871416130384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,9 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfca1ced9e38b7143b80ff972d5ab914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  champVide: {fileID: 2800000, guid: a7a1b046b97145a4db870cf5c1411f59, type: 3}
-  champPlein: {fileID: 2800000, guid: f20a135ed5f7424449547f4842568f9b, type: 3}
-  ouvrierType: {fileID: 967542262191595975, guid: 1c47ed282b8b4544b8aa6b9d9c4be499,
+  champVide: {fileID: 2800000, guid: 16f67cc41305e374196d694081fca2fc, type: 3}
+  champPlein: {fileID: 2800000, guid: 97e1a1081fb096b4d9343ead2fef33a1, type: 3}
+  ouvrierType: {fileID: 4785489204420595602, guid: e3e8ee46999539048b285418ca7d65ef,
     type: 3}
 --- !u!65 &1226739288645644711
 BoxCollider:

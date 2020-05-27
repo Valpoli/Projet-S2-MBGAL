@@ -4,11 +4,10 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - champVide: {fileID: 2800000, guid: a99bbd62b36d88f46b05e98aca3c1cd3, type: 3}
-  - champPlein: {fileID: 2800000, guid: f20a135ed5f7424449547f4842568f9b, type: 3}
-  - ouvrierType: {fileID: 967542262191595975, guid: 1c47ed282b8b4544b8aa6b9d9c4be499,
+  - champVide: {instanceID: 0}
+  - champPlein: {instanceID: 0}
+  - ouvrierType: {fileID: 4785489204420595602, guid: e3e8ee46999539048b285418ca7d65ef,
       type: 3}
-  - rend: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
